@@ -1,1539 +1,370 @@
-1. pagilaran_profile.json:
+The main challenges faced by PT Pagilaran in the environmental aspect include:
+Land Use and Biodiversity Conservation:
+PT Pagilaran operates in a region with significant biodiversity. The company must balance its agricultural activities with the conservation of natural habitats and species. This includes implementing sustainable agricultural practices to minimize the impact on local ecosystems.
+Waste Management:
+The company has implemented strict policies against indiscriminate littering, hunting, and polluting rivers. However, managing waste from agricultural activities and tourism remains a challenge. PT Pagilaran has to ensure that waste is properly disposed of or recycled to prevent environmental degradation.
+Climate Change and Weather Variability:
+Climate change poses a significant threat to agricultural productivity. PT Pagilaran must adapt to changing weather patterns, which can affect tea and cocoa production. This includes implementing measures to mitigate the effects of droughts, floods, and other extreme weather events.
+Sustainable Tourism Development:
+While agrotourism is a significant part of PT Pagilaran’s business, it also brings environmental challenges. For example, the company has to manage the environmental impact of tourist activities, such as paragliding, which was considered but postponed due to potential damage to tea plants.
+Regulatory Compliance:
+PT Pagilaran must comply with various environmental regulations, including those related to the use of pesticides, waste management, and conservation of natural resources. Ensuring that all operations meet these standards is crucial for sustainable development.
+Energy Use and Emissions:
+The production processes at PT Pagilaran’s factories require significant energy, leading to emissions. The company has to manage its energy use efficiently and reduce its carbon footprint. For instance, a study found that producing one kilogram of green tea at PT Pagilaran’s Samigaluh factory required 68,534.14 KJ of energy and released various emissions, including CO2, HC, NOx, and Pb.
+Community Involvement and Education:
+Engaging the local community in sustainable practices is essential. PT Pagilaran needs to continue educating and involving local residents in environmental conservation efforts to ensure long-term sustainability.
+Addressing these challenges requires a holistic approach that integrates environmental management into the core operations of PT Pagilaran, ensuring that both agricultural and tourism activities are sustainable and have minimal environmental impact.
+Copy
+Share
+How does PT Pagilaran plan to tackle the issue of land use and biodiversity?
 
-[
-  {
-    "section": 1,
-    "title": "Pendahuluan",
-    "content": "PT Pagilaran adalah perusahaan teh dan agribisnis yang unik karena berada langsung di bawah Universitas Gadjah Mada. Dengan komitmen pada pendidikan, penelitian, pengabdian masyarakat, perusahaan ini tidak hanya unggul dalam agribisnis, tetapi juga menjadi pusat inovasi dan pendidikan langsung (\"teaching industry\")."
-  },
-  {
-    "section": 2,
-    "title": "Sejarah & Warisan (1840–sekarang)",
-    "content": "Perjalanan Pagilaran dimulai sejak 1840 saat E. Blink memulai budidaya kina dan kopi, lalu beralih ke teh menuju akhir abad ke-19. Perusahaan mengalami masa kepemimpinan Belanda, Inggris, hingga Jepang dan akhirnya kembali ke Indonesia, dikelola sebagai bagian UGM sejak 1964, serta resmi menjadi PT sejak 1974.",
-    "references": [
-      "oaicite:1"
-    ]
-  },
-  {
-    "section": 3,
-    "title": "Model Bisnis PT Pagilaran",
-    "content": "Pagilaran menerapkan model Pentahelix—sinergi akademik, pemerintah, pelaku usaha, masyarakat, dan media. Sebagai teaching industry UGM, perusahaan berperan sebagai: Tempat magang & pelatihan bagi mahasiswa; Laboratorium riset: agronomi, teknologi pengolahan; Pusat pengabdian masyarakat dengan kemitraan petani plasma dan pelatihan teknis.",
-    "references": [
-      "oaicite:2"
-    ]
-  },
-  {
-    "section": 4,
-    "title": "Produk & Diversifikasi Terbaik",
-    "content": "PT Pagilaran tidak hanya memproduksi teh hitam orthodox berkualitas tinggi (~800–1.200 ton/tahun), tetapi juga varian: Teh hitam premium (BOP, BOPF, PF, DUST); Teh hijau, putih, kuning, Blue Sapphire, Ruby Red; Produk olahan kakao: powder, butter, cokelat premium; Klon unggul (PGL series) dengan produktivitas tinggi.",
-    "references": [
-      "oaicite:3"
-    ]
-  },
-  {
-    "section": 5,
-    "title": "Ekspor & Pasar Internasional",
-    "content": "Pagilaran secara konsisten mengekspor ke Amerika Serikat, Inggris, Rusia, Jepang, negara ASEAN, Kanada, dan Timur Tengah. Pada 2023, 75% produk teh diserap pasar ekspor, sedangkan sisanya dijual lokal melalui merek seperti 'Sigma Rasa'.",
-    "references": [
-      "oaicite:4"
-    ]
-  },
-  {
-    "section": 6,
-    "title": "Agrowisata & Edukasi Inovatif",
-    "content": "Sebagai agrowisata edukatif, Pagilaran menawarkan: Tea walk, tea tasting, dan tur pabrik; Fasilitas wisata: glamping, vila, premium café, jembatan gantung, flying fox, amfiteater; Program budaya & edukasi terintegrasi dengan SDGs.",
-    "references": [
-      "oaicite:5"
-    ]
-  },
-  {
-    "section": 7,
-    "title": "Riset & Inovasi Mutakhir",
-    "content": "Beberapa inovasi yang dihasilkan: Klon unggul PGL tahan serangan penyakit, produktivitas 5,8 ton/ha (> rata-rata nasional); Pengendalian mutu melalui Statistical Quality Control di unit Hijau (Samigaluh) dan teh hitam; Optimalisasi proses pemetikan, kadar air, dan sensoris melalui SPC.",
-    "references": [
-      "oaicite:6",
-      "oaicite:7",
-      "oaicite:8"
-    ]
-  },
-  {
-    "section": 8,
-    "title": "Prestasi & Penghargaan Terkini",
-    "content": "2025 – Festival Teh Nasional (Asosiasi Teh Indonesia & Jogja F&B Expo): Juara 1: BOP, BOPF, Pekoe Fanning; Juara 2: DUST. Pengakuan ini menegaskan mutu dan reputasi teh Pagilaran sebagai teh berkualitas tertinggi di tingkat nasional.",
-    "references": [
-      "oaicite:9",
-      "oaicite:10"
-    ]
-  },
-  {
-    "section": 9,
-    "title": "Keunggulan Utama PT Pagilaran",
-    "content": "1. Kualitas Ekspor Tinggi: SNI, kontrol mutu ketat, pengawasan kadar air & sensoris; 2. Inovasi & Riset: klon unggul, digitalisasi produksi, teaching industry integratif; 3. Jejaring Global: ekspor luas, diversifikasi produk kakao, branding premium; 4. Agrowisata & Edukasi: interaksi langsung hulu-hilir, edukasi budaya, dukungan SDGs; 5. Prestasi Nasional: juara kompetisi teh nasional, reputasi bisnis dan akademik teruji.",
-    "references": [
-      "oaicite:11",
-      "oaicite:12",
-      "oaicite:13"
-    ]
-  },
-  {
-    "section": 10,
-    "title": "Kesimpulan",
-    "content": "PT Pagilaran adalah contoh terbaik integrasi agribisnis modern, pendidikan praktis, dan inovasi agroforestry. Dengan produk premium, agrowisata edukatif, dan capaian riset, perusahaan ini menegaskan posisinya sebagai pemimpin sektor teh di Indonesia bahkan Asia—siap memperluas ekspor dan terus berinovasi."
-  },
-  {
-    "section": 11,
-    "title": "Daftar Referensi",
-    "content": "- \"Produk Teh Pagilaran Raih 4 Penghargaan...\", UGM, Mei 2025\n- \"PT Pagilaran Torehkan Prestasi Juara Teh Hitam...\", Faperta UGM, Juni 2025\n- \"PT Pagilaran Terus Berinovasi dalam Produksi\", UGM, Mei 2017\n- \"Pengendalian Kualitas Teh Hijau...\", UGM (Sari), 2002\n- \"Pengendalian Mutu Produk Teh Hitam...\", SIPORA Polije 2023\n- \"Inovasi Persilangan Teh...\", Faperta UGM, Sept 2024\n- \"PENJUALAN LOKAL DAN EKSPOR PRODUK TEH\", UGM Repository Nita Nurintan 2014"
-  }
-]
+What specific measures does the company take to manage waste effectively?
 
-2. knowledge_bank.json:
+Could you explain more about the climate change adaptation strategies for PT Pagilaran?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran land use and biodiversity challenges
+How does PT Pagilaran plan to tackle the issue of land use and biodiversity?
+PT Pagilaran addresses the challenges of land use and biodiversity through several strategic measures:
+Sustainable Agriculture Practices: PT Pagilaran implements sustainable agricultural practices to minimize the environmental impact of its operations. This includes the use of organic fertilizers, integrated pest management, and conservation of natural resources.
+Biodiversity Conservation: The company strictly prohibits activities that harm biodiversity, such as hunting and river pollution. It also promotes the conservation of natural habitats within its plantation areas.
+Landscape Planning and Management: PT Pagilaran integrates landscape planning and management programs to ensure that land use is optimized for both agricultural productivity and biodiversity conservation.
+Community Involvement: The company engages local communities in conservation efforts, ensuring that biodiversity protection is a shared responsibility.
+What specific measures does the company take to manage waste effectively?
+PT Pagilaran has implemented a comprehensive waste management strategy:
+Zero-Waste to Landfill: The company aims to achieve zero waste to landfill by recycling and reusing waste materials. This includes converting agricultural waste into compost and using it as organic fertilizer.
+Waste Segregation and Recycling: PT Pagilaran segregates waste at the source and recycles materials such as paper, plastic, and metal. Organic waste is composted, and non-organic waste is sent for recycling or proper disposal.
+Fines for Littering: The company imposes fines for indiscriminate littering to discourage improper waste disposal and maintain a clean environment.
+Waste-to-Energy Initiatives: PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations, reducing both waste and carbon emissions.
+Could you explain more about the climate change adaptation strategies for PT Pagilaran?
+PT Pagilaran has developed several strategies to adapt to climate change:
+Climate-Resilient Agriculture: The company implements climate-resilient agricultural practices, such as using drought-resistant and flood-tolerant crop varieties. It also employs techniques like mulching and cover cropping to improve soil moisture retention.
+Efficient Water Management: PT Pagilaran invests in efficient irrigation systems and water conservation measures to ensure water availability during droughts. It also manages water resources through rainwater harvesting and recycling.
+Energy Efficiency and Renewable Energy: The company focuses on energy efficiency in its operations and explores renewable energy sources, such as solar and biogas, to reduce its carbon footprint.
+Adaptive Management: PT Pagilaran continuously monitors climate data and adapts its management practices accordingly. This includes adjusting planting schedules, crop varieties, and harvesting times to align with changing weather patterns.
+Community Education: The company educates local communities about climate change and sustainable practices, fostering a culture of resilience and adaptation.
+By integrating these strategies, PT Pagilaran aims to mitigate the impacts of climate change and ensure the long-term sustainability of its operations.
+Copy
+Share
+How does PT Pagilaran ensure sustainable agricultural practices?
 
-[
-  {
-    "question": "hello",
-    "answer": "Halo! Saya adalah Pagilaran Smart Assistant, bagaimana bisa membantu Anda?",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:03:25.593Z"
-  },
-  {
-    "question": "haii jelaskan tentang produk pt pagilaran",
-    "answer": "Selamat datang di PT Pagilaran! Di bawah ini adalah informasi mengenai produk yang kami tawarkan:\n\n### **Produk Utama: Teh**\n\nKami menawarkan berbagai kualitas teh yang berasal dari kebun kami yang indah di lereng pegunungan Jawa. Berikut adalah beberapa jenis teh utama yang dapat Anda temukan dari kami:\n\n1. **Teh Hitam (Black Tea)**\n\n    - Teh hitam adalah produk unggulan kami. \n    - Kami menawarkan tiga varian kami teh hitam celup serta teh hitam kopi rasa cengkih. \n\n2. **Teh Hijau (Green Tea)**\n\n    - Teh hijau kami terkenal akan aromanya yang segar dengan berbagai rasa alami seperti rasa teh wangi melati yang memanjakan penikmat teh. \n\n3. **Teh Wangi Melati (Jasmine Scented Tea)**\n\n    - Teh ini adalah varian teh celup dengan sentuhan melati yang mewah. \n    - Teh ini diharapkan bisa memberikan anda minuman kesehatan yang tepat untuk memulai hari.\n\n### **Produk Lainnya**\n\nSelain teh, PT Pagilaran juga memproduksi berbagai jenis tanaman perkebunan lain:\n\n1. **Kakao (Cocoa)**\n\n    - Produk olahan kakao yang berasal dari biji kakao berkualitas tinggi yang dihasilkan di perkebunan kami. \n    - Anda bisa menemukan serta memesan produk kami di halaman website dan fitur pemesanan secara daring. \n\n2. **Kopi (Coffee)**\n\n    - Biji kopi berkualitas yang bisa Anda temukan sesuai selera Anda. \n    - Kami menyediakan berbagai pilihan yang bisa Anda temukan di halaman website kami. \n\n3. **Cengkih (Cloves)** dan **Kina (Quinine)**\n\n    - PT Pagilaran juga memproduksi cengkih serta kina yang bisa Anda temukan di halaman pesanan kami.   \n\n### **Kualitas dan Standar**\n\n- Setiap produk kami diciptakan dengan komitmen kami akan kualitas terbaik. \n- Kami memastikan produk kami mengikuti standar kesehatan serta standar operasional nasional maupun internasional.\n\nApakah ada produk spesifik yang ingin Anda tanyakan? Kami siap membantu! Untuk informasi lebih lanjut atau untuk melakukan pesanan, harap kunjungi halaman website kami. Jika Anda ingin melakukan pesanan langsung, segera kunjungi fitur penjemtaan daring kami.\n\nTerima kasih telah menginformasikan diri. Jika ada pertanyaan mengenai produk kami yang belum bisa saya jawab, silakan hubungi call center kami atau kirim kami email. \n\nKami menanti pertanyaan lebih lanjut dari Anda!",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:04:03.279Z"
-  },
-  {
-    "question": "jelaskan produk pagilaran",
-    "answer": "Berikut adalah daftar produk PT Pagilaran beserta deskripsinya:\n\n1. **Orthodox Black Tea**\n    - Deskripsi: Teh hitam tradisional dengan rasa yang kaya dan penuh tubuh\n    - Catatan rasa: Malty, fruity, dan manis dengan sentuhan yang segar\n    - Sertifikasi: Rainforest Alliance, Organic Certified\n\n2. **Premium CTC**\n    - Deskripsi: Teh yang kuat dan penuh tubuh, cocok untuk dicampur dengan susu\n    - Catatan rasa: Kuat, bold, dan malty\n    - Sertifikasi: Fair Trade, ISO 22000\n\n3. **Green Tea**\n    - Deskripsi: Teh hijau dengan aroma yang halus dan kaya antioksidan\n    - Catatan rasa: Vegetal, sedikit manis dengan rasa yang segarkan\n    - Sertifikasi: JAS Organic, USDA Organic\n\n4. **White Tea**\n    - Deskripsi: Teh putih dengan rasa halus yang dibuat dari daun muda\n    - Catatan rasa: Lembut, floral, dan manis dengan sentuhan madu dan melon\n    - Sertifikasi: Organic, Non-GMO\n\n5. **Blue Tea**\n    - Deskripsi: Teh biru unik dengan warna yang tidak biasa\n    - Catatan rasa: Kayu, bunga, dan manis dengan rasa kakao yang lembut\n    - Sertifikasi: Natural, Herbal\n\n6. **Pink Tea**\n    - Deskripsi: Teh merah aromatik dan menenangkan dengan rasa yang manis\n    - Catatan rasa: Spicy dan creamy dengan sentuhan cengkeh dan cardamon\n    - Sertifikasi: Authentic Recipe\n\n7. **Yellow Tea**\n    - Deskripsi: Teh kuning yang langka dengan rasa yang manis dan lembut\n    - Catatan rasa: Manis, nutty, dan smooth dengan rasa yang bersih\n    - Sertifikasi: Imperial Tribute Tea\n\nDengan berbagai macam pilihan produk tersebut, PT Pagilaran menawarkan teh-teh berkualitas tinggi yang mencerminkan warisan budidaya teh yang panjang serta komitmen kualitas.",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:21:18.968Z"
-  },
-  {
-    "question": "jelaskan lokasi pt pagilaran",
-    "answer": "**Lokasi PT Pagilaran**\n\nPT Pagilaran merupakan bagian dari Universitas Gadjah Mada (UGM) dan terletak di Kabupaten Batang, Jawa Tengah. Berikut adalah rincian dari lokasi perkebunan dan fasilitas-fasilitas kami:\n\n- **Ketinggian:** Terletak di ketinggian 1000 Meter di atas permukaan laut, memastikan kualitas teh yang prima dari kondisi tanah dan iklim pegunungan Jawa Tengah.\n- **Alamat:** Perkebunan kami berada di Dusun Pagilaran, Desa Keteleng, Kecamatan Blado. Daerah ini telah menjadi basis operasi sejak pendirian pada masa kolonial Belanda pada tahun 1840.\n- **Akses Wisatawan:** PT Pagilaran juga berfungsi sebagai agrowisata unggulan,buka setiap hari dari pukul 07.00 - 18.00 WIB, menawarkan pemandangan perkebunan teh serta pengalaman membeli teh premium langsung dari produsen. \n\nDemikian penjelasan mengenai lokasi kantor dan area operasi PT Pagilaran. Untuk informasi lebih lanjut mengenai produk spesifik atau jadwal kunjungan agrowisata, silahkan hubungi call center kami di +62 274 123456 atau email [export@ptpagilaran.com](mailto:export@ptpagilaran.com).\n\n*PT Pagilaran siap melayani kebutuhan premium tea Anda dari dataran tinggi Jawa.*",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:30:17.104Z"
-  },
-  {
-    "question": "where pagilaran export office?",
-    "answer": "PT Pagilaran's export office is strategically located in Yogyakarta, Indonesia.\n\n**Location Details:**\n\n- **Main Office Address:** Jl. Faridan M. Noto, Yogyakarta\n- **Contact Information:**\n  - ☎️ Phone: +62 274 123456\n  - 📧 Email: [export@ptpagilaran.com](mailto:export@ptpagilaran.com)\n\nFor specific visit inquiries or shipping logistics, please contact the office directly using the provided contact details. Shipping from their high-altitude plantation estates ensures premium quality from production through export.\n\n**Additional Information:**\n- 📦 With over **100+ years** of heritage, PT Pagilaran ranks as **Indonesia's 2nd largest tea exporter** (2008).\n- 🌏 Serving 50+ countries globally through international partnerships.\n\nFor further assistance, please feel free to reach out to their customer support team. Enjoy exploring Java’s rich tea heritage with PT Pagilaran.",
-    "lang": "en",
-    "timestamp": "2025-07-11T05:31:29.969Z"
-  },
-  {
-    "question": "Ke negara mana saja Anda mengekspor?",
-    "answer": "PT Pagilaran telah mengembangkan jaringan distribusi global dan berhasil menjadi salah satu eksportir teh terbesar di Indonesia. Kami dengan bangga mengekspor produk-produk terbaik kami ke lebih dari **50 negara di seluruh dunia**, termasuk di antaranya adalah:\n\n- **Amerika Serikat**: Pasar utama untuk teh spesialis dan premium\n- **Republik Rakyat Tiongkok**: Destinasi signifikan dengan minat yang berkembang terhadap teh berkualitas tinggi\n- **Timur Tengah**: Termasuk Arab Saudi dan UEA sebagai pasar yang suka terhadap hibrida teh manis\n- **Eropa Barat**: Prancis, Jerman, dan Belanda sebagai konsumen teh hitam tradisional\n- **Asia Tenggara**: Singapura, Malaysia, dan Filipina sebagai negara tetangga dengan pasar yang stabil\n- **Afrika Sub-Sahara**: Mesir dan Tanzania yang telah menunjukkan peningkatan terhadap produk gourmet\n- **Wilayah Pasifik**: Jepang, Korea, dan Australia tertarik dengan produk teh organik dan seremonial\n\nSebagai perusahaan dengan lebih dari 100 tahun pengalaman dalam industri teh, kami telah berkembang secara global sementara tetap berakar kuat di daerah sekitar pegunungan vulkanik Jawa Tengah. Saat ini, kami mencapai pasar-pasar tersebut melalui jaringan logistik yang efisien serta mitra ekspor internasional yang tepercaya, memastikan pelanggan kamu menerima produk dengan standar tertinggi.\n\nUntuk informasi mengenai ekspor internasional dan mitra distribusi, silakan menghubungi call center PT Pagilaran di **+62 274 123456** atau melalui email kami di **export@ptpagilaran.com**. Kami siap membantu!\n\n🌍 **Ekspor ke 50+ negara**\n✈️ **Logistik internasional melalui mitra**\n📞 **Consultasi gratis hubungi +62 274 123456**\n\nJika Anda memiliki pertanyaan lebih lanjut atau berminat dengan daftar produk yang tersedia, kunjungi halaman **Produk Kami** atau hubungi tim penjualan internasional kami – kami dengan senang hati siap membantu Anda!",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:32:31.949Z"
-  },
-  {
-    "question": "Ingin konsultasi gratis seputar teh atau layanan kami?",
-    "answer": "Selamat pagi! Tentu, kami akan dengan senang hati membantu Anda melalui layanan kami. Dari tahun 2008 hingga 2015, kami telah menjadi mitra handal untuk berbagai kebutuhan teh Anda. Berikut beberapa langkah mudah untuk mendapatkan konsultasi gratis dari kami:\n\n1. **Hubungi Call Center Kami**  \n   Anda bisa menghubungi customer service kami melalui nomor **+62 274 123456** untuk mendapatkan informasi lebih lanjut dan konsultasi gratis seputar teh atau layanan kami. Tim kami siap membantu Anda mulai dari pilihan produk, cara penggilingan, penyimpanan, hingga ide resep minuman.\n\n2. **Kunjungi Pusat Agrowisata Pagilaran**  \n   Kami memiliki fasilitas agrowisata yang menawarkan pengalaman belajar tentang proses produksi teh kami tanpa adanya biaya tambahan. Di sini, Anda bisa langsung berinteraksi dengan petugas kami dan mendapatkan tips spesialisasi melalui tutorial langsung.\n\n3. **Chat Online**  \n   Anda juga dapat menggunakan fitur chat yang tersedia di website kami. Klik ikon chat di pojok kanan bawah atau buka halaman kontak di [https://ptpagilaran.com/contact](https://ptpagilaran.com/contact) untuk memulai percakapan langsung dengan tim kami.\n\n4. **Email Kami**  \n   Silahkan kirim email ke **export@ptpagilaran.com** dengan pertanyaan atau masalah yang ingin Anda tanyakan. Tim kami akan segera menanggapi email Anda dalam waktu 1-2 hari kerja.\n\nKami menjunjung tinggi kualitas pelayanan kepada pelanggan kami, dimulai dari proses penanaman teh hingga pengalaman setelah Anda menikmatinya di cangkir. Konsultasi gratis ini akan membantu Anda dalam memahami lebih jauh tentang dunia teh, mulai dari cara memilih teh yang sesuai dengan selera Anda atau perkembangan produk kami.\n\n**Spesifikasi Layanan:**\n\n- **Produk**: Semua jenis teh kami, termasuk Black Tea, Green Tea, dan spesialisasi lainnya\n- **Pelayanan**: Gratis biaya konsultasi, tutorial, dan demo menggunakan teh Pagilaran\n- **Waktu**: Senin – Jumat, 08:00 – 17:00 WIB\n\nTerima kasih telah mempercayai PT Pagilaran untuk kebutuhan teh premium Anda. Kami menantikan pertanyaan dan umpan balik Anda untuk memberikan layanan terbaik. Jika Anda memiliki masalah yang lebih spesifik atau ingin memesan secara massal, jangan ragu untuk konsultasi melalui salah satu metode di atas. 🍃☕\n\nApakah ada pertanyaan atau topik spesifik yang ingin Anda tanyakan?",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:45:09.758Z"
-  },
-  {
-    "question": "siapa pemimpin pt pagilaran sekarang?",
-    "answer": "Saat ini, pemimpin PT Pagilaran adalah **Prof. Ir. Adi Djoko Guritno, MSIE, Ph.D** yang menjabat sebagai Direktur Utama. Dia juga telah dikukuhkan sebagai Guru Besar Bidang Ilmu Teknologi Industri, menunjukkan pengakuan akademik atas pencapaiannya dalam pengelolaan perusahaan.\n\nJika Anda ingin mengetahui lebih lanjut tentang kepemimpinan atau struktur manajemen PT Pagilaran, silakan kunjungi halaman \"Tentang Kami\" di website resmi atau hubungi call center kami di nomor +62 274 123456 untuk informasi lebih rinci.",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:48:32.860Z"
-  },
-  {
-    "question": "Ingin tahu proses produksi teh Pagilaran?",
-    "answer": "Proses produksi teh di PT Pagilaran memadukan metode tradisional dengan standar kualitas modern, menghasilkan teh-teh unggul yang diakui secara internasional. Terdapat 3 metode utama yang digunakan di setiap produk kami:\n\n**1. Teh Hitam Orthodox (Orthodox Black Tea)**\n\nCara tradisional dengan sentuhan human touch di setiap tahap:\n- **Withering:** Daun teh dibiarkan layu di withering tray untuk mengurangi kadar air.\n- **Rolling:** Daun digulung dalam mesin rotorvane untuk memotong daun dan melepaskan enzim alami.\n- **Oxidation:** Proses fermentasi secara alami di ruangan ventilasi khusus.\n- **Drying:** Pemanasan pada suhu terkontrol untuk menghentikan oksidasi.\n\n**2. Metode CTC (Premium CTC)**\n\nCara industri untuk teh cepat infusi:\n- **Crush, Tear, Curl (CTC):** Daun dihancurkan menjadi partikel kecil menggunakan mesin khusus untuk produksi volume tinggi.\n- **Oxidation cepat:** Proses fermentasi singkat untuk mendapatkan rasa malty yang kuat.\n- **Drying:** Keringan partikel kecil menggunakan rotating drier atau fluid-bed drier.\n\n**3. Proses Teh Hijau (Green Tea)**\n\nCara delicate tanpa oksidasi:\n- **Withering:** Pengurangan kadar air tanpa fermentasi.\n- **Fixing (Steaming/Pan-firing):** Proses penyerapan panas untuk menghentikan oksidasi, sesuai tradisi Jepang/Tiongkok.\n- **Drying:** Pengeringan bertahap untuk mempertahankan rasa fresh.\n\nSemua proses ini memastikan PT Pagilaran mempertahankan standar kualitas internasional dengan sertifikasi Rainforest Alliance, ISO 22000, dan Organic Certified.\n\nUntuk detail spesifik tiap produk, kunjungi halaman produk kami ➡️ [Lihat Produk Kami](https://pagilaran.com/produk)\n\nButuh bantuan lebih lanjut? Hubungi call center kami di **+62 274 123456**.\n",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:49:09.175Z"
-  },
-  {
-    "question": "apa hubungan pt pagilaran dengan ugm?",
-    "answer": "PT Pagilaran adalah perusahaan teh yang didirikan oleh Universitas Gadjah Mada (UGM) dengan cakupan lahan 1.311 hektar di Pekalongan.Hubungan PT Pagilaran dengan UGM adalah sinergi akademik dengan dunia industri melalui kerja sama pemerintah, pelaku usaha dan masyarakat menciptakan sinergi optimal (Konsep penta helix). Saat ini PT Pagilaran telah beroperasi dalam memasarkan produknya secara domestik dan internasional.\n\nCatatan: Untuk informasi lebih lanjut, silahkan kunjungi website kami atau hubungi tim customer service melalui nomor telepon yang tersedia di website. Terima kasih.",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:59:06.343Z"
-  },
-  {
-    "question": "Mau rekomendasi produk sesuai kebutuhan Anda?",
-    "answer": "Tentu! Tolong kami beritahu preferensi Anda atau kebutuhan khusus yang ingin Anda penuhi dengan minuman kami. Ada beberapa hal yang bisa Anda bagikan untuk bantuan rekomendasi:\n\n1. **Jenis teh yang lebih disukai**  \n   Misalnya: Hitam, hijau, putih, atau herbal\n\n2. **Rasa yang diinginkan**  \n   Misalnya: Lembut, manis, dengan sentuhan buah, atau kuat\n\n3. **Penggunaan**  \n   Teh untuk meditasi pagi, pendamping makan siang, atau minum malam rileks\n\n4. **Kebutuhan kesehatan**  \n   Misalnya: Rendah kafein, tinggi antioksidan, atau opsi herbal\n\nBerikan preferensi Anda, maka kami akan menyajikannya segera! ✨",
-    "lang": "id",
-    "timestamp": "2025-07-11T05:59:48.882Z"
-  },
-  {
-    "question": "Bukan, saya ingin melakukan kerjasama riset saja.",
-    "answer": "Halo Selamat Pagi! Terima kasih telah menghubungi layanan Smart Chat Pagilaran.\n\nPT Pagilaran dengan senang hati menyambut minat Anda dalam melakukan kerjasama riset. Sebagai perusahaan yang memiliki kolaborasi kuat dengan Lembaga Pendidikan, kami terbuka untuk bekerja sama dalam berbagai bidang termasuk riset. \n\nApakah Anda memiliki lembaga pendidikan yang tertarik untuk bekerja sama melakukan riset bersama kami? \n\nMohon tanya jawab lebih lanjut terkait keinginan Anda kepada kami melalui:\n\nNo. Telp: +62 274 123456  \nEmail: export@ptpagilaran.com",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:00:15.668Z"
-  },
-  {
-    "question": "Kemana saya bisa melakukan kerjasama riset?",
-    "answer": "Selamat pagi! Kami adalah Pagilaran Smart Assistant, siap membantu Anda.\n\nUntuk informasi mengenai kerjasama riset dengan PT Pagilaran, kami menyarankan langkah-langkah berikut:\n\n1. **Identifikasi Fokus Penelitian:**\n   Mulailah dengan mengidentifikasi topik atau bidang penelitian yang ingin Anda kembangkan bersama PT Pagilaran. Ini bisa terkait dengan praktik pertanian berkelanjutan, inovasi teknologi dalam produksi teh, atau manfaat kesehatan dari produk teh kami.\n\n2. **Persiapan Proposal Riset:**\n   Persiapkan proposal riset yang rinci mencakup latar belakang studi, tujuan penelitian, metodologi yang akan digunakan, serta potensi dampak atau manfaat dari penelitian tersebut. Pastikan penulisan proposal memenuhi standar akademik serta institusi Anda.\n\n3. **Kontak Resmi:**\n   Hubungi tim peneliti atau departemen pengabdian masyarakat di PT Pagilaran melalui email resmi perusahaan atau nomor telepon yang tersedia di situs web kami. Jelaskan secara singkat minat Anda dalam kerjasama serta lampirkan proposal riset untuk dipertimbangkan.\n\n4. **Diskusi Kolaborasi:**\n   Jika proposal Anda diterima, Anda akan diajak dalam diskusi lebih lanjut mengenai pembentukan rencana riset bersama, pemecahan masalah yang dihadapi, serta pemanfaatan fasilitas atau sumber daya yang dimiliki PT Pagilaran dalam penelitian tersebut.\n\nUntuk pertanyaan lebih lanjut, silakan hubungi call center kami melalui +62 274 123456 atau kirim email ke [export@ptpagilaran.com](mailto:export@ptpagilaran.com).\n\nMohon diperhatikan bahwa detail spesifik proses kerjasama mungkin membutuhkan koordinasi langsung dengan tim akademisi serta administrasi Pagilaran. Kami ucapkan terima kasih atas minat kerjasama Anda dan berharap dapat segera bekerja bersama untuk menghasilkan penelitian berguna dalam industri teh di Indonesia.\n\nSalam hangat,  \nPagilaran Smart Assistant ",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:01:16.896Z"
-  },
-  {
-    "question": "Apakah kamu tau warmindo yona?",
-    "answer": "Sayangnya, saya tidak memiliki data internal mengenai \"Warmindo Yona.\" Jika Anda memiliki pertanyaan terkait produk, jasa, atau informasi lainnya dari PT Pagilaran, silakan tanyakan. Untuk pertanyaan di luar ruang lingkup PT Pagilaran, saya sarankan Anda menghubungi call center yang tertera di website kami. Terima kasih!",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:02:52.578Z"
-  },
-  {
-    "question": "Apakah pt pagilaran butuh kerjasama pupuk untuk lahan?",
-    "answer": "Saat ini,Informasi mengenai kebutuhan dan proses kerjasama dengan perusahaan pupuk untuk keperluan lahan kami tidak tersedia di website resmi PT Pagilaran. Untuk informasi lebih lanjut, kami menyarankan menghubungi bagian layanan pelanggan melalui nomor telepon +62 274 123456 atau email export@ptpagilaran.com\n\nKami sangat menghargai pertanyaan dan minat Anda dalam peluang kerjasama. Jika ada keperluan lain yang dapat kami bantu, silakan beritahukan. Selamat menghubungi!",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:04:25.856Z"
-  },
-  {
-    "question": "Butuh info program reseller/agen Pagilaran?",
-    "answer": "Maaf, saya tidak menemukan informasi yang relevan.",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:05:13.378Z"
-  },
-  {
-    "question": "Apa saja karir di pagilaran?",
-    "answer": "Maaf, informasi mengenai karir di Pagilaran belum tersedia di website ini. Untuk informasi lebih lengkap, Anda dapat menghubungi call center kami di:\n\n**Head Office:**\n📞 +62 274 654321  \n📧 info@ptpagilaran.com\n\nKami siap membantu Anda untuk informasi lebih lanjut.\n\nTerima kasih!",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:22:35.252Z"
-  },
-  {
-    "question": "Di lokasi mana saja kebun pt pagilaran?",
-    "answer": "Selamat pagi! PT Pagilaran memiliki lokasi kebun utama di Kabupaten Batang, Jawa Tengah, tepatnya di kaki Gunung Kamulyan, Kecamatan Blado. Berikut adalah beberapa detail tambahan mengenai lokasi kami:\n\n📍 **Kebun Teh Pagilaran - Lokasi Utama**:\n- **Alamat**: Kaki Gunung Kamulyan, Kecamatan Blado, Kabupaten Batang, Jawa Tengah.\n- **Deskripsi**: Kebun teh ini adalah bagian dari agrowisata unggulan Pagilaran yang juga berfungsi sebagai pusat inovasi dan pengalaman pendidikan langsung (\"teaching industry\") bekerjasama dengan Universitas Gadjah Mada.\n- **Jarak**: Sekitar 12,8 kilometer dari pusat Kabupaten Batang, membuatnya mudah dijangkau untuk pengunjung dan wisatawan.\n\nSelain itu, PT Pagilaran juga memiliki fasilitas penunjang lain seperti Pusat Riset dan Kantor Pusat di Yogyakarta, serta kantor ekspor yang terletak di berbagai titik strategis untuk melayani pasar domestik dan internasional. Kami bangga dengan warisan serta lokasi strategis kami yang memungkinkan komitmen kami terhadap tea excellence dan agrowisata berkembang pesat.\n\n🤝 Jika Anda memiliki pertanyaan lebih lanjut tentang lokasi atau fasilitas kami, silakan menghubungi Kantor Ekspor kami di **+62 274 123456** atau Customer Service kami di email: **export@ptpagilaran.com.**\n\nSemoga informasi ini membantu! Selamat menikmati perjalanan pengetahuan Anda dengan PT Pagilaran. ☕🍃\n\nHormat kami,  \nTim Pagilaran Smart Assistant",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:23:17.956Z"
-  },
-  {
-    "question": "Selain itu dimana lagi lokasi kebun nya?",
-    "answer": "Selamat datang di Pagilaran Smart Assistant. Di samping lokasi kebun utama kami yang terdapat di Yogyakarta, PT Pagilaran juga memiliki beberapa divisi kebun di lokasi strategis lain di Indonesia, termasuk:\n\n1.  **Lampung**\n    Di Sinar Sari Estate, kami mengoperasikan salah satu dari 3 pabrik pengolahan teh hijau utama di Indonesia\n2.  **Sumedang, Jawa Barat**\n    Lokasi tradisional perkebunan teh dengan fasilitas produksi canggih PT Pagilaran Sumedang\n3.  **Bogor, Jawa Barat**\n    Sebagai bagian dari jaringan perkebunan kami yang lengkap di pulau Jawa\n\nUntuk informasi lebih rinci mengenai lokasi spesifik kebun-kebun kami di berbagai daerah, silakan hubungi call center kami di:\n\n-   Telp: +62 274 123456 (Export Office) / +62 274 654321 (Head Office)\n-   Email: info@ptpagilaran.com\n\nAtau kunjungi website resmi <http://www.ptpagilaran.com> untuk peta lokasi kantor dan kebun kami.\n\nApakah ada informasi lain yang bisa kami bantu?",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:24:17.731Z"
-  },
-  {
-    "question": "Siapa saja direktur dan komisaris pt pagilaran sekarang?",
-    "answer": "Maaf, informasi terbaru tentang direktur dan komisaris PT Pagilaran tidak tersedia di website kami. Untuk detail terbaru, silakan menghubungi call center kami di **+62 274 123456** atau email [export@ptpagilaran.com](mailto:export@ptpagilaran.com)⁠.\n\nTerima kasih atas pengertian Anda!",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:25:44.005Z"
-  },
-  {
-    "question": "Butuh info katalog dan varian produk?",
-    "answer": "Selamat pagi! Di bawah ini adalah informasi katalog produk PT Pagilaran:\n\n**Orthodox Black Tea**\n- Deskripsi: Dituai dan diproses secara tradisional untuk rasa full-bodied\n- Catatan rasa: Malty, fruity, dan sedikit manis dengan finish brisk\n- Spesifikasi: 100% daun teh hitam, diperoleh dari perkebunan dataran tinggi\n- Sertifikasi: Rainforest Alliance, Organic Certified\n\n**Premium CTC**\n- Deskripsi: Teh kuat dan full-bodied yang sempurna untuk blending\n- Catatan rasa: Kuat, bold, dan malty, ideal untuk teh susu\n- Spesifikasi: Proses crush-tear-curl (CTC) untuk infusi cepat\n- Sertifikasi: Fair Trade, ISO 22000\n\n**Green Tea**\n- Deskripsi: Lezat, segar dengan antioksidan alami\n- Catatan rasa: Grassy, vegetal, dan sedikit segar dengan aftertaste menyegarkan\n- Spesifikasi: Dikuskus atau dipanaskan untuk mencegah oksidasi\n- Sertifikasi: JAS Organic, USDA Organic\n\n**White Tea**\n- Deskripsi: Menikmati kelezatan teh yang dibuat dari daun ter muda\n- Catatan rasa: Ringan, harum, dan manis dengan sentuhan madu dan melon\n- Spesifikasi: Diproses minimal, daun kering alami\n- Sertifikasi: Organic, Non-GMO\n\n**Blue Tea**\n- Deskripsi: Unggulan eksotis yang dikenal dengan warnanya yang unik\n- Catatan rasa: Kayu dan sedikit manis\n- Spesifikasi: Dibuat dari bunga telang\n- Sertifikasi: Natural, Herbal\n\n**Pink Tea**\n- Deskripsi: Teh aromatik yang lembut dengan warna pink yang menawan\n- Catatan rasa: Pedas dan creamy, dengan sentuhan kari dan kayu manis\n- Spesifikasi: Resep autentik Kashmir chai dengan baking soda\n- Sertifikasi: Resep Autentik\n\n**Yellow Tea**\n- Deskripsi: Teh yang jarang ditemukan ini berasal dari proses oksidasi yang sangat slow dan butuh proses yang unik\n- Catatan rasa: Berakhir dengan aftertaste yang manis namun fresh yang memberikan kepuasan\n- Spesifikasi: Proses oksidasi yang slow dan lembut\n- Sertifikasi: Imperial Tribute Tea\n\nUntuk melihat katalog produk lengkap dalam format fisik atau digital, silakan menghubungi departemen pemasaran kami di:\n\n📞 Hubungi kami di:\n- Export Office: **+62 274 123456**\n- Head Office: **+62 274 654321**\n- Research Center: **+62 274 789012**\n\n🙏 Terima kasih atas pengertian dan kekhatirannya. Silakan jangan sungkan untuk menemui kami melalui kontak di atas untuk lebih lanjut informasi mengenai produk kami. Selamat berbelanja! 🍃🌿\n\nJika ada pertanyaan lebih lanjut, kami siap membantu. Selamat menikmati teh dari PT Pagilaran! ",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:47:11.039Z"
-  },
-  {
-    "question": "Dimana lokasi kantor pusat pt pagilaran?",
-    "answer": "Kantor pusat PT Pagilaran berlokasi di:\n\n**Head Office**  \nJl. Head Office No. 2, Yogyakarta  \n📞 +62 274 654321  \n📧 [info@ptpagilaran.com](mailto:info@ptpagilaran.com)\n\nUntuk informasi tambahan:\n- **Export Office**: Jl. Export No. 1, Yogyakarta  \n- **Research Center**: Jl. Research Center No. 3, Yogyakarta\n\nJika Anda membutuhkan bantuan lebih lanjut, silakan hubungi nomor kontak di atas atau kunjungi situs resmi kami.",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:52:15.860Z"
-  },
-  {
-    "question": "Butuh bantuan proses transaksi atau pengiriman?",
-    "answer": "Selamat pagi! Untuk bantuan khusus proses transaksi atau pengiriman produk kami, saya sarankan Anda menghubungi **Tim Customer Service PT Pagilaran** melalui:\n\n📞 **Telepon:** +62 274 654321 (Kantor Pusat)  \n📧 **Email:** info@ptpagilaran.com  \n\nTim kami siap membantu Anda dengan proses transaksi, konfirmasi pembayaran, maupun detail pengiriman. Selamat berbelanja!",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:52:34.164Z"
-  },
-  {
-    "question": "Apa saja produk dari pt pagilaran?",
-    "answer": "PT Pagilaran menawarkan berbagai jenis teh premium dengan ciri khas masing-masing. Berikut adalah daftar produk mereka berserta karakteristik:\n\n1. **Orthodox Black Tea**\n   - **Rasa**: Malty, fruity, sedikit manis dengan finish yang segar\n   - **Khusus**: Berkualitas penuh, proses tradisional\n   - **Sertifikat**: Rainforest Alliance, Organic Certified\n\n2. **Premium CTC**\n   - **Rasa**: Kuat, kaya, rasa malty - ideal untuk teh susu\n   - **Khusus**: Proses Crush, Tear, Curl (CTC) untuk infusi cepat\n   - **Sertifikat**: Fair Trade, ISO 22000\n\n3. **Green Tea**\n   - **Rasa**: Rumiput, sedikit manis dengan setelah rasa menyegarkan\n   - **Khusus**: Diproses dengan cara dikukus atau dibakar untuk mencegah oksidasi\n   - **Sertifikat**: JAS Organic, USDA Organic\n\n4. **White Tea**\n   - **Rasa**: Ringan, bernuansa bunga, manis dengan sedikit madu dan melon\n   - **Khusus**: Proses minimal, dikeringkan dengan udara\n   - **Sertifikat**: Organic, Non-GMO\n\n5. **Blue Tea**\n   - **Rasa**: Berbahan woody dan sedikit manis\n   - **Khusus**: Dibuat dari bunga telang, tidak mengandung kafein\n   - **Sertifikat**: Natural, Herbal\n\n6. **Pink Tea**\n   - **Rasa**: Pedas dan krem dengan sentuhan kapulaga dan kayu manis\n   - **Khusus**: Resep tradisional Kashmiri chai dengan baking soda\n   - **Sertifikat**: Authentic Recipe\n\n7. **Yellow Tea**\n   - **Rasa**: Manis, rasa kacang dengan finish yang bersih\n   - **Khusus**: Proses oksidasi lambat dan lembut\n   - **Sertifikat**: Imperial Tribute Tea\n\nSetiap produk ini dibuat dengan komitmen terhadap kualitas, keberlanjutan, dan tradisi produksi yang kaya.\n\nApa ada produk tertentu yang Anda ingin lebih tahu tentang fitur atau sertifikasinya? Atau perlu bantuan lain terkait PT Pagilaran?",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:53:21.752Z"
-  },
-  {
-    "question": "Apakah semua produk mendapatkan SNI dan Halal?",
-    "answer": "Mohon maaf, tidak semua produk Pagilaran mendapatkan sertifikasi SNI atau Halal di dalam data internal kami. Informasi sertifikasi tersedia secara khusus untuk setiap produk di detil produk masing-masing.\n\nSertifikat penting yang berlaku:\n- **SNI (Standar Nasional Indonesia)** - Produk diuji memenuhi standar nasional untuk keamanan konsumen.\n- **Halal MUI** - Menjamin produk sesuai aturan Islam dan dikonsumsi oleh masyarakat Muslim.\n\nUntuk produk di Pagilaran yang telah mendapatkan sertifikasi ini diantaranya:\n- **Orthodox Black Tea**: Bersertifikasi Rainforest Alliance dan Organic Certified (informasi SNI/Halal tidak tercatat)\n- **Premium CTC**: Bersertifikasi Fair Trade dan ISO 22000 (informasi SNI/Halal tidak tercatat)\n- **Green Tea**: Bersertifikasi JAS Organic dan USDA Organic (informasi SNI/Halal tidak tercatat)\n\nJika Anda ingin mengetahui detail sertifikasi lainnya, silakan hubungi kontak call center kami di:\n\n**Head Office:**\nJl. Head Office No. 2, Yogyakarta  \n📞 +62 274 654321  \n📧 info@ptpagilaran.com\n\nKami sarankan menghubungi kontak terkait secara langsung untuk informasi spesifik tentang semua sertifikasi produk.",
-    "lang": "id",
-    "timestamp": "2025-07-11T06:54:07.585Z"
-  },
-  {
-    "question": "berapa jumlah pekerja total pt pagilaran?",
-    "answer": "Maaf, saya tidak menemukan informasi yang relevan.",
-    "lang": "id",
-    "timestamp": "2025-07-11T07:18:53.440Z"
-  },
-  {
-    "question": "Berapa total luas lahan perkebunan pt pagilaran?",
-    "answer": "### Total Luas Lahan Perkebunan PT Pagilaran\n\nPT Pagilaran memiliki total luas lahan perkebunan sebesar **1.113,838 hektar**. Dari luas total ini, **1008,956 hektar** digunakan khusus untuk tanaman teh. Kebun teh Pagilaran tersebar di tiga zona dengan ketinggian berkisar antara 600-1600 meter di atas permukaan laut.\n\nUntuk lebih rinci tentang operasional atau areal perkebunan PT Pagilaran, Anda bisa [menghubungi kantor kami](https://ptpagilaran.com/hubungi-kami).\n\n🌿 **Note:** Untuk informasinya tetap up-to-date dan verifikasi data terbaru, kami merekomendasikan langsung menghubungi call center PT Pagilaran yang tersedia di [website resminya](https://ptpagilaran.com/).\n\n---\n\n### Hubungi Kami\n\nJika Anda memerlukan bantuan lebih lanjut atau informasi khusus mengenai perkebunan dan produk kami, silahkan menghubungi PT Pagilaran:\n\n- **Head Office Yogyakarta**\n  - **Alamat:** Jl. Head Office No. 2, Yogyakarta\n  - **Telepon:** +62 274 654321\n  - **Email:** [info@ptpagilaran.com](mailto:info@ptpagilaran.com)\n\nTerima kasih telah menghubungi PT Pagilaran!",
-    "lang": "id",
-    "timestamp": "2025-07-11T07:20:07.049Z"
-  },
-  {
-    "question": "Jelaskan lokasi pagilaran dimana?",
-    "answer": "Tentunya! PT Pagilaran adalah perusahaan teh yang terletak di **Desa Keteleng, Kecamatan Blado, Kabupaten Batang, Jawa Tengah**. Sebagai bagian dari Universitas Gadjah Mada, Pagilaran berada di dataran tinggi yang subur, di mana teh mereka ditanam. Tempat ini terkenal karena suhunya yang sejuk dan lahan pertanian yang luas, yang sangat cocok untuk budidaya teh berkualitas tinggi.\n\n**Alamat Lengkap:**\nJl. Pagilaran No. 20, Desa Keteleng, Kecamatan Blado, Kabupaten Batang, Jawa Tengah, Indonesia.\n\nAnda dapat mengunjungi Pagilaran pada jam operasional dari **Senin hingga Minggu, dari pukul 07:00 sampai 18:00 WIB**. Wisatawan bisa menikmati keindahan alam dan lahan tehnya, serta merasakan proses pengolahan teh sejak zaman Kolonial Belanda berdirinya. Selain itu, Pagilaran juga menawarkan agrowisata yang menarik untuk keluarga dan penggemar alam.\n\n---\n\nApa ada informasi lain yang bisa saya bantu?",
-    "lang": "id",
-    "timestamp": "2025-07-12T12:10:43.978Z"
-  },
-  {
-    "question": "Tertarik mencoba sampel produk?",
-    "answer": "Tentu, kami akan dengan senang hati memberikan sampel produk Pagilaran kepada Anda. Berikut adalah beberapa langkah untuk mendapatkan sampelnya:  \n\n1. **Kunjungailah kantor kami**  \n   Anda bisa langsung datang ke kantor PT Pagilaran di Yogyakarta. Tim kami akan dengan senang hati memberikan sampel produk serta memberikan penjelasan mendalam mengenai produk kami.  \n\n   **Head Office**  \n   Jl. Head Office No. 2, Yogyakarta  \n   Kontak: +62 274 654321  \n\n   **Export Office**  \n   Jl. Export No. 1, Yogyakarta  \n   Kontak: +62 274 123456  \n\n   **Research Center**  \n   Jl. Research Center No. 3, Yogyakarta  \n   Kontak: +62 274 789012  \n\n2. **Hubungi kami melalui telepon atau email**  \n   Anda bisa menghubungi kantor kami melalui nomor telepon atau mengirim email ke kami untuk mengajukan permintaan sampel produk.  \n\n   **Kantor Ekspor**  \n   Telepon: +62 274 123456  \n   Email: export@ptpagilaran.com  \n\n   **Kantor Pusat**  \n   Info: +62 274 654321  \n   Email: info@ptpagilaran.com  \n\nKami ingin Anda merasakan kualitas luar biasa dari teh produksi kami serta pelayanan profesional kami. Selain itu, Anda juga bisa berkunjung ke kantor kami untuk tur perkebunan teh kami yang merupakan bagian dari program agrowisata kami.\n\nJangan ragu untuk menghubungi kami melalui nomor telepon atau email yang telah disebutkan di atas. Terima kasih atas minat Anda terhadap produk kami.",
-    "lang": "id",
-    "timestamp": "2025-07-12T13:18:42.044Z"
-  },
-  {
-    "question": "model llm apa kamu?",
-    "answer": "Saya adalah asisten AI yang dilatih untuk menjawab pertanyaan produktif dan memberikan informasi otentik. Apakah Anda membutuhkan bantuan terkait produk atau layanan kami?",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:19:01.243Z"
-  },
-  {
-    "question": "Apa saja yang bisa kamu jelaskan?",
-    "answer": "Halo! Saya adalah \"Pagilaran Smart Assistant\" - selalu siap membantu dengan profesional dan responsifnya. \n\nBerikut adalah beberapa topik yang bisa saya jelaskan seputar **PT Pagilaran**:\n\n1. **Produk Teh Kami**:\n   - _Orthodox Black Tea_: Rasa penuh tubuh dengan sentuhan malty, fruity.\n   - _Premium CTC_: Pilihan sempurna untuk teh susu dengan cita rasa kuat dan kokoh.\n   - _Green Tea_: Antioksidan alami dengan rasa segar.\n\n2. **Sejarah & Milebat**:\n   - Didirikan sejak **1840** di dataran tinggi Java.\n   - Menerima penghargaan internasional **1986** untuk unggulnya perkebunan.\n   - Salah satu eksportir terbesar di Indonesia sejak **2008**.\n\n3. **Keunggulan**:\n   - Sertifikasi ketat: Rainforest Alliance, ISO 22000, dan Organic Certified.\n   - Dikelola oleh Universitas Gadjah Mada dengan penekanan pada riset dan pendidikan.\n\n4. **Keunggulan Pilihan**:\n   - _Sustainable Practices_: Komitmen kami untuk lingkungan dan keberlanjutan.\n   - _Global Reach_: Menawarkan produk ke lebih dari 50 negara.\n\nUntuk lebih detailnya dapat langsung mengunjungi [website kami](https://ptpagilaran.com).\n\nAda pertanyaan tertentu yang ingin Anda ketahui? Silakan tanyakan! 🙏",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:19:58.521Z"
-  },
-  {
-    "question": "Jelaskan kemana saja export produk pt pagilaran?",
-    "answer": "### Ekspor Produk PT Pagilaran: Pasar Internasional\n\nPT Pagilaran berprestasi sebagai salah satu eksportir terbesar di Indonesia, dengan **50+ pasar internasional** yang telah menjadi tujuan utama dari produk teh kami. Berikut adalah beberapa negara utama yang menjadi bagian dari jaringan global kami:\n\n- **Amerika Serikat**: Memenuhi permintaan pasar premium dengan berbagai kategori teh.\n- **Eropa Barat**: Termasuk Jerman, Prancis, dan Belanda yang menuntut standar kualitas tinggi.\n- **Timur Tengah**: Pasar yang berkembang pesat dengan preferensi terhadap teh eksotis dari Asia.\n- **Asia Timur**: Sebagai pasar dekat dan tradisional dengan minat pasar seperti Jepang dan Korea Selatan.\n- **Afrika**: Mengembangkan kolaborasi baru dengan negara-negara seperti Maroko dan Mesir.\n- **Asia Tenggara**: Indonesia, Singapura, Malaysia, dan Filipina sebagai pasar regional utama.\n\n**Kami juga terus menjelajah pasar baru di Amerika Latin, Rusia, dan Australia** dengan kolaborasi ritel dan distributor internasional.\n\nDengan **keberadaan di lebih dari 50 negara**, PT Pagilaran telah membangun jejak internasional yang signifikan dalam industri teh global, memastikan kualitas premium dan kepuasan konsumen di berbagai belahan dunia.\n\nJika Anda berminat memahami lebih mendalam mengenai pasar ekspor khusus atau mendiskusikan peluang bisnis internasional, silakan hubungi kantor kami di [phone number redacted] (Export Office) atau melalui email di [contact info redacted]. Tim kami siap membantu Anda mengeksplorasi potensi kolaborasi internasional.",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:21:44.854Z"
-  },
-  {
-    "question": "Jelaskan apa saja produk pagilaran premium dan non premium?",
-    "answer": "**Produk Teh Pagilaran**\n\n*Berikut adalah berbagai jenis teh yang ditawarkan oleh Pagilaran, kategorisasi premium dan non-premium berdasarkan informasi produk yang tersedia:*\n\n🌿 **Premium:**\n\n1. **Orthodox Black Tea**\n   - Keterangan: Dipetik dengan tangan dan diproses tradisional untuk rasa full-bodied.\n   - Ciri Khas: Malty, buah, dan manis dengan penutup segar.\n   - Sertifikasi: Rainforest Alliance, Organic Certified\n\n2. **Premium CTC**\n   - Keterangan: Teh kuat dan full-bodied yang sempurna untuk blending.\n   - Ciri Khas: Cocok untuk teh susu, dengan rasa kuat dan malty.\n   - Sertifikasi: Fair Trade, ISO 22000\n\n3. **Green Tea**\n   - Keterangan: Lembut dan segar dengan antioksidan alami.\n   - Ciri Khas: Sejuk, vegetal, manis dengan aftertaste segar.\n   - Sertifikasi: JAS Organic, USDA Organic\n\n4. **White Tea**\n   - Keterangan: Halus dan lembut, terbuat dari daun termuda.\n   - Ciri Khas: Ringan, bunga, manis dengan sentuhan madu dan melon.\n   - Sertifikasi: Organic, Non-GMO\n\n🍃 **Non-Premium:**\n\n1. **Blue Tea**\n   - Keterangan: Bergaya unik dengan warna berbunga, tanpa kafein.\n   - Ciri Khas: Kayuan dan sedikit manis.\n   - Sertifikasi: Alami, Herbal\n\n2. **Pink Tea**\n   - Keterangan: Aromatis dan menenangkan, denganrona merah muda.\n   - Ciri Khas: Pedas dan krim, dengan cardamom dan cinnamon.\n   - Sertifikasi: Resep Autentik\n\n3. **Yellow Tea**\n   - Keterangan: Langka dan lembut, dengan rasa manis dan smooth.\n   - Ciri Khas: Manis, kenari, lembut dengan penutup bersih.\n   - Sertifikasi: Imperial Tribute Tea \n\n*Pemisahan produk ini didasarkan pada karakteristik spesifik dan sertifikasi premium, dengan mempertimbangkan proses pembuatan, daun yang digunakan, dan profil rasa.*\n\n\n**Silakan hubungi kami jika Anda membutuhkan informasi lebih lanjut tentang produk tertentu atau pilihan yang tersedia.** ",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:34:54.014Z"
-  },
-  {
-    "question": "Apakah bisa memesan produk pagilaran partai besar?",
-    "answer": "Hai, terima kasih atas pertanyaan Anda. Produk teh kami memang bisa dipesan dalam jumlah besar, baik untuk kebutuhan perusahaan, acara, maupun gift packs premium.\n\nUntuk mendapatkan penawaran khusus pesanan bulk kami sarankan menghubungi tim export office kami melalui:\n\n📞 **+62 274 123456**  \n📩 **export@ptpagilaran.com**\n\n\nPara spesialis kami akan dengan senang hati membantu menentukan jenis teh Pagilaran yang cocok untuk kebutuhan Anda. Kami juga bisa mengakomodasi permintaan custom packaging, tergantung jumlah pesanan.\n\nPastikan untuk menyebutkan jenis produk (Orthodoz Black, Green Tea, Premium CTC dll) dan estimasi jumlah kebutuhan. Semakin spesifik, tim kami bisa memberikan layanan yang lebih optimal.\n\nTerima kasih telah mempercayai kami! Mohon jangan ragu untuk menghubungi kami jika memiliki pertanyaan lebih lanjut atau butuh bantuan dengan pesanan.\n\nJangan lupa gunakan hashtag #TehPagilaran di sosial media saat menikmati teh premium kami - ini akan dilihat oleh banyak orang yang mungkin juga tertarik dengan produk kami.\n\nSalam hangat,\n\n**Pagilaran Smart Assistant**  \n**PT Pagilaran**\n\nGunakan tombol di bawah ini untuk mengirim pesan langsung lewat email:\n\n📧 **[Kirim Email ke Tim Export](mailto:export@ptpagilaran.com?subject=Pemesanan%20Partai%20Besar%20Produk%20Pagilaran)**",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:36:01.797Z"
-  },
-  {
-    "question": "Butuh katalog produk dan harga grosir?",
-    "answer": "Mohon maaf, saat ini kami tidak memiliki katalog digital atau daftar harga grosir yang tersedia secara online. Untuk permintaan informasi lebih lanjut, termasuk pilihan produk teh kami dan rincian harga grosir, kami sarankan langkah berikut ini:\n\n📞 **Hubungi Call Center Kami:** Anda dapat menemukan nomor kontak call center kami di bagian bawah setiap halaman di website resmi kami. Tim kami akan dengan senang hati membantu memberikan informasi produk, penjelasan mengenai program grosir, dan pengiriman katalog cetak jika tersedia.\n\n💌 **Kirim Email Kepada Tim Export:** Untuk pertanyaan lebih spesifik atau permintaan formal, silakan kirim email kepada tim export resmi kami di [export@ptpagilaran.com](mailto:export@ptpagilaran.com). Pastikan untuk memasukkan rincian kebutuhan Anda agar kami dapat memberikan solusi yang tepat.\n\n📧 **Berlangganan Newsletter:** Jika Anda berlangganan newsletter kami, Anda akan menerima pemberitahuan tentang produk-produk baru, promo, dan kemungkinan rilis katalog digital di masa mendatang.\n\nKami selalu berusaha meningkatkan layanan kami dan terbuka terhadap saran, termasuk permintaan katalog digital yang lebih mudah diakses. Terima kasih atas minat dan kepedulian Anda terhadap PT Pagilaran.\n\n🍵 **Salam Hormat,**  \nPagilaran Smart Assistant",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:37:06.072Z"
-  },
-  {
-    "question": "Apakah pagilaran bisa mengirim produk ke Qatar?",
-    "answer": "Tentu, **PT Pagilaran** mampu menangani pengiriman produk kami ke **Qatar**. Terhitung sejak 2008, kami telah **menjadi eksportir teh terbesar kedua di Indonesia**, dengan jaringan distribusi global yang luas meliputi lebih dari **50 negara** – termasuk di Timur Tengah.\n\nUntuk mengatur pengiriman ke Qatar, **hubungi Kantor Ekspor kami** di nomor +62 274 123456 atau email [export@ptpagilaran.com](mailto:export@ptpagilaran.com). Tim kami siap membantu memastikan produk-produk pilihan Anda – dari teh hitam Orthopox, Green Tea, hingga spesialita eksotis seperti Blue Tea – tiba di Qatar dengan sempurna dan tepat waktu.\n\nIngat, pengiriman internasional kami mendukung berbagai bentuk packaging termasuk palet (dari 890kg/pallet untuk teh longgar hingga 650kg/pallet untuk teh kemasan). Biaya pengiriman akan didiskusikan sesuai volume pesanan dan preferensi kemasannya.\n\n**Informasi lebih lanjut tentang prosedur ekspor**, konsultasi teh spesifik, atau permintaan sample tersedia lewat Kantor Ekspor atau **layanan chat interaktif kami** di website ini. Kami senang melayani kebutuhan Qatar Anda!\n\n---\n\n*Jika Anda perlu bantuan lain atau detail spesifik, silakan tanya langsung atau hubungi Kami di:**  \n**Head Office:** +62 274 654321  \n**Research Center:** +62 274 789012*",
-    "lang": "id",
-    "timestamp": "2025-07-12T16:57:52.995Z"
-  },
-  {
-    "question": "saya adam",
-    "answer": "Hai Adam,\n\nSelamat datang di pagi lalu🌟 Kami adalah **Pagilaran Smart Assistant**, tembus pandang pilihan berkualitas seteap pagi. Jika memiliki pertanyaan seputar produk teh kami atau operasi PT. Pagilaran, jangan ragu untuk bertanya. Berikut beberapa topik yang bisa dibahas:\n\n- 🌿 **Produk Te**: Eksplorasi variasi teh kami dari hitam sampai hijau dan mengetahui profil rasa, sertifikasi organik, teknik pengolahan\n- 📈 **Keunggulan PT.**: Pelajari bagaimana komitmen akademik UGM mendorong inovasi tanam, ekspor global, prinsip lestarinya budidaya\n- 🏆 **Prestasi**: Temukan pencapaian internasional Kami yang diakui seperti penghargaan, sertifikat dan milestone sejak tahun 1840\n- 🚀 **Ekspor**: Ketahui cara menjadi bagian dari jaringan pemasok/mitra kami melalui konsultasi kerjasama ekspor internasional\n\nCukup tulis pertanyaan Anda seperti \"Berapa harga teh biru?\" atau \"Apa sertifikat PT. Pagilaran?\" kami siap membantu.\n\nMenanti respon Anda! 🍃\n\nHormat kami,  \n**Pagilaran Smart Assistant**",
-    "lang": "id",
-    "timestamp": "2025-07-12T18:53:14.887Z"
-  },
-  {
-    "question": "Saya ingin magang di pagilaran bagaimana caranya?",
-    "answer": "Untuk melamar magang di PT Pagilaran, Anda bisa mengikuti langkah-langkah berikut:\n\n1. **Buat Akun di Portal SIMBELMAWA:**\n   - Kunjungi portal resmi Magang Berdampak melalui link berikut: \n     <https://simbelmawa.kemdikbud.goid/magang/lowongan> \n   - Pastikan Anda telah membaca semua detail dan persyaratan yang dicantumkan.\n\n2. **Pendaftaran Online:**\n   - Setelah membuat akun, masukkan data pribadi serta lampiran yang diperlukan sesuai instruksi yang diberikan di portal.\n\n3. **Status Pendaftaran:**\n   - Lacak status pendaftaran Anda melalui portal resmi dan menunggu pemberitahuan selanjutnya. \n\nJika Anda memerlukan bantuan lebih lanjut mengenai proses pengajuan magang atau ingin mengetahui detail lebih lanjut, Anda bisa menghubungi Departemen Sumber Daya Manusia PT Pagilaran melalui email: [**hrd@ptpagilaran.com**](mailto:hrd@ptpagilaran.com), atau menghubungi nomor telepon: **+62 274 654321** (Kantor Pusat).\n\nSelamat mencoba, dan semoga sukses dengan pengajuan magang Anda di PT Pagilaran!",
-    "lang": "id",
-    "timestamp": "2025-07-12T18:57:43.437Z"
-  },
-  {
-    "question": "Saya adam, ingin melakukan penelitian di pt pagilaran, bagaimana caranya?",
-    "answer": "Selamat siang, Adam. Terima kasih atas minat Anda untuk melakukan penelitian di PT Pagilaran. \n\nUntuk memulai proses ini, disarankan untuk menghubungi kami melalui:\n\n**Email:**\n- Kirimkan Surat Permohonan Kerjasama Penelitian ke info@ptpagilaran.com dengan subjek \"Permintaan Penelitian\"\n- Lampirkan perizinan dari institusi Anda, proposal penelitian, dan tujuan spesifik\n\n**Telpon:**\n- Hubungi Kantor Pusat PT Pagilaran di nomor +62 274 654321 untuk penjelasan lebih lanjut\n\nAlamat kantor kami dapat Anda kunjungi secara langsung di: \n\n📍Jl. Head Office No. 2, Yogyakarta\n\nPastikan Anda juga memiliki rekomendasi dari institusi Anda serta proposal penelitian yang jelas mengenai obyek dan metode studi. Kami berusaha membantu para peneliti, namun diperlukan persetujuan dari Dewan Direksi yang terdiri dari pakar pertanian, operasional, dan akademik seperti Dr. Siti Nurjanah dan Prof. Dr. Bambang Hendarto.\n\nJika Anda memiliki pertanyaan spesifik seputar produk Pagilaran seperti **Orthodox Black Tea** atau **Green Tea**, atau ingin mengetahui lebih lanjut mengenai kebijakan penelitian kami, silakan tanyakan langsung kepada kami di sini.\n\nSemoga informasi ini bermanfaat. PT Pagilaran dengan senang hati akan mempertimbangkan permohonan Anda untuk mendukung kegiatan penelitian yang berguna bagi kami bersama. Terima kasih.",
-    "lang": "id",
-    "timestamp": "2025-07-12T19:00:52.075Z"
-  },
-  {
-    "question": "Mau closing order ekspor hari ini?",
-    "answer": "Selamat pagi! Tentu, ingin menutup order ekspor hari ini adalah hal yang penting untuk menjaga produktivitas. Berikut adalah langkah-langkah strategis yang bisa Anda tempuh:\n\n### 1. **Komunikasi Langsung** \nMulai dengan mengirim email yang jelas dan profesional kepada calon pembeli Anda, sampaikan di sini:\n\n- Konfirmasi detail final pesanan (kuantitas, spesifikasi)\n- Tentukan tanggal pengiriman yang tepat\n- Tanyakan apakah ada permintaan tambahan atau revisi\n\n### 2. **Dokumentasi Resmi** 📄\nPastikan semua dokumen telah lengkap dan valid:\n\n- **Faktur Proforma**: Sertakan rincian produk dan total harga yang sudah disepakati\n- **Sertifikat Mutu**: Tambahkan sertifikat Rainforest Alliance dan Organic yang dimiliki PT Pagilaran\n- **Dokumen Ekspor**: Sertifikat Asal (CO) sesuai persyaratan negara tujuan\n\n### 3. **Konfirmasi Pembayaran** 💵\n- Lakukan follow-up pembayaran melalui email atau telephon dengan nada tegas tetapi sopan\n- Pastikan metode pembayaran menyesuaikan kebijakan internasional (misalnya, L/C, DP, atau TT)\n\n### 4. **Pastikan Logisitik** ✈️\nKonfirmasikan dengan tim logistik Anda tentang:\n- Kapasitas stok, terutama untuk **Orthodox Black Tea** atau **Premium CTC** \n- Jadwal pengiriman dengan menggunakan jasa yang kredibel untuk memastikan keamanan barang\n\n### 5. **Konfirmasi Pemesan** 📞\nHubungi calon pembeli melalui telephon agar dapat membahas:\n- Waktu pengiriman terbaik\n- Ketentuan pembayaran\n- Apakah ada kebutuhan tambahan\n\n### 6. **Follow-Up Setelah Closing** 📦\nSetelah order ditutup:\n- Kirim notifikasi dengan nomor referensi tracking barang \n- Minta umpan balik setelah penerimaan barang \n- Jadwalkan follow-up order berikutnya\n\nSemoga bisa menutup order ekspor Anda hari ini. Selamat mencoba! Ada pertanyaan lain yang perlu dibahas?\n\n***\n\nJika Anda membutuhkan informasi lebih lanjut atau asisten lainnya, jangan ragu untuk menghubungi kami di [export@ptpagilaran.com](mailto:export@ptpagilaran.com) atau menghubungi nomor kantor kami di +62 274 123456.\n\n*Sumber:*\n\n- [PT Pagilaran Export Office](https://ptpagilaran.com/export) \n- [PT Pagilaran Ekspor Guidelines](https://ptpagilaran.com/procedures)\n\n---\n\nHarap tanyakan saya apabila perlu untuk dibantu lebih lanjut dengan konfigurasi ekspor, peluang pasar, atau pengelolaan order. Kami di sini untuk membantu! ☕️🌿\n\n---\n\n\nTetap dalam melayani,  \n*Pagilaran Smart Assistant* ",
-    "lang": "id",
-    "timestamp": "2025-07-12T19:07:51.795Z"
-  },
-  {
-    "question": "Siap melakukan pemesanan atau ingin penawaran harga khusus?",
-    "answer": "Untuk melakukan pemesanan atau mendapatkan penawaran harga khusus produk Pagilaran, kami sarankan menghubungi tim kami melalui kontak berikut:\n\n**Head Office:**  \n📞 **+62 274 654321**  \n🏢 **Jl. Head Office No. 2, Yogyakarta**  \n📧 **[info@ptpagilaran.com](mailto:info@ptpagilaran.com)**\n\n**Export Office:**  \n📞 **+62 274 123456**   \n🏢 **Jl. Export No. 1, Yogyakarta**   \n📧 **[export@ptpagilaran.com](mailto:export@ptpagilaran.com)**\n\nUntuk informasi lebih rinci tentang produk kami seperti varian teh, spesifikasi, atau certifikasi, kami juga dapat dihubungi melalui kanal diatas. Tim kami akan dengan senang hati membantu Anda memulai bisnis dengan kami atau menjawab pertanyaan teknis sesuai kebutuhan.\n\nAnda juga dapat mengunjungi halaman produk di situs resmi kami untuk rincian lebih lanjut tentang berbagai jenis teh yang kami tawarkan, seperti Orthodox Black Tea, Premium CTC, dan banyak lagi. Silakan beritahu kami volume dan spesifikasi pesanan Anda agar kami dapat memberikan penawaran yang kompetitif.\n\nTerima kasih atas minat Anda dalam produk Pagilaran!\n\n---\n\n*Catatan: Untuk pertanyaan seputar persyaratan impor atau kebijakan perusahaan, silakan hubungi kantoran tersebut diatas langsung untuk memastikan layanan optimal.*",
-    "lang": "id",
-    "timestamp": "2025-07-12T19:27:26.484Z"
-  },
-  {
-    "question": "Saya ingin live agent mode",
-    "answer": "Mohon maaf, **saya hanya memiliki kapasitas sebagai AI Assistant** dan tidak bisa langsung menghubungkan Anda dengan live customer service. Namun, saya ada di sini untuk membantu Anda sesuai kemampuan saya. Kami juga memiliki beberapa alat yang bisa memudahkan komunikasi Anda, seperti:\n\n**Ekspor Kontak:**\n☏ +62 274 123456  \n📧 [export@ptpagilaran.com](mailto:export@ptpagilaran.com)\n\n**Live Chat:**\n*Untuk bantuan langsung, silakan kunjungi atau hubungi kami. Kami akan dengan senang hati membantu Anda lebih lanjut.* \n\nApakah ada pertanyaan tertentu yang Anda ingin tanyakan?",
-    "lang": "id",
-    "timestamp": "2025-07-12T19:28:21.058Z"
-  }
-]
+What are the specific waste segregation methods used by PT Pagilaran?
 
-3. model-flow-rules.json :
+Can you elaborate on PT Pagilaran's community engagement for biodiversity conservation?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran community engagement biodiversity conservation
+How does PT Pagilaran ensure sustainable agricultural practices?
+PT Pagilaran ensures sustainable agricultural practices through several key measures:
+Integration with Higher Education Principles: PT Pagilaran operates under the principles of the Tri Dharma of Higher Education, which includes education, research, and community service. This approach ensures that agricultural practices are not only profitable but also contribute to scientific development and community welfare.
+Rainforest Alliance Certification: The company has obtained Rainforest Alliance certification, which requires adherence to principles of sustainable agriculture. These principles include effective management and planning systems, conservation of biodiversity, natural resource conservation, and community welfare.
+Life Cycle Assessment (LCA): PT Pagilaran implements LCA to assess the environmental impact of its tea production processes. This includes evaluating energy use and emissions at each stage of production, from harvesting to final storage, ensuring that operations are environmentally friendly.
+Self-Supporting Model: The company operates on a self-supporting model, involving local communities and alumni in management and development. This model prioritizes local economic growth and sustainability.
+Sustainable Tourism Integration: PT Pagilaran integrates sustainable tourism with its plantation activities, promoting educational tours that highlight sustainable practices and conservation efforts.
+What are the specific waste segregation methods used by PT Pagilaran?
+PT Pagilaran employs specific waste segregation methods to manage waste effectively:
+Source Segregation: Waste is segregated at the source into different categories such as organic, recyclable, and non-recyclable materials. Organic waste is composted and used as fertilizer, while recyclables are sent to recycling facilities.
+Fines for Littering: The company imposes fines for indiscriminate littering to discourage improper waste disposal and maintain a clean environment.
+Recycling Programs: PT Pagilaran has established recycling programs for materials like paper, plastic, and metal. These programs ensure that waste is properly processed and reused, reducing landfill contributions.
+Waste-to-Energy Initiatives: The company explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations, which reduces both waste and carbon emissions.
+Can you elaborate on PT Pagilaran's community engagement for biodiversity conservation?
+PT Pagilaran engages the community in biodiversity conservation through various initiatives:
+Community Involvement: The company involves local communities in conservation efforts, ensuring that biodiversity protection is a shared responsibility. This includes educating residents about the importance of biodiversity and involving them in conservation activities.
+Educational Programs: PT Pagilaran provides educational programs and workshops to local communities, focusing on sustainable practices and biodiversity conservation. These programs aim to raise awareness and foster a culture of environmental stewardship.
+Support for Local Initiatives: The company supports local initiatives that promote biodiversity, such as tree planting and habitat restoration projects. These efforts help to enhance local ecosystems and protect endangered species.
+Integration with Agrotourism: PT Pagilaran integrates biodiversity conservation with its agrotourism activities, offering educational tours that highlight the importance of biodiversity and sustainable practices. This approach not only educates visitors but also generates support for conservation efforts.
+By involving the community and promoting educational initiatives, PT Pagilaran ensures that biodiversity conservation is a collaborative effort, contributing to long-term environmental sustainability.
+Copy
+Share
+How does PT Pagilaran's self-supporting model benefit local communities?
 
-{
-  "permanent": true,
-  "description": "PERMANENT CHATBOT RESPONSE FLOW RULES. DO NOT MODIFY. This file defines the mandatory, unchangeable logic for model selection, fallback, data source usage, and anti-hallucination/context enforcement for Pagilaran chatbot.",
-  "response_flow": [
-    {
-      "step": 1,
-      "criteria": "User chat is ringan (light) to medium complexity.",
-      "model": "deepseek/deepseek-r1-0528-qwen3-8b:free",
-      "data_source": "internal_only",
-      "external_data_allowed": false,
-      "anti_hallucination": {
-        "enabled": true,
-        "description": "Model MUST NOT hallucinate or answer out of context. Response must be relevant to user's current question AND session history.",
-        "confidence_threshold": 0.55,
-        "history_context_check": true,
-        "fallback_on_hallucination": true,
-        "similarity_kb_threshold": 0.25,
-        "blacklist_patterns": [
-          "sebagai ai",
-          "as an ai",
-          "i am an ai",
-          "saya tidak bisa",
-          "saya tidak dapat",
-          "saya tidak memiliki informasi",
-          "saya tidak mengetahui",
-          "saya tidak menemukan informasi",
-          "informasi tidak tersedia",
-          "tidak ada informasi",
-          "this is an ai"
-        ],
-        "out_of_domain_response": {
-          "en": "Sorry, I can only answer questions related to PT Pagilaran based on our official data or relevant sources. Your question is outside this domain.",
-          "id": "Maaf, saya hanya dapat menjawab pertanyaan seputar PT Pagilaran yang sesuai data resmi atau sumber relevan. Pertanyaan Anda di luar cakupan domain Pagilaran."
-        }
-      },
-      "context_enforcement": {
-        "enabled": true,
-        "description": "Model MUST always use and consider relevant chat session history (recent user and assistant messages) to generate contextually correct answers.",
-        "history_message_count": 6,
-        "history_must_be_used_in_prompt": true
-      },
-      "fallback": {
-        "on_error": true,
-        "on_token_limit": true,
-        "on_logic_reasoning": true,
-        "on_low_confidence": true,
-        "on_hallucination": true,
-        "criteria": "Fallback triggers if answer is out of context, confidence is low, or hallucination/AI-template detected.",
-        "fallback_model": "deepseek/deepseek-r1-0528:free",
-        "next_step": 2
-      }
-    },
-    {
-      "step": 2,
-      "criteria": "Jika model deepseek/deepseek-r1-0528-qwen3-8b:free tidak bisa menjawab, error, atau butuh logic berat.",
-      "models_priority": [
-        "deepseek/deepseek-r1-0528:free",
-        "openrouter/auto"
-      ],
-      "fallback_strategy": "Otomatis fallback ke model berikutnya jika error/limit, confidence rendah, jawaban tidak relevan dengan history, atau jika chat user mengandung logic reasoning. Jika semua model tersedia, pilih model dengan latency terendah.",
-      "data_source": "internal_and_external",
-      "external_data_allowed": true,
-      "external_data_usage": "Boleh menggunakan data eksternal (SerpAPI, Tavily AI, Exa AI, Playwright) hanya jika model merasa jawaban kurang lengkap, confidence rendah, atau butuh support data eksternal. Semua jawaban harus tetap relevan dengan konteks percakapan dan internal KB.",
-      "anti_hallucination": {
-        "enabled": true,
-        "description": "Model MUST NOT hallucinate or answer out of context. If answer is not relevant to current user question and chat session history, fallback or escalate.",
-        "confidence_threshold": 0.55,
-        "history_context_check": true,
-        "fallback_on_hallucination": true,
-        "similarity_kb_threshold": 0.25,
-        "blacklist_patterns": [
-          "sebagai ai",
-          "as an ai",
-          "i am an ai",
-          "saya tidak bisa",
-          "saya tidak dapat",
-          "saya tidak memiliki informasi",
-          "saya tidak mengetahui",
-          "saya tidak menemukan informasi",
-          "informasi tidak tersedia",
-          "tidak ada informasi",
-          "this is an ai"
-        ],
-        "out_of_domain_response": {
-          "en": "Sorry, I can only answer questions related to PT Pagilaran based on our official data or relevant sources. Your question is outside this domain.",
-          "id": "Maaf, saya hanya dapat menjawab pertanyaan seputar PT Pagilaran yang sesuai data resmi atau sumber relevan. Pertanyaan Anda di luar cakupan domain Pagilaran."
-        }
-      },
-      "context_enforcement": {
-        "enabled": true,
-        "description": "Model MUST always use and consider relevant chat session history (recent user and assistant messages) to generate contextually correct answers.",
-        "history_message_count": 6,
-        "history_must_be_used_in_prompt": true
-      },
-      "note": "Prioritaskan kecepatan respon, kecerdasan model, dan konteks history chat."
-    }
-  ],
-  "external_data_sources": [
-    "SerpAPI",
-    "Tavily AI",
-    "Exa AI"
-  ],
-  "enforcement": {
-    "rule_is_permanent": true,
-    "modification_allowed": false,
-    "enforced_by": "system"
-  },
-  "persona": {
-    "style": "professional global enterprise",
-    "language": ["id", "en"],
-    "description": "Chatbot must always respond as a professional, global enterprise assistant. Responses must be natural, friendly, and polite, and always match the tier/capability of the selected LLM model. Persona applies to both Indonesian and English responses.",
-    "examples": {
-      "en": [
-        "Thank you for your inquiry. We are delighted to assist you with any information about Pagilaran's products and services.",
-        "We appreciate your interest. Please let us know if you need further details or support regarding our global tea export solutions.",
-        "Our team is committed to providing you with the best service. Feel free to ask about our certifications, sustainability programs, or international shipping."
-      ],
-      "id": [
-        "Terima kasih atas pertanyaan Anda. Kami dengan senang hati membantu segala informasi tentang produk dan layanan Pagilaran.",
-        "Kami menghargai minat Anda. Silakan hubungi kami jika membutuhkan detail atau dukungan lebih lanjut terkait solusi ekspor teh global kami.",
-        "Tim kami berkomitmen memberikan layanan terbaik. Jangan ragu bertanya tentang sertifikasi, program keberlanjutan, atau pengiriman internasional."
-      ]
-    },
-    "note": "Examples are for style reference only, not for hardcoded responses. Chatbot must always use a professional, global enterprise, natural, and friendly tone in both Indonesian and English, but responses do not have to match the examples verbatim."
-  },
-  "compliance": {
-    "all_rules_mandatory": true,
-    "llm_must_follow": true,
-    "note": "Every rule and persona in this file is mandatory and must be strictly followed by the chatbot and LLM model."
-  }
-}
+Can you explain the role of community involvement in PT Pagilaran's sustainable practices?
 
-4. rules.json  :
+What are the environmental benefits of PT Pagilaran's waste segregation methods?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran self-supporting model benefits local communities
+How does PT Pagilaran's self-supporting model benefit local communities?
+PT Pagilaran's self-supporting model significantly benefits local communities through several key initiatives:
+Economic Empowerment: The company operates on a self-supporting model that prioritizes local economic growth. It employs up to 1,500 local residents, providing stable employment and reducing unemployment rates. This model ensures that the economic benefits of the plantation and agrotourism activities stay within the community.
+Community Involvement: PT Pagilaran actively involves local residents in its operations. The company prioritizes hiring local workers for both plantation and agrotourism activities, ensuring that the community directly benefits from these economic opportunities.
+Support for Local Businesses: The company supports local businesses by sourcing supplies, such as fertilizers, from local vendors. This not only boosts the local economy but also strengthens the community's economic resilience.
+Investment and Development: PT Pagilaran encourages investment from alumni who have become CEOs. These investments are used to develop the plantation and agrotourism activities, further enhancing the community's economic prospects.
+Education and Training: The company provides educational and training opportunities for local residents, enhancing their skills and employability. This includes support for local schools and the provision of facilities such as gamelan sets for cultural education.
+Can you explain the role of community involvement in PT Pagilaran's sustainable practices?
+Community involvement plays a crucial role in PT Pagilaran's sustainable practices:
+Collaborative Management: PT Pagilaran manages its agrotourism activities in collaboration with local community groups, such as Pokdarwis "Agrobinangkit," and local government departments. This collaborative approach ensures that sustainability efforts are community-driven and locally relevant.
+Economic Participation: The company encourages local residents to participate in tourism activities, such as trading and cultural performances. This not only boosts the local economy but also fosters a sense of ownership and responsibility among community members.
+Environmental Stewardship: PT Pagilaran educates local residents about environmental conservation and sustainable practices. This includes strict regulations against littering, hunting, and river pollution, ensuring that community members are actively involved in protecting the environment.
+Cultural Preservation: The company supports local cultural initiatives, such as the tea picking dance created by local elementary school teachers. These cultural activities not only enrich the agrotourism experience but also preserve and promote local traditions.
+What are the environmental benefits of PT Pagilaran's waste segregation methods?
+PT Pagilaran's waste segregation methods offer several environmental benefits:
+Reduction of Landfill Waste: By segregating waste at the source and recycling materials like paper, plastic, and metal, the company significantly reduces the amount of waste sent to landfills. This helps in minimizing environmental pollution and conserving landfill space.
+Resource Recovery: Organic waste is composted and used as fertilizer, returning nutrients to the soil and reducing the need for synthetic fertilizers. This not only enhances soil health but also reduces greenhouse gas emissions associated with waste decomposition.
+Energy Efficiency: PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations. This reduces the company's reliance on fossil fuels and lowers its carbon footprint.
+Pollution Control: Strict fines for indiscriminate littering and pollution help maintain a clean environment, protecting local ecosystems and water sources. This ensures that natural habitats remain healthy and sustainable for future generations.
+By implementing these waste segregation methods, PT Pagilaran demonstrates its commitment to environmental sustainability and responsible waste management.
+Copy
+Share
+How does PT Pagilaran's employment of local residents contribute to the community's economic stability?
 
-{
-  "working_hours": {
-    "monday_friday": "08:00-17:00",
-    "saturday": "08:00-12:00",
-    "sunday": "closed"
-  },
-  "holiday": [
-    "2025-12-25",
-    "2025-12-31",
-    "2026-01-01",
-    "2026-03-21"
-  ],
-  "escalation_threshold": 2,
-  "auto_escalate_outside_hours": true,
-  "business_rules": [
-    {
-      "intent": "order",
-      "priority": 1,
-      "escalate": false,
-      "response": "Pesanan teh Anda akan diproses pada jam operasional. Jika Anda order di luar jam kerja, order akan diproses di hari kerja berikutnya.",
-      "validation": {
-        "required_fields": ["nama", "alamat", "produk_teh", "jumlah"],
-        "min_order_quantity": 1
-      }
-    },
-    {
-      "intent": "complaint",
-      "priority": 2,
-      "escalate": true,
-      "response": "Keluhan Anda akan segera ditangani oleh tim Pagilaran. Untuk kendala serius, kami akan menghubungi Anda secara langsung.",
-      "validation": {
-        "required_fields": ["nama", "nomor_order", "detail_keluhan"]
-      }
-    },
-    {
-      "intent": "product_info",
-      "priority": 3,
-      "escalate": false,
-      "response": "Berikut informasi lengkap produk teh Pagilaran. Silakan pilih jenis teh yang ingin Anda ketahui.",
-      "validation": {}
-    },
-    {
-      "intent": "shipping",
-      "priority": 4,
-      "escalate": false,
-      "response": "Pengiriman dilakukan ke seluruh Indonesia. Estimasi biaya dan waktu kirim dapat dilihat setelah Anda memasukkan alamat tujuan.",
-      "validation": {}
-    },
-    {
-      "intent": "payment",
-      "priority": 5,
-      "escalate": false,
-      "response": "Pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode lain yang tersedia.",
-      "validation": {}
-    },
-    {
-      "intent": "contact",
-      "priority": 6,
-      "escalate": true,
-      "response": "Silakan hubungi customer service Pagilaran melalui WhatsApp atau email di jam kerja.",
-      "validation": {}
-    }
-  ],
-  "escalation_rules": {
-    "max_fallback": 2,
-    "outside_working_hours": true,
-    "urgent_keywords": ["penting", "darurat", "urgent", "segera"],
-    "auto_assign_to_admin": true
-  },
-  "multi_language_support": [
-    "id",
-    "en"
-  ],
-  "context_handling": {
-    "enable_context_awareness": true,
-    "context_timeout_minutes": 15
-  },
-  "logging": {
-    "log_all_interactions": true,
-    "log_escalations": true
-  },
-  "privacy": {
-    "anonymize_user_data": true,
-    "gdpr_compliance": true
-  }
-}
+What specific environmental conservation measures does PT Pagilaran teach local residents?
 
-5. response-templates.json:
+Could you elaborate on the cultural education programs provided by PT Pagilaran for local communities?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran environmental conservation measures for local residents
+How does PT Pagilaran's employment of local residents contribute to the community's economic stability?
+PT Pagilaran's employment of local residents significantly contributes to the community's economic stability through several key initiatives:
+Job Creation: PT Pagilaran employs up to 1,500 local residents, providing stable employment opportunities and reducing unemployment rates. This employment not only offers direct income but also helps break the chain of poverty in the local community.
+Economic Empowerment: The company prioritizes hiring local workers for both plantation and agrotourism activities, ensuring that the economic benefits stay within the community. This approach fosters local economic growth and resilience.
+Support for Local Businesses: PT Pagilaran sources supplies, such as fertilizers, from local vendors, further boosting the local economy. This supports small and medium-sized enterprises (SMEs) and contributes to the overall economic stability of the region.
+Investment and Development: The company encourages investment from alumni who have become CEOs. These investments are used to develop the plantation and agrotourism activities, creating additional economic opportunities for the community.
+What specific environmental conservation measures does PT Pagilaran teach local residents?
+PT Pagilaran educates local residents on various environmental conservation measures:
+Strict Regulations: The company enforces strict regulations against littering, hunting, river pollution, and burning garbage. These measures help protect local ecosystems and maintain environmental health.
+Waste Management: PT Pagilaran teaches effective waste management practices, including waste segregation at the source and recycling. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions.
+Sustainable Practices: The company promotes sustainable agricultural practices, such as the use of organic fertilizers and integrated pest management. These practices help maintain soil health and reduce the environmental impact of agricultural activities.
+Biodiversity Conservation: PT Pagilaran emphasizes the importance of biodiversity conservation, encouraging residents to protect and enhance local habitats. This includes supporting local flora and fauna and maintaining ecological balance.
+Could you elaborate on the cultural education programs provided by PT Pagilaran for local communities?
+PT Pagilaran supports cultural education programs for local communities in several ways:
+Gamelan Facilities: The company provides a set of gamelan instruments to local schools, such as SD Negeri Keteleng 1, to be used for cultural education and artistic performances. This initiative supports the preservation and promotion of traditional arts.
+Tea Picking Dance: Local elementary school teachers created a tea picking dance, which is performed by students and has become a cultural attraction for tourists. This not only educates the youth about local traditions but also enhances the cultural experience for visitors.
+Community Involvement: PT Pagilaran actively involves local residents in cultural activities and events, fostering a sense of community and cultural pride. This includes participation in cultural festivals and art performances.
+Educational Tours: The company offers educational tours that highlight the cultural and historical significance of the tea plantation. These tours provide an opportunity for both locals and visitors to learn about the region's cultural heritage.
+By integrating cultural education into its operations, PT Pagilaran not only preserves local traditions but also enhances the cultural experience for the community and tourists alike.
+Copy
+Share
+How does PT Pagilaran's investment in local businesses impact the community?
 
-{
-  "greeting": {
-    "pagi": [
-      "Selamat pagi, selamat datang di PT Pagilaran. Ada yang bisa kami bantu hari ini?",
-      "Pagi! Silakan sampaikan kebutuhan Anda, tim Pagilaran siap membantu."
-    ],
-    "siang": [
-      "Selamat siang, ada yang bisa kami bantu dari PT Pagilaran?",
-      "Siang! Apakah ada pertanyaan atau kebutuhan informasi seputar produk teh Pagilaran?"
-    ],
-    "sore": [
-      "Selamat sore, dengan senang hati PT Pagilaran siap membantu Anda.",
-      "Sore! Ada yang dapat kami bantu terkait produk atau layanan Pagilaran?"
-    ],
-    "malam": [
-      "Selamat malam, layanan digital PT Pagilaran tetap siap membantu. Silakan tinggalkan pesan Anda.",
-      "Malam! Silakan sampaikan pertanyaan atau kebutuhan Anda, kami akan respon secepatnya."
-    ]
-  },
-  "order_confirmation": [
-    "Pesanan Anda untuk produk teh Pagilaran telah kami terima. Terima kasih atas kepercayaan Anda.",
-    "Order Anda berhasil diterima. Mohon cek email untuk rincian & konfirmasi selanjutnya.",
-    "Terima kasih atas pemesanan Anda. Tim Pagilaran akan memproses pesanan Anda segera."
-  ],
-  "order_instruction": [
-    "Untuk melakukan pemesanan teh Pagilaran, silakan klik menu 'Pemesanan' atau ketik 'Saya ingin pesan teh'.",
-    "Anda dapat melakukan pemesanan melalui website resmi kami atau menghubungi customer service Pagilaran."
-  ],
-  "order_status": [
-    "Status pesanan Anda: <status>. Silakan cek email untuk update terbaru.",
-    "Pesanan Anda saat ini berada pada tahap: <status>. Hubungi admin jika ada kendala."
-  ],
-  "product_info": [
-    "Berikut informasi produk teh Pagilaran: <deskripsi_produk>",
-    "Kami menyediakan berbagai jenis teh berkualitas: hitam, hijau, dan spesialti. Silakan pilih sesuai preferensi Anda.",
-    "Untuk daftar lengkap produk teh, silakan kunjungi halaman produk di website kami."
-  ],
-  "shipping_info": [
-    "Pengiriman produk teh Pagilaran dapat dilakukan ke seluruh Indonesia. Estimasi waktu pengiriman: <estimasi_kirim>.",
-    "Biaya pengiriman akan menyesuaikan alamat tujuan. Silakan masukkan alamat lengkap untuk estimasi ongkir."
-  ],
-  "payment_info": [
-    "Pembayaran dapat dilakukan via transfer bank, e-wallet, atau metode lain yang tersedia di website kami.",
-    "Setelah melakukan pembayaran, silakan konfirmasi melalui menu 'Konfirmasi Pembayaran'."
-  ],
-  "complaint_received": [
-    "Keluhan Anda telah kami terima. Tim Pagilaran akan segera menindaklanjuti dan menghubungi Anda.",
-    "Terima kasih atas feedback Anda. Kami akan berupaya memberikan solusi terbaik untuk permasalahan yang Anda sampaikan."
-  ],
-  "business_hours": [
-    "Jam operasional customer service Pagilaran: Senin-Jumat, 08:00-17:00 WIB.",
-    "Di luar jam kerja, silakan tinggalkan pesan. Kami akan membalas di hari berikutnya."
-  ],
-  "farewell": [
-    "Terima kasih telah menghubungi PT Pagilaran. Semoga hari Anda menyenangkan.",
-    "Jika ada pertanyaan lain, jangan ragu untuk menghubungi kami kembali.",
-    "Sampai jumpa! PT Pagilaran selalu siap melayani Anda."
-  ],
-  "thanks": [
-    "Terima kasih atas kepercayaan Anda pada produk teh Pagilaran.",
-    "Kami sangat menghargai interaksi Anda dengan layanan digital kami."
-  ],
-  "fallback": [
-    "Mohon maaf, saya belum dapat memahami pertanyaan Anda. Silakan ulangi atau pilih menu bantuan.",
-    "Pertanyaan Anda belum dapat saya jawab. Silakan hubungi customer service untuk bantuan lebih lanjut."
-  ],
-  "contact_info": [
-    "Anda dapat menghubungi admin Pagilaran melalui WhatsApp di <nomor_wa> atau email ke <email>.",
-    "Jika membutuhkan bantuan langsung, tim customer service kami siap melayani di jam kerja."
-  ]
-}
+Can you explain more about the waste management practices taught by PT Pagilaran?
 
-6. fallback-responses.json:
+What cultural events does PT Pagilaran organize for the local community?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran investment in local businesses impact
+How does PT Pagilaran's investment in local businesses impact the community?
+PT Pagilaran's investment in local businesses significantly impacts the community by fostering economic growth and stability. The company employs up to 1,500 local residents, providing stable employment opportunities and reducing unemployment rates. This employment not only offers direct income but also helps break the chain of poverty in the local community. Additionally, PT Pagilaran sources supplies, such as fertilizers, from local vendors, further boosting the local economy. The company also encourages investment from alumni who have become CEOs, using these investments to develop the plantation and agrotourism activities, which in turn create additional economic opportunities for the community.
+Can you explain more about the waste management practices taught by PT Pagilaran?
+PT Pagilaran implements strict waste management practices to ensure environmental sustainability. The company enforces fines for indiscriminate littering, prohibits hunting, river pollution, and burning garbage. It also promotes effective waste segregation at the source, recycling materials like paper, plastic, and metal. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions. Additionally, PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations, which reduces both waste and carbon emissions.
+What cultural events does PT Pagilaran organize for the local community?
+PT Pagilaran actively supports and organizes various cultural events for the local community. The company provides a set of gamelan instruments to local schools, such as SD Negeri Keteleng 1, to be used for cultural education and artistic performances. This initiative supports the preservation and promotion of traditional arts. Additionally, PT Pagilaran supports local cultural initiatives, such as the tea picking dance created by local elementary school teachers. This dance is performed by students and has become a cultural attraction for tourists. The company also organizes cultural festivals and art performances, involving local residents and fostering a sense of community and cultural pride.
+Copy
+Share
+How does PT Pagilaran's support for local schools influence education?
 
-{
-  "knowledge_sources": [
-    {
-      "file": "PAGILARAN_PROFILE_KOMPILASI.md",
-      "description": "Profil, sejarah, model bisnis, produk, agrowisata, inovasi, prestasi, keunggulan, dan referensi resmi PT Pagilaran. Selalu gunakan data ini untuk jawaban kontekstual dan akurat jika relevan dengan pertanyaan user."
-    }
-  ],
-  "purposes_by_profile": {
-    "Pembeli": [
-      "Mencari informasi produk",
-      "Ingin melakukan pemesanan",
-      "Butuh konsultasi atau rekomendasi",
-      "Butuh bantuan customer service",
-      "Lainnya"
-    ],
-    "Mahasiswa": [
-      "Mencari data penelitian",
-      "Magang atau kerja praktek",
-      "Studi banding",
-      "Kunjungan industri",
-      "Lainnya"
-    ],
-    "Peneliti": [
-      "Akses data riset",
-      "Kolaborasi penelitian",
-      "Permohonan publikasi",
-      "Kunjungan laboratorium",
-      "Lainnya"
-    ],
-    "Umum": [
-      "Mencari informasi umum",
-      "Kunjungan/tur",
-      "Acara komunitas",
-      "Lainnya"
-    ],
-    "Mitra Bisnis": [
-      "Kerjasama distribusi",
-      "Negosiasi kontrak",
-      "Evaluasi partnership",
-      "Lainnya"
-    ],
-    "Distributor": [
-      "Order produk grosir",
-      "Cek stok dan harga",
-      "Klaim garansi",
-      "Lainnya"
-    ],
-    "Reseller": [
-      "Order produk reseller",
-      "Permintaan materi promosi",
-      "Laporan penjualan",
-      "Lainnya"
-    ],
-    "Agen": [
-      "Order produk agen",
-      "Permintaan pelatihan",
-      "Laporan aktivitas",
-      "Lainnya"
-    ],
-    "Eksportir": [
-      "Order ekspor",
-      "Cek regulasi ekspor",
-      "Negosiasi harga ekspor",
-      "Lainnya"
-    ],
-    "Importir": [
-      "Order impor",
-      "Cek regulasi impor",
-      "Negosiasi harga impor",
-      "Lainnya"
-    ],
-    "Pemerintah": [
-      "Permintaan data industri",
-      "Kolaborasi program pemerintah",
-      "Pengawasan regulasi",
-      "Lainnya"
-    ],
-    "Media": [
-      "Permintaan wawancara",
-      "Akses press release",
-      "Liputan acara",
-      "Lainnya"
-    ],
-    "Investor": [
-      "Permintaan laporan keuangan",
-      "Diskusi peluang investasi",
-      "Kunjungan perusahaan",
-      "Lainnya"
-    ],
-    "Akademisi": [
-      "Kolaborasi akademik",
-      "Permintaan data",
-      "Kunjungan studi",
-      "Lainnya"
-    ]
-  },
-  "privacy_notice": "Privasi Anda terjamin. Data profil dan tujuan hanya digunakan untuk personalisasi layanan, tidak dibagikan ke pihak luar.",
-  "profiles": [
-    "Pembeli",
-    "Mahasiswa",
-    "Peneliti",
-    "Umum",
-    "Mitra Bisnis",
-    "Distributor",
-    "Reseller",
-    "Agen",
-    "Eksportir",
-    "Importir",
-    "Pemerintah",
-    "Media",
-    "Investor",
-    "Akademisi"
-  ],
-  "umum_followup": [
-    "Pelanggan",
-    "Tamu",
-    "Pengunjung",
-    "Komunitas",
-    "Keluarga",
-    "Lainnya"
-  ],
-  "purposes": [
-    "Mencari informasi produk",
-    "Ingin melakukan pemesanan",
-    "Butuh konsultasi atau rekomendasi",
-    "Ingin menjadi mitra bisnis",
-    "Mencari peluang kerja atau magang",
-    "Ingin melakukan penelitian atau studi",
-    "Ingin mengajukan kerjasama",
-    "Butuh bantuan customer service",
-    "Lainnya"
-  ],
-  "default": [
-    "Selamat datang di Pagilaran Smart Assistant! Untuk memberikan layanan yang lebih personal, silakan pilih profil Anda di bawah ini. Setelah memilih, Anda akan mendapatkan saran dan bantuan yang sesuai kebutuhan profil Anda.",
-    "Maaf, saya belum memahami pertanyaan Anda. Silakan ulangi atau pilih salah satu menu bantuan di bawah.",
-    "Mohon maaf, saya masih belajar. Bisa jelaskan kebutuhan Anda dengan kata lain?",
-    "Pertanyaan Anda belum dapat saya jawab. Silakan pilih menu bantuan atau klik tombol bantuan di sudut bawah.",
-    "Apakah Anda ingin informasi tentang produk, pemesanan, lokasi, atau bantuan langsung dari tim kami?",
-    "Jika Anda ingin berbicara dengan admin Pagilaran, silakan ketik 'hubungi admin' atau klik tombol kontak."
-  ],
-  "suggestions": [
-    "Mau rekomendasi produk sesuai kebutuhan Anda?",
-    "Butuh info katalog dan varian produk?",
-    "Tertarik mencoba sampel produk?",
-    "Ingin tahu promo atau diskon terbaru?",
-    "Butuh bantuan proses pemesanan?",
-    "Mau konsultasi gratis seputar produk?",
-    "Siap pesan produk hari ini?",
-    "Butuh bantuan pembayaran atau pengiriman?",
-    "Mau dapat penawaran spesial?",
-    "Tertarik jadi pelanggan setia Pagilaran?",
-    "Mau dapat update promo dan event spesial?",
-    "Ingin berbagi testimoni pengalaman dengan Pagilaran?",
-    "Ingin tahu sejarah dan keunggulan Pagilaran untuk bisnis Anda?",
-    "Tertarik dengan program kemitraan perusahaan kami?",
-    "Butuh insight tentang kualitas dan sertifikasi produk kami?",
-    "Mau konsultasi produk teh untuk kebutuhan bisnis?",
-    "Butuh katalog produk dan harga grosir?",
-    "Tertarik mencoba sampel produk untuk perusahaan Anda?",
-    "Ingin diskusi proposal kerjasama atau partnership?",
-    "Butuh info program reseller/agen Pagilaran?",
-    "Mau konsultasi CSR atau kemitraan bisnis?",
-    "Siap melakukan pemesanan atau ingin penawaran harga khusus?",
-    "Mau closing order hari ini?",
-    "Butuh bantuan proses transaksi atau pengiriman?",
-    "Tertarik program loyalitas dan benefit eksklusif mitra?",
-    "Mau dapat update promo dan event bisnis terbaru?",
-    "Ingin berbagi testimoni pengalaman kerjasama?",
-    "Ingin tahu sejarah dan keunikan teh Pagilaran?",
-    "Butuh info manfaat teh untuk kesehatan?",
-    "Tertarik dengan cerita heritage Pagilaran?",
-    "Mau rekomendasi teh sesuai selera Anda?",
-    "Butuh info varian dan rasa teh Pagilaran?",
-    "Tertarik mencoba sampel produk di rumah?",
-    "Ingin tahu promo atau diskon terbaru?",
-    "Butuh bantuan proses pemesanan online?",
-    "Mau konsultasi gratis seputar teh?",
-    "Siap pesan produk favorit Anda hari ini?",
-    "Butuh bantuan pembayaran atau pengiriman?",
-    "Mau dapat penawaran spesial member?",
-    "Tertarik jadi pelanggan setia Pagilaran?",
-    "Mau dapat update promo dan event spesial?",
-    "Ingin berbagi testimoni pengalaman minum teh?",
-    "Ingin tahu sejarah ekspor Pagilaran?",
-    "Butuh insight sertifikasi ekspor dan kualitas produk?",
-    "Tertarik dengan jaringan distribusi global kami?",
-    "Mau konsultasi produk ekspor dan logistik?",
-    "Butuh katalog produk ekspor dan harga?",
-    "Tertarik mencoba sampel ekspor?",
-    "Ingin diskusi proposal ekspor atau partnership?",
-    "Butuh info dokumen ekspor dan pengiriman?",
-    "Mau konsultasi ekspor gratis?",
-    "Siap order ekspor atau ingin penawaran harga khusus?",
-    "Butuh bantuan proses ekspor atau pengiriman?",
-    "Mau closing order ekspor hari ini?",
-    "Tertarik program loyalitas eksportir?",
-    "Mau dapat update promo dan event ekspor?",
-    "Ingin berbagi testimoni pengalaman ekspor?",
-    "Ingin tahu lebih banyak tentang Pagilaran?",
-    "Butuh info sejarah dan keunggulan produk kami?",
-    "Tertarik dengan program dan event Pagilaran?",
-    "Butuh info CSR dan program sosial Pagilaran?",
-    "Mau info peluang investasi di Pagilaran?",
-    "Tertarik dengan inovasi produk terbaru?",
-    "Butuh info sertifikasi halal/organik?",
-    "Mau konsultasi pengembangan bisnis teh/kakao?",
-    "Tertarik program kunjungan pabrik/kebun?",
-    "Butuh info beasiswa atau magang di Pagilaran?",
-    "Mau tahu sejarah ekspor dan penghargaan Pagilaran?",
-    "Tertarik dengan komunitas pelanggan Pagilaran?",
-    "Butuh info pengaduan atau whistle blower?",
-    "Mau info sistem early warning perusahaan?",
-    "Tertarik dengan event edukasi dan pelatihan Pagilaran?",
-    "Info lengkap agrowisata kebun teh Pagilaran (jam buka, tiket, fasilitas, dsb)",
-    "Apa saja fasilitas di agrowisata Pagilaran?",
-    "Bagaimana cara izin camping atau acara di kebun Pagilaran?",
-    "Apakah ada penginapan di area kebun Pagilaran?",
-    "Berapa harga tiket masuk agrowisata?",
-    "Jadwal buka/tutup agrowisata Pagilaran?"
-  ],
-  "suggestions_by_profile": {
-    "Pembeli": [
-      "Lihat katalog produk terbaru",
-      "Cek promo dan diskon khusus pembeli",
-      "Tanya rekomendasi produk sesuai kebutuhan",
-      "Ajukan pertanyaan seputar pemesanan",
-      "Minta bantuan customer service"
-    ],
-    "Mahasiswa": [
-      "Ajukan permohonan magang/kerja praktek",
-      "Tanya data penelitian atau studi kasus",
-      "Info kunjungan industri",
-      "Tanya peluang beasiswa atau riset bersama",
-      "Minta kontak bagian akademik",
-      "Tanya info agrowisata dan fasilitas edukasi di kebun Pagilaran"
-    ],
-    "Peneliti": [
-      "Akses data riset dan publikasi",
-      "Ajukan kolaborasi penelitian",
-      "Tanya fasilitas laboratorium",
-      "Permohonan publikasi bersama Pagilaran",
-      "Info kunjungan laboratorium"
-    ],
-    "Umum": [
-      "Tanya info umum tentang Pagilaran",
-      "Info lengkap agrowisata kebun teh Pagilaran (jam buka, tiket, fasilitas, dsb)",
-      "Jam buka/tutup agrowisata dan harga tiket",
-      "Fasilitas agrowisata: camping, penginapan, outbound, edukasi, dsb",
-      "Izin penggunaan lahan untuk camping/penginapan/acara",
-      "Info kunjungan/tur ke pabrik/kebun",
-      "Tanya event komunitas atau CSR",
-      "Ajukan pertanyaan seputar produk",
-      "Minta kontak customer service"
-    ],
-    "Mitra Bisnis": [
-      "Ajukan kerjasama distribusi",
-      "Tanya peluang partnership",
-      "Negosiasi kontrak bisnis",
-      "Info benefit mitra bisnis",
-      "Minta katalog harga grosir"
-    ],
-    "Distributor": [
-      "Order produk grosir",
-      "Cek stok dan harga distributor",
-      "Ajukan klaim garansi",
-      "Tanya promo khusus distributor",
-      "Minta bantuan logistik"
-    ],
-    "Reseller": [
-      "Order produk reseller",
-      "Permintaan materi promosi reseller",
-      "Laporan penjualan reseller",
-      "Tanya program loyalitas reseller",
-      "Minta katalog produk reseller"
-    ],
-    "Agen": [
-      "Order produk agen",
-      "Permintaan pelatihan agen",
-      "Laporan aktivitas agen",
-      "Tanya benefit khusus agen",
-      "Minta katalog produk agen"
-    ],
-    "Eksportir": [
-      "Order ekspor produk",
-      "Cek regulasi dan dokumen ekspor",
-      "Negosiasi harga ekspor",
-      "Tanya promo ekspor",
-      "Minta bantuan logistik ekspor"
-    ],
-    "Importir": [
-      "Order impor produk",
-      "Cek regulasi dan dokumen impor",
-      "Negosiasi harga impor",
-      "Tanya promo impor",
-      "Minta bantuan logistik impor"
-    ],
-    "Pemerintah": [
-      "Permintaan data industri teh/kakao",
-      "Kolaborasi program pemerintah",
-      "Pengawasan regulasi industri",
-      "Tanya program CSR Pagilaran",
-      "Minta kontak bagian legal"
-    ],
-    "Media": [
-      "Permintaan wawancara dengan manajemen",
-      "Akses press release terbaru",
-      "Liputan acara Pagilaran",
-      "Tanya sejarah perusahaan",
-      "Minta kontak humas"
-    ],
-    "Investor": [
-      "Permintaan laporan keuangan",
-      "Diskusi peluang investasi",
-      "Kunjungan perusahaan",
-      "Tanya program kemitraan investasi",
-      "Minta info kinerja perusahaan"
-    ],
-    "Akademisi": [
-      "Kolaborasi akademik",
-      "Permintaan data penelitian",
-      "Kunjungan studi ke Pagilaran",
-      "Tanya program beasiswa",
-      "Minta kontak bagian akademik"
-    ]
-  },
-  "contextual": {
-    "order": [
-      "Untuk melakukan pemesanan, silakan klik menu 'Pemesanan' atau ketik 'pesan teh' atau 'pesan kakao'.",
-      "Butuh bantuan proses pemesanan? Saya bisa pandu langkah-langkahnya."
-    ],
-    "complaint": [
-      "Jika Anda punya keluhan terkait produk atau layanan, silakan klik menu Bantuan atau ketik 'komplain'.",
-      "Tolong ceritakan masalah Anda secara singkat, agar tim kami bisa membantu lebih cepat."
-    ],
-    "product_info": [
-      "Produk apa yang ingin Anda ketahui? Kami menyediakan berbagai jenis teh dan kakao.",
-      "Apakah ingin info detail produk, harga, atau proses pengiriman?"
-    ],
-    "location": [
-      "Lokasi kebun dan pabrik Pagilaran tersebar di beberapa wilayah. Anda ingin info lokasi mana?",
-      "Untuk kunjungan atau tur, silakan hubungi customer service kami."
-    ],
-    "working_hours": [
-      "Jam operasional customer service Pagilaran: Senin-Jumat, 08:00-17:00 WIB.",
-      "Di luar jam kerja, kami akan membalas di hari berikutnya. Silakan tinggalkan pesan."
-    ],
-    "greeting": [
-      "Selamat datang di Pagilaran Virtual Assistant! Ada yang bisa kami bantu hari ini?",
-      "Halo, saya siap membantu kebutuhan Anda."
-    ],
-    "agrowisata": [
-      "Agrowisata Kebun Teh Pagilaran menawarkan pengalaman wisata alam, edukasi, dan rekreasi di tengah hamparan kebun teh. Fasilitas yang tersedia meliputi: area camping, penginapan, outbound, tea walk, edukasi proses teh, area bermain anak, spot foto, dan restoran/cafe. Jam buka: 07.00-17.00 WIB setiap hari. Harga tiket masuk mulai Rp15.000/orang (bisa berubah sesuai event). Untuk izin camping, penginapan, atau acara (gathering, outbound, wedding, dsb), silakan hubungi admin atau isi form reservasi di website. Tersedia paket edukasi untuk sekolah/mahasiswa. Info lebih lanjut: https://pagilaran.co.id/agrowisata atau WhatsApp admin.",
-      "Untuk reservasi camping, penginapan, atau acara di kebun Pagilaran, mohon ajukan permohonan minimal H-3 sebelum hari H. Sertakan jumlah peserta, tanggal, dan kebutuhan fasilitas."
-    ],
-    "jam_buka_agrowisata": [
-      "Jam operasional agrowisata Pagilaran: 07.00-17.00 WIB setiap hari."
-    ],
-    "harga_tiket_agrowisata": [
-      "Harga tiket masuk agrowisata Pagilaran mulai Rp15.000/orang. Untuk paket edukasi/group, silakan hubungi admin."
-    ],
-    "fasilitas_agrowisata": [
-      "Fasilitas: camping ground, penginapan, outbound, tea walk, edukasi teh, area bermain anak, spot foto, restoran/cafe, aula serbaguna."
-    ],
-    "izin_camping_penginapan": [
-      "Untuk izin camping, penginapan, atau acara di kebun Pagilaran, silakan hubungi admin atau isi form reservasi di website. Mohon ajukan minimal H-3 sebelum hari H."
-    ],
-    "tiket_agrowisata": [
-      "Harga tiket masuk agrowisata Pagilaran mulai Rp15.000/orang. Tiket dapat dibeli di lokasi atau melalui website."
-    ],
-    "fasilitas_umum_agrowisata": [
-      "Agrowisata Pagilaran dilengkapi dengan fasilitas umum seperti toilet, tempat parkir, dan area istirahat."
-    ],
-    "aktivitas_agrowisata": [
-      "Berbagai aktivitas menarik menanti Anda di agrowisata Pagilaran, seperti tea walk, outbound, dan edukasi proses pembuatan teh."
-    ],
-    "info_acara_agrowisata": [
-      "Untuk info acara spesial atau event di agrowisata Pagilaran, silakan cek website kami atau hubungi admin."
-    ],
-    "promo_agrowisata": [
-      "Jangan lewatkan promo menarik untuk pengunjung agrowisata Pagilaran. Info lebih lanjut, kunjungi website atau tanyakan pada admin."
-    ]
-  },
-  "multi_language": {
-    "en": [
-      "Sorry, I didn't understand your question. Please rephrase or select a help menu below.",
-      "Would you like to contact the Pagilaran team? Type 'contact admin' or click the contact button.",
-      "You can ask about: products, order, location, or customer support."
-    ],
-    "id": [
-      "Maaf, saya belum memahami pertanyaan Anda. Silakan ulangi atau pilih menu bantuan.",
-      "Anda bisa bertanya seputar produk, pemesanan, lokasi, atau bantuan admin."
-    ]
-  },
-  "escalate": "Permintaan Anda akan diteruskan ke tim Pagilaran untuk penanganan lebih lanjut. Mohon tunggu, admin kami segera membantu Anda.",
-  "auto_escalate_threshold": 2,
-  "log_unhandled": true,
-  "user_feedback_prompt": "Apakah jawaban saya membantu Anda? [Ya/Tidak]",
-  "feedback_options": [
-    "👍 Ya, sangat membantu",
-    "👌 Cukup membantu",
-    "👎 Tidak membantu"
-  ],
-  "faq_links": [
-    {
-      "title": "Tentang Pagilaran",
-      "url": "https://pagilaran.co.id/tentang-kami"
-    },
-    {
-      "title": "Daftar Produk",
-      "url": "https://pagilaran.co.id/produk"
-    },
-    {
-      "title": "Cara Pemesanan",
-      "url": "https://pagilaran.co.id/pemesanan"
-    },
-    {
-      "title": "Bantuan & Pengaduan",
-      "url": "https://pagilaran.co.id/bantuan"
-    }
-  ],
-  "guidance": "Jika Anda butuh bantuan lebih lanjut, silakan klik menu yang tersedia atau hubungi admin kami melalui WhatsApp di halaman kontak.",
-  "tracking": {
-    "enable": true,
-    "log_fallback_intent": true,
-    "log_context": true
-  }
-}
+Can you tell me more about the tea picking dance and its significance?
 
-7. intent-patterns.json:
+What role does PT Pagilaran's waste management play in environmental conservation?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran waste management environmental conservation
+How does PT Pagilaran's support for local schools influence education?
+PT Pagilaran's support for local schools significantly impacts education in the community. The company provides facilities such as a set of gamelan instruments to SD Negeri Keteleng 1, a culture-based school, to be used for learning arts and culture and as an attraction for agrotourism activities. This initiative not only enriches the cultural education of students but also supports the preservation of traditional arts. Additionally, PT Pagilaran offers a platform for educational and research activities related to tea plantations, providing students with practical knowledge and experience in agricultural sciences. This support helps enhance the educational experience and broadens the knowledge base of students in the local community.
+Can you tell me more about the tea picking dance and its significance?
+The tea picking dance, known as "Tari Picking Tea," is a unique cultural performance created by local elementary school teachers in Keteleng Village, Pagilaran. This dance is performed by elementary school students and has become a cultural attraction for tourists visiting the Pagilaran Tea Plantation. The dance not only showcases the traditional art forms of the region but also serves as an educational tool, illustrating the tea picking process and the cultural significance of tea production. It helps preserve local traditions and provides a sense of cultural pride among the community. The tea picking dance is a proud achievement that integrates cultural education with tourism, making it an integral part of the agrotourism experience.
+What role does PT Pagilaran's waste management play in environmental conservation?
+PT Pagilaran's waste management practices play a crucial role in environmental conservation. The company strictly implements fines for indiscriminate littering, prohibits hunting, river pollution, and burning garbage. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions. Additionally, PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations, which reduces both waste and carbon emissions. These practices not only help maintain a clean environment but also contribute to sustainable agricultural practices and the overall health of local ecosystems.
+Copy
+Share
+How does PT Pagilaran's support for gamelan instruments affect student creativity?
 
-{
-  "order": [
-    "saya mau pesan teh*",
-    "pesan teh*",
-    "ingin order teh*",
-    "beli teh*",
-    "bagaimana cara pesan teh*",
-    "order teh*",
-    "bisa pesan teh*",
-    "cara beli teh*",
-    "mau order teh*",
-    "harga teh*",
-    "tanya harga teh*",
-    "how to order tea*",
-    "can i order tea*",
-    "i want to buy tea*",
-    "how much is the tea*",
-    "tea price*"
-  ],
-  "complaint": [
-    "saya ingin komplain*",
-    "ada masalah*",
-    "saya tidak puas*",
-    "teh rusak*",
-    "kualitas teh buruk*",
-    "barang belum sampai*",
-    "pesanan saya belum datang*",
-    "keluhan*",
-    "komplain teh*",
-    "mau protes*",
-    "ada kendala*",
-    "pengiriman terlambat*",
-    "salah kirim*",
-    "complain*",
-    "problem with tea*",
-    "damaged tea*",
-    "my order not arrive*"
-  ],
-  "product_info": [
-    "info teh*",
-    "jenis teh*",
-    "informasi teh*",
-    "teh apa saja*",
-    "detail teh*",
-    "deskripsi teh*",
-    "sertifikasi teh*",
-    "profil teh*",
-    "teh unggulan*",
-    "what tea products do you have*",
-    "what teas are available*",
-    "tea product info*",
-    "tea certification*"
-  ],
-  "payment": [
-    "cara bayar*",
-    "metode pembayaran*",
-    "pembayaran via*",
-    "bisa bayar dengan*",
-    "transfer ke mana*",
-    "rekening pembayaran*",
-    "how to pay*",
-    "payment method*",
-    "can i pay by*",
-    "bank account*"
-  ],
-  "shipping": [
-    "biaya kirim*",
-    "ongkir*",
-    "pengiriman ke*",
-    "lama pengiriman*",
-    "paket sampai kapan*",
-    "resi pengiriman*",
-    "tracking order*",
-    "shipping to*",
-    "how long delivery*",
-    "how much is shipping*",
-    "delivery cost*"
-  ],
-  "greeting": [
-    "halo",
-    "hai",
-    "selamat pagi",
-    "selamat siang",
-    "selamat sore",
-    "selamat malam",
-    "hello",
-    "hi",
-    "good morning",
-    "good afternoon",
-    "good evening"
-  ],
-  "thanks": [
-    "terima kasih*",
-    "makasih*",
-    "thanks*",
-    "thank you*",
-    "thank you very much*"
-  ],
-  "goodbye": [
-    "selamat tinggal",
-    "sampai jumpa",
-    "see you",
-    "goodbye",
-    "bye"
-  ],
-  "location": [
-    "alamat pt pagilaran*",
-    "lokasi kebun*",
-    "alamat pabrik*",
-    "dimana lokasi*",
-    "kantor pusat*",
-    "alamat kantor*",
-    "kebun terdekat*",
-    "where is pagilaran*",
-    "where is your factory*",
-    "where is your office*",
-    "location of pagilaran*"
-  ],
-  "business_hours": [
-    "jam buka*",
-    "jam operasional*",
-    "buka jam berapa*",
-    "tutup jam berapa*",
-    "jam kerja*",
-    "hari libur*",
-    "opening hours*",
-    "business hours*",
-    "when are you open*",
-    "when do you close*"
-  ],
-  "contact": [
-    "hubungi admin*",
-    "nomor telepon*",
-    "kontak*",
-    "bisa bicara dengan admin*",
-    "customer service*",
-    "nomor wa*",
-    "whatsapp admin*",
-    "contact admin*",
-    "contact number*",
-    "how to contact*",
-    "customer support*",
-    "whatsapp number*"
-  ],
-  "faq": [
-    "tentang pagilaran*",
-    "sejarah pagilaran*",
-    "tentang perusahaan*",
-    "visi misi*",
-    "legalitas*",
-    "sertifikasi*",
-    "about pagilaran*",
-    "company profile*",
-    "company history*",
-    "vision mission*",
-    "legal status*"
-  ],
-  "track_order": [
-    "cek pesanan*",
-    "status order*",
-    "lacak pesanan*",
-    "order sudah dikirim?*",
-    "pesanan saya dimana*",
-    "track order*",
-    "order status*",
-    "where is my order*"
-  ],
-  "feedback": [
-    "saran*",
-    "kritik*",
-    "masukan*",
-    "feedback*",
-    "suggestion*",
-    "compliment*"
-  ],
-  "other": [
-    "apakah bisa ekspor*",
-    "bisa kirim ke luar negeri*",
-    "ada promo*",
-    "diskon*",
-    "contoh teh*",
-    "daftar reseller*",
-    "apakah halal*",
-    "teh organik*",
-    "can i export*",
-    "export tea*",
-    "is there any promo*",
-    "any discount*",
-    "sample tea*",
-    "reseller list*",
-    "is your tea halal*",
-    "organic tea*"
-  ]
-}
+Can you explain the benefits of the tea picking dance for tourism?
 
-8. user_questions_log.json:
+What are the specific environmental benefits of PT Pagilaran's waste management?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran waste management environmental benefits
+How does PT Pagilaran's support for gamelan instruments affect student creativity?
+PT Pagilaran's support for gamelan instruments significantly enhances student creativity. The company provides a set of gamelan instruments to SD Negeri Keteleng 1, a culture-based school, to be used for learning arts and culture and as an attraction for agrotourism activities. This initiative not only enriches the cultural education of students but also fosters their creativity by providing them with a platform to explore traditional arts. The gamelan instruments serve as a medium for students to express themselves artistically, contributing to their overall creative development.
+Can you explain the benefits of the tea picking dance for tourism?
+The tea picking dance, known as "Tari Picking Tea," offers several benefits for tourism. Created by local elementary school teachers, the dance is performed by students and has become a cultural attraction for tourists. This unique performance not only showcases the traditional art forms of the region but also educates visitors about the tea picking process. The dance adds a cultural dimension to the agrotourism experience, making it more engaging and memorable for tourists. By integrating cultural elements with tourism activities, PT Pagilaran enhances the overall appeal of its plantation, attracting more visitors and boosting local tourism.
+What are the specific environmental benefits of PT Pagilaran's waste management?
+PT Pagilaran's waste management practices contribute significantly to environmental conservation. The company strictly enforces fines for indiscriminate littering, prohibits hunting, river pollution, and burning garbage. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions. Additionally, PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations, which reduces both waste and carbon emissions. These practices help maintain a clean environment, protect local ecosystems, and promote sustainable agricultural practices.
+Copy
+Share
+What role does 'Tari Picking Tea' play in promoting local culture?
 
-[
-  {
-    "timestamp": "2025-07-11T04:24:22.433Z",
-    "message": "Apa kebijakan manajemen air Anda?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:24:31.235Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:36:53.759Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:41:28.452Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:41:33.385Z",
-    "message": "test",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:50:13.681Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:58:20.598Z",
-    "message": "test",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T04:58:25.222Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:00:21.739Z",
-    "message": "test",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:00:26.553Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:03:21.279Z",
-    "message": "hello",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:03:46.682Z",
-    "message": "haii jelaskan tentang produk pt pagilaran",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:21:03.346Z",
-    "message": "jelaskan produk pagilaran",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:30:00.399Z",
-    "message": "jelaskan lokasi pt pagilaran",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:31:19.317Z",
-    "message": "where pagilaran export office?",
-    "lang": "en"
-  },
-  {
-    "timestamp": "2025-07-11T05:32:16.607Z",
-    "message": "Ke negara mana saja Anda mengekspor?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:44:50.621Z",
-    "message": "Ingin konsultasi gratis seputar teh atau layanan kami?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:48:22.782Z",
-    "message": "siapa pemimpin pt pagilaran sekarang?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:48:52.639Z",
-    "message": "Ingin tahu proses produksi teh Pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:58:57.736Z",
-    "message": "apa hubungan pt pagilaran dengan ugm?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T05:59:40.248Z",
-    "message": "Mau rekomendasi produk sesuai kebutuhan Anda?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:00:07.604Z",
-    "message": "Bukan, saya ingin melakukan kerjasama riset saja.",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:01:00.796Z",
-    "message": "Kemana saya bisa melakukan kerjasama riset?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:02:44.972Z",
-    "message": "Apakah kamu tau warmindo yona?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:04:16.541Z",
-    "message": "Apakah pt pagilaran butuh kerjasama pupuk untuk lahan?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:05:05.770Z",
-    "message": "Butuh info program reseller/agen Pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:22:27.571Z",
-    "message": "Apa saja karir di pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:23:05.087Z",
-    "message": "Di lokasi mana saja kebun pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:24:05.276Z",
-    "message": "Selain itu dimana lagi lokasi kebun nya?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:25:31.519Z",
-    "message": "Siapa saja direktur dan komisaris pt pagilaran sekarang?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:46:49.887Z",
-    "message": "Butuh info katalog dan varian produk?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:52:07.538Z",
-    "message": "Dimana lokasi kantor pusat pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:52:24.853Z",
-    "message": "Butuh bantuan proses transaksi atau pengiriman?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:53:03.552Z",
-    "message": "Apa saja produk dari pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T06:53:56.656Z",
-    "message": "Apakah semua produk mendapatkan SNI dan Halal?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T07:18:44.093Z",
-    "message": "berapa jumlah pekerja total pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T07:19:43.635Z",
-    "message": "Berapa total luas lahan perkebunan pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-11T07:20:41.153Z",
-    "message": "Berapa umur pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T12:10:32.755Z",
-    "message": "Jelaskan lokasi pagilaran dimana?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T13:18:27.799Z",
-    "message": "Tertarik mencoba sampel produk?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:18:52.400Z",
-    "message": "model llm apa kamu?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:19:45.090Z",
-    "message": "Apa saja yang bisa kamu jelaskan?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:21:30.081Z",
-    "message": "Jelaskan kemana saja export produk pt pagilaran?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:34:37.596Z",
-    "message": "Jelaskan apa saja produk pagilaran premium dan non premium?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:35:48.417Z",
-    "message": "Apakah bisa memesan produk pagilaran partai besar?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:36:52.824Z",
-    "message": "Butuh katalog produk dan harga grosir?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T16:57:39.157Z",
-    "message": "Apakah pagilaran bisa mengirim produk ke Qatar?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T18:53:02.433Z",
-    "message": "saya adam",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T18:57:30.164Z",
-    "message": "Saya ingin magang di pagilaran bagaimana caranya?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T19:00:38.921Z",
-    "message": "Saya adam, ingin melakukan penelitian di pt pagilaran, bagaimana caranya?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T19:07:32.665Z",
-    "message": "Mau closing order ekspor hari ini?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T19:27:10.630Z",
-    "message": "Siap melakukan pemesanan atau ingin penawaran harga khusus?",
-    "lang": "id"
-  },
-  {
-    "timestamp": "2025-07-12T19:28:09.574Z",
-    "message": "Saya ingin live agent mode",
-    "lang": "id"
-  }
-]
+How does PT Pagilaran's waste management reduce environmental impact?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran waste management environmental impact
+What role does 'Tari Picking Tea' play in promoting local culture?
+The tea picking dance, known as "Tari Picking Tea," plays a significant role in promoting local culture. Created by local elementary school teachers in Keteleng Village, Pagilaran, this dance is performed by students and has become a cultural attraction for tourists. The dance not only showcases the traditional art forms of the region but also educates visitors about the tea picking process. By integrating cultural elements with tourism activities, PT Pagilaran enhances the overall appeal of its plantation, attracting more visitors and boosting local tourism. This unique performance helps preserve local traditions and provides a sense of cultural pride among the community.
+How does PT Pagilaran's waste management reduce environmental impact?
+PT Pagilaran's waste management practices significantly reduce environmental impact through several key measures:
+Energy Efficiency: The company implements Life Cycle Assessment (LCA) to assess the environmental aspects and potential effects of its green tea production process. This includes evaluating energy use and emissions at each stage of production, from harvesting tea leaves to final storage. The LCA found that producing one kilogram of green tea at PT Pagilaran's Samigaluh factory requires 68,534.14 KJ of energy and releases various emissions, including CO2, HC, NOx, and Pb. By identifying these energy and emission points, the company can implement strategies to reduce pollution.
+Waste Segregation and Recycling: PT Pagilaran segregates waste at the source and recycles materials like paper, plastic, and metal. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions.
+Pollution Control: The company strictly enforces fines for indiscriminate littering, prohibits hunting, river pollution, and burning garbage. These measures help maintain a clean environment and protect local ecosystems.
+Waste-to-Energy Initiatives: PT Pagilaran explores waste-to-energy initiatives, such as using biogas from organic waste to power its operations. This reduces both waste and carbon emissions, contributing to a more sustainable production process.
+By implementing these waste management practices, PT Pagilaran not only reduces its environmental footprint but also promotes sustainable agricultural practices and protects local ecosystems.
+Copy
+Share
+How can tourists participate in 'Tari Picking Tea'?
+
+What other environmental initiatives does PT Pagilaran have?
+
+How does PT Pagilaran's waste management benefit the local community?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran Waste Management Community Benefits
+How can tourists participate in 'Tari Picking Tea'?
+Tourists can participate in the 'Tari Picking Tea' (Tea Picking Dance) by visiting the Pagilaran Tea Plantation during their operating hours. The dance is performed by elementary school students and has become a cultural attraction for tourists. Visitors can watch the performance and learn about the tea picking process through this unique cultural experience. The dance not only showcases the traditional art forms of the region but also educates visitors about the tea picking process, making it an integral part of the agrotourism experience .
+What other environmental initiatives does PT Pagilaran have?
+PT Pagilaran has implemented several environmental initiatives to promote sustainability:
+Rainforest Alliance Certification: PT Pagilaran is certified by the Rainforest Alliance, which requires adherence to principles of sustainable agriculture, including effective management and planning systems, conservation of biodiversity, natural resource conservation, and community welfare .
+Sustainable Tourism: The company integrates sustainable tourism practices into its operations, focusing on eco-friendly tour packages and minimizing environmental impact. This includes reviewing and improving tourism infrastructure to reduce pollution and waste .
+Community Involvement: PT Pagilaran involves the local community in conservation efforts, ensuring that environmental protection is a shared responsibility. This includes strict regulations against littering, hunting, river pollution, and burning garbage .
+Waste Management: The company implements strict waste management practices, including waste segregation, recycling, and composting. Organic waste is used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions .
+Eco-Friendly Innovations: PT Pagilaran explores eco-friendly innovations, such as using biogas from organic waste to power its operations, reducing both waste and carbon emissions .
+How does PT Pagilaran's waste management benefit the local community?
+PT Pagilaran's waste management practices benefit the local community in several ways:
+Reduction of Pollution: By implementing strict regulations against littering, hunting, river pollution, and burning garbage, PT Pagilaran helps maintain a clean environment, protecting local ecosystems and water sources .
+Resource Recovery: Organic waste is composted and used as fertilizer, returning nutrients to the soil and reducing the need for synthetic fertilizers. This not only enhances soil health but also reduces greenhouse gas emissions associated with waste decomposition .
+Economic Opportunities: The company's waste management practices create economic opportunities for the local community. For example, recycled materials can be sold or reused, generating additional income for local businesses .
+Community Education: PT Pagilaran educates local residents about effective waste management practices, fostering a culture of environmental stewardship and sustainability. This education helps residents understand the importance of waste segregation and recycling, contributing to a cleaner and healthier community .
+Support for Local Initiatives: The company supports local initiatives that promote environmental conservation, such as tree planting and habitat restoration projects. These efforts help enhance local ecosystems and protect endangered species .
+By integrating these waste management practices, PT Pagilaran ensures that both its agricultural and tourism activities are sustainable and have minimal environmental impact, benefiting the local community and contributing to long-term sustainability.
+Copy
+Share
+Can tourists also learn about tea processing?
+
+What are the specific eco-friendly innovations PT Pagilaran uses?
+
+How does PT Pagilaran's waste management help local health?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran waste management local health benefits
+Can tourists also learn about tea processing?
+Yes, tourists can learn about tea processing during their visit to the Pagilaran Tea Plantation. The company offers educational tours that include visits to tea factories where the production process is explained. These tours provide insights into the various stages of tea production, from harvesting to final storage. This educational experience is part of the company's commitment to promoting sustainable tourism and edutourism, making it an integral part of the agrotourism experience.
+What are the specific eco-friendly innovations PT Pagilaran uses?
+PT Pagilaran has implemented several eco-friendly innovations to promote sustainability:
+Super Smart Fertilizer (SSF): Developed by the UGM Agrotechnology Innovation Center, SSF is used in the Pagilaran tea plantation. This fertilizer, made from compost, biochar, chicken feather hydrolysate, and inorganic fertilizer, has significantly increased tea shoot production up to threefold.
+Waste Management: The company segregates waste at the source and recycles materials like paper, plastic, and metal. Organic waste is composted and used as fertilizer, reducing the need for synthetic fertilizers and minimizing landfill contributions.
+Eco-Friendly Tour Packages: PT Pagilaran is developing new tourist attractions that prioritize eco-friendly principles. For example, they are planning to introduce hot air balloons that fly up to see the view of the Pagilaran Tea Plantation.
+Rainforest Alliance Certification: The company is certified by the Rainforest Alliance, which requires adherence to principles of sustainable agriculture, including effective management and planning systems, conservation of biodiversity, natural resource conservation, and community welfare.
+How does PT Pagilaran's waste management help local health?
+PT Pagilaran's waste management practices contribute to local health in several ways:
+Reduction of Pollution: By implementing strict regulations against littering, hunting, river pollution, and burning garbage, PT Pagilaran helps maintain a clean environment, protecting local ecosystems and water sources. This reduces the risk of waterborne diseases and other health issues associated with pollution.
+Resource Recovery: Organic waste is composted and used as fertilizer, returning nutrients to the soil and reducing the need for synthetic fertilizers. This not only enhances soil health but also reduces greenhouse gas emissions associated with waste decomposition.
+Community Education: The company educates local residents about effective waste management practices, fostering a culture of environmental stewardship and sustainability. This education helps residents understand the importance of waste segregation and recycling, contributing to a cleaner and healthier community.
+Support for Local Initiatives: PT Pagilaran supports local initiatives that promote environmental conservation, such as tree planting and habitat restoration projects. These efforts help enhance local ecosystems and protect endangered species, indirectly benefiting public health by preserving natural resources.
+By integrating these waste management practices, PT Pagilaran ensures that both its agricultural and tourism activities are sustainable and have minimal environmental impact, benefiting the local community and contributing to long-term sustainability.
+Copy
+Share
+Can I book a tour to see the tea processing?
+
+What other eco-friendly practices does PT Pagilaran have?
+
+How does PT Pagilaran's waste management benefit the community health?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran waste management community health benefits
+Can I book a tour to see the tea processing?
+Yes, you can book a tour to see the tea processing at the Pagilaran Tea Plantation. The plantation offers educational tours that include visits to tea factories where the production process is explained. These tours provide insights into the various stages of tea production, from harvesting to final storage. You can book your tour through the official website or by contacting the plantation directly .
+What other eco-friendly practices does PT Pagilaran have?
+PT Pagilaran has implemented several eco-friendly practices to promote sustainability:
+Rainforest Alliance Certification: PT Pagilaran is certified by the Rainforest Alliance, which requires adherence to principles of sustainable agriculture, including effective management and planning systems, conservation of biodiversity, natural resource conservation, and community welfare .
+Life Cycle Assessment (LCA): The company implements LCA to assess the environmental aspects and potential effects of its green tea production process. This includes evaluating energy use and emissions at each stage of production, from harvesting tea leaves to final storage .
+Eco-Friendly Tour Packages: PT Pagilaran is developing new tourist attractions that prioritize eco-friendly principles. For example, they are planning to introduce hot air balloons that fly up to see the view of the Pagilaran Tea Plantation .
+Super Smart Fertilizer (SSF): Developed by the UGM Agrotechnology Innovation Center, SSF is used in the Pagilaran tea plantation. This fertilizer, made from compost, biochar, chicken feather hydrolysate, and inorganic fertilizer, has significantly increased tea shoot production up to threefold .
+How does PT Pagilaran's waste management benefit the community health?
+PT Pagilaran's waste management practices contribute to community health in several ways:
+Reduction of Pollution: By implementing strict regulations against littering, hunting, river pollution, and burning garbage, PT Pagilaran helps maintain a clean environment, protecting local ecosystems and water sources. This reduces the risk of waterborne diseases and other health issues associated with pollution .
+Resource Recovery: Organic waste is composted and used as fertilizer, returning nutrients to the soil and reducing the need for synthetic fertilizers. This not only enhances soil health but also reduces greenhouse gas emissions associated with waste decomposition .
+Community Education: The company educates local residents about effective waste management practices, fostering a culture of environmental stewardship and sustainability. This education helps residents understand the importance of waste segregation and recycling, contributing to a cleaner and healthier community .
+Support for Local Initiatives: PT Pagilaran supports local initiatives that promote environmental conservation, such as tree planting and habitat restoration projects. These efforts help enhance local ecosystems and protect endangered species, indirectly benefiting public health by preserving natural resources .
+By integrating these waste management practices, PT Pagilaran ensures that both its agricultural and tourism activities are sustainable and have minimal environmental impact, benefiting the local community and contributing to long-term sustainability.
+Copy
+Share
+How do I book the tour? Can I do it online?
+
+What are the eco-friendly tour packages you mentioned?
+
+Can you tell me more about the Super Smart Fertilizer?
+Copy
+faviconfaviconfaviconfaviconfavicon
+PT Pagilaran tea processing tour booking
+How do I book the tour? Can I do it online?
+Yes, you can book a tour to see the tea processing at the Pagilaran Tea Plantation. You can book your tour online through the official website or by contacting the plantation directly. The plantation offers educational tours that include visits to tea factories where the production process is explained. These tours provide insights into the various stages of tea production, from harvesting to final storage.
+What are the eco-friendly tour packages you mentioned?
+PT Pagilaran offers several eco-friendly tour packages as part of its commitment to sustainable tourism. These packages include:
+Tea Walking: Guided tours through the tea gardens where visitors can learn about tea cultivation and harvesting.
+Tea Factory Tour: Visits to the tea factory to see the processing stages from fresh leaves to final tea products.
+Camping and Outbound Areas: Eco-friendly camping sites and outbound areas within the tea plantation, offering a unique experience in a natural setting.
+Chrysanthemum Cultivation: Tours that include visits to chrysanthemum cultivation areas, showcasing sustainable agricultural practices.
+Tea Picking Dance Performance: Cultural performances that highlight local traditions and the tea picking process.
+Can you tell me more about the Super Smart Fertilizer?
+The Super Smart Fertilizer (SSF) is an innovative product developed by the UGM Agrotechnology Innovation Center. Since mid-2023, this fertilizer has been applied in the PT Pagilaran tea plantation. The SSF is made from compost, biochar, chicken feather hydrolysate, and inorganic fertilizer, with a composition adjusted for each crop type.
+The application of SSF has shown significant results in increasing tea shoot production. Trials conducted in the Pagilaran and Kalilandak sections demonstrated a production increase of up to 320% in some areas. The quality of the tea produced also showed positive results, with one area reaching 1,800 kg of shoots per hectare in a single harvest.
+The SSF is part of PT Pagilaran's commitment to sustainable agricultural practices, aiming to increase the production of high-quality tea for export while maintaining environmental sustainability.
+Copy
+Share
+How much does the Tea Walking tour cost?
+
+Can I bring my family on the factory tour?
+
+What's the schedule for the chrysanthemum cultivation tour?
+Copy
+faviconfaviconfaviconfaviconfavicon
+Chrysanthemum cultivation tour schedule
+How much does the Tea Walking tour cost?
+The cost of the Tea Walking tour at the Pagilaran Tea Plantation is not specified in the search results. However, similar tea tours in other regions have varying costs. For example, a tea tour in Sri Lanka costs $50 per group, with some tea purchases up to USD 39 being free. The cost for a private tea tour in Nuwara Eliya, Sri Lanka, is $20 per person. For a more specific price, it is recommended to contact the Pagilaran Tea Plantation directly or check their official website.
+Can I bring my family on the factory tour?
+Yes, you can bring your family on the factory tour. The tour is generally suitable for all ages, but children under 5 years old may not be permitted on some tours. It is always a good idea to check with the tour provider in advance to ensure that the tour is appropriate for your family members and to make any necessary arrangements.
+What's the schedule for the chrysanthemum cultivation tour?
+The schedule for the chrysanthemum cultivation tour at the Pagilaran Tea Plantation is not specified in the search results. However, similar tours in other regions typically operate during the day, with specific times varying depending on the location and season. For the most accurate and up-to-date schedule, it is recommended to contact the Pagilaran Tea Plantation directly or check their official website.
+Copy
+Share
+How do I contact Pagilaran Tea Plantation?
+
+Do they offer group discounts for the tea tour?
+
+What's the best time to visit for the chrysanthemum tour in pagilaran?
+Copy
+faviconfaviconfaviconfaviconfavicon
+best time to visit chrysanthemum tour Pagilaran
+How do I contact Pagilaran Tea Plantation?
+You can contact the Pagilaran Tea Plantation through the following details:
+Phone: +1 825 436 9306
+Email: info@iieta.org
+Do they offer group discounts for the tea tour?
+The search results do not provide specific information on group discounts for the tea tour at Pagilaran Tea Plantation. However, it is common for such attractions to offer group discounts. It is recommended to contact the plantation directly to inquire about group discounts.
+What's the best time to visit for the chrysanthemum tour in Pagilaran?
+The best time to visit for the chrysanthemum tour in Pagilaran is during the rainy season, which is also the perfect time for planting chrysanthemums. This period is typically from August to October. However, the availability of the chrysanthemum tour may also depend on the planting and harvesting period, so it is advisable to check with the plantation for the most up-to-date information.
+Copy
+Share
+How do I book a group tour there?
+
+What's the admission fee for the tea tour?
+
+Can you tell me more about the festival or culture festival in pagilaran?
+Copy
+faviconfaviconfaviconfaviconfavicon
+Pagilaran Tea Plantation group tour booking
+How do I book a group tour there?
+You can book a group tour at the Pagilaran Tea Plantation by contacting them directly. The plantation offers various tour packages, including tea factory tours and agrotourism activities. For group bookings, it is recommended to contact the plantation in advance to arrange for special rates and accommodations. You can reach them at +1 825 436 9306 or via email at info@iieta.org .
+What's the admission fee for the tea tour?
+The admission fee for the tea tour at the Pagilaran Tea Plantation is IDR 5,000 per person . This fee allows you to enter the plantation and participate in the tea tour, which includes visiting the tea factory and learning about the tea production process. There is also a parking fee of IDR 2,000 for motorbikes and IDR 5,000 for cars .
+Can you tell me more about the festival or culture festival in Pagilaran?
+The Pagilaran Tea Plantation hosts various cultural events and festivals throughout the year. One notable event is the Tea Production Revolution Festival, which includes competitions on the productivity and production quality of tea shoots, cultural performances, and a thanksgiving night . Additionally, the plantation supports local cultural initiatives such as the tea picking dance, performed by elementary school students, which has become a cultural attraction for tourists . These events not only showcase the local culture but also provide educational and recreational opportunities for visitors.
+Copy
+Share
+What's the best time to visit for the festival?
+
+Can I bring my own tea leaves for processing?
+
+How do I get to Pagilaran from Jakarta?
+Copy
+faviconfaviconfaviconfaviconfavicon
+Pagilaran festival best time to visit
+What's the best time to visit for the festival?
+The best time to visit the Pagilaran Tea Plantation for the festival is during the rainy season, which is typically from August to October. This period is ideal for chrysanthemum cultivation and other agricultural activities. Additionally, Batang Regency plans to hold a tourist festival in Pantura during the upcoming Ramadhan celebrations.
+Can I bring my own tea leaves for processing?
+Yes, you can bring your own tea leaves for processing at the Pagilaran Tea Plantation. The plantation allows visitors to observe the tea processing from above through glass, including the drying, sorting, and other production processes. However, it is recommended to check with the plantation in advance to ensure that your tea leaves can be processed during your visit.
+How do I get to Pagilaran from Jakarta?
+To get to Pagilaran from Jakarta, you have several transportation options:
+By Train: The best way to get from Jakarta to Batang is by train via Dewisartika-Mekah, which takes approximately 1 hour and 26 minutes and costs between IDR 3,000 and IDR 8,000. You can take a train from Gambir or Pasar Senen station to Purwokerto or Kroya, and then transfer to a local bus or taxi to Pagilaran.
+By Bus: You can also travel by bus from Jakarta to Batang. Buses are available from Slipi or Kampung Rambutan bus terminal. The bus trip takes approximately 3 to 4 hours. You can book your bus ticket on platforms like Traveloka.
+By Car or Taxi: If you prefer a more direct route, you can rent a car or take a taxi from Jakarta to Batang. The drive takes around 3 to 4 hours, depending on traffic conditions.
+For the most convenient and reliable travel experience, consider booking your tickets in advance through platforms like Traveloka.
