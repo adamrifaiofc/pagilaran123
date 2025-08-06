@@ -50505,5 +50505,4834 @@
       "roi": "375% by year 5"
     },
     "reference": "Alibaba rural Taobao, Amul cooperative model, Nespresso ecosystem"
+  },
+  [
+  {
+    "id": "monte-carlo-001",
+    "scenario_type": "PRODUCTION_YIELD_UNCERTAINTY",
+    "model": "Monte Carlo Simulation - Tea Yield Prediction",
+    "parameters": {
+      "base_yield": 1200,
+      "unit": "ton/year",
+      "variables": {
+        "rainfall": {
+          "distribution": "normal",
+          "mean": 3200,
+          "std_dev": 400,
+          "unit": "mm/year",
+          "correlation_yield": 0.75
+        },
+        "temperature": {
+          "distribution": "triangular",
+          "min": 18,
+          "mode": 22,
+          "max": 26,
+          "unit": "celsius",
+          "correlation_yield": -0.65
+        },
+        "pest_incidence": {
+          "distribution": "poisson",
+          "lambda": 3.5,
+          "impact_factor": -0.15,
+          "unit": "events/year"
+        },
+        "labor_availability": {
+          "distribution": "beta",
+          "alpha": 8,
+          "beta": 2,
+          "min": 300,
+          "max": 500,
+          "unit": "workers"
+        }
+      }
+    },
+    "simulation_results": {
+      "iterations": 10000,
+      "yield_distribution": {
+        "p5": 850,
+        "p25": 1050,
+        "p50": 1200,
+        "p75": 1350,
+        "p95": 1550,
+        "mean": 1205,
+        "std_dev": 212
+      },
+      "probability_outcomes": {
+        "below_1000_ton": 0.18,
+        "1000_1200_ton": 0.42,
+        "1200_1400_ton": 0.28,
+        "above_1400_ton": 0.12
+      },
+      "value_at_risk": {
+        "var_95": 850,
+        "cvar_95": 780,
+        "economic_impact": "Rp 17 miliar potential loss"
+      }
+    },
+    "strategic_recommendations": {
+      "risk_mitigation": [
+        "Diversify planting areas across elevation zones",
+        "Implement precision irrigation system",
+        "Develop drought-resistant varieties",
+        "Create labor-sharing cooperatives"
+      ],
+      "investment_priority": {
+        "irrigation_infrastructure": "Rp 8 miliar",
+        "variety_development": "Rp 3 miliar",
+        "labor_mechanization": "Rp 5 miliar",
+        "expected_risk_reduction": "35%"
+      }
+    },
+    "sensitivity_analysis": {
+      "most_sensitive": "Rainfall variation (45% impact)",
+      "moderate_sensitive": "Temperature (30% impact)",
+      "least_sensitive": "Labor (15% impact)",
+      "breakeven_rainfall": "2800 mm minimum"
+    }
+  },
+  {
+    "id": "stochastic-002",
+    "scenario_type": "SUPPLY_CHAIN_DISRUPTION",
+    "model": "Stochastic Process - Multi-Echelon Supply Chain",
+    "parameters": {
+      "supply_nodes": {
+        "farmer_suppliers": 300,
+        "collection_centers": 5,
+        "processing_plants": 1,
+        "distribution_centers": 3,
+        "customers": 500
+      },
+      "disruption_probabilities": {
+        "farmer_default": {
+          "distribution": "exponential",
+          "rate": 0.02,
+          "recovery_time": "14 days"
+        },
+        "transport_failure": {
+          "distribution": "weibull",
+          "shape": 2.5,
+          "scale": 30,
+          "unit": "days"
+        },
+        "plant_breakdown": {
+          "distribution": "gamma",
+          "shape": 2,
+          "rate": 0.1,
+          "downtime_cost": "Rp 100 juta/day"
+        }
+      }
+    },
+    "simulation_results": {
+      "service_level": {
+        "current_baseline": 0.92,
+        "under_disruption": {
+          "p10": 0.75,
+          "p50": 0.85,
+          "p90": 0.91
+        }
+      },
+      "financial_impact": {
+        "lost_sales": {
+          "p50": "Rp 2.5 miliar/year",
+          "p95": "Rp 8 miliar/year"
+        },
+        "expedite_costs": {
+          "p50": "Rp 800 juta/year",
+          "p95": "Rp 2 miliar/year"
+        },
+        "inventory_holding": {
+          "optimal_buffer": "Rp 3.2 miliar",
+          "current": "Rp 1.8 miliar",
+          "gap": "Rp 1.4 miliar"
+        }
+      },
+      "resilience_metrics": {
+        "time_to_recover": {
+          "p50": "7 days",
+          "p95": "21 days"
+        },
+        "cascade_effect": "2.3x amplification",
+        "critical_nodes": ["Collection Center 2", "Transport Route A3"]
+      }
+    },
+    "optimization_strategies": {
+      "network_redesign": {
+        "additional_collection_centers": 2,
+        "backup_transport_routes": 3,
+        "cost": "Rp 4 miliar",
+        "resilience_improvement": "45%"
+      },
+      "inventory_positioning": {
+        "strategic_stock_points": 5,
+        "safety_stock_levels": "Dynamic EOQ+20%",
+        "investment": "Rp 2.5 miliar",
+        "service_level_gain": "5%"
+      },
+      "dual_sourcing": {
+        "critical_materials": 8,
+        "supplier_qualification": "Rp 500 juta",
+        "premium_cost": "3-5%",
+        "risk_reduction": "60%"
+      }
+    }
+  },
+  {
+    "id": "bayesian-003",
+    "scenario_type": "MARKET_DEMAND_FORECASTING",
+    "model": "Bayesian Hierarchical Model with External Factors",
+    "parameters": {
+      "demand_drivers": {
+        "gdp_growth": {
+          "prior": "normal(3, 1)",
+          "elasticity": 1.2
+        },
+        "competitor_pricing": {
+          "prior": "student_t(3, 0, 1)",
+          "cross_elasticity": -0.8
+        },
+        "health_trend_index": {
+          "prior": "gamma(2, 2)",
+          "impact_coefficient": 0.3
+        },
+        "seasonality": {
+          "fourier_terms": 4,
+          "amplitude_prior": "half_normal(0, 1)"
+        }
+      },
+      "hierarchical_structure": {
+        "national_level": "Population effect",
+        "regional_level": "5 regions",
+        "channel_level": "B2B, B2C, Export",
+        "product_level": "15 SKUs"
+      }
+    },
+    "posterior_predictions": {
+      "baseline_forecast": {
+        "year_1": {
+          "mean": 1450,
+          "ci_95": [1200, 1700],
+          "unit": "ton"
+        },
+        "year_3": {
+          "mean": 1850,
+          "ci_95": [1400, 2300],
+          "unit": "ton"
+        },
+        "year_5": {
+          "mean": 2200,
+          "ci_95": [1600, 2800],
+          "unit": "ton"
+        }
+      },
+      "scenario_analysis": {
+        "economic_recession": {
+          "demand_drop": "25%",
+          "probability": 0.20,
+          "revenue_impact": "Rp 30 miliar"
+        },
+        "health_boom": {
+          "demand_surge": "40%",
+          "probability": 0.15,
+          "capacity_constraint": "Yes at 1800 ton"
+        },
+        "competitor_entry": {
+          "market_share_loss": "15%",
+          "probability": 0.35,
+          "mitigation_cost": "Rp 5 miliar"
+        }
+      }
+    },
+    "adaptive_strategies": {
+      "capacity_planning": {
+        "flexible_capacity": "±30% swing",
+        "investment": "Rp 12 miliar",
+        "breakeven_utilization": "65%"
+      },
+      "revenue_management": {
+        "dynamic_pricing": "AI-based",
+        "yield_optimization": "+15% revenue",
+        "implementation": "Rp 2 miliar"
+      },
+      "product_portfolio": {
+        "scenario_based_mix": "Adaptive SKU management",
+        "new_product_pipeline": "3 launches/year",
+        "r_and_d_budget": "Rp 4 miliar/year"
+      }
+    }
+  },
+  {
+    "id": "markov-004",
+    "scenario_type": "EQUIPMENT_RELIABILITY_OPTIMIZATION",
+    "model": "Markov Chain - Multi-State Degradation",
+    "parameters": {
+      "equipment_states": {
+        "new": "State 1 - Optimal performance",
+        "good": "State 2 - Minor degradation",
+        "fair": "State 3 - Noticeable degradation",
+        "poor": "State 4 - Major issues",
+        "failed": "State 5 - Complete failure"
+      },
+      "transition_matrix": {
+        "daily_probabilities": [
+          [0.995, 0.004, 0.001, 0, 0],
+          [0, 0.990, 0.008, 0.002, 0],
+          [0, 0, 0.985, 0.012, 0.003],
+          [0, 0, 0, 0.970, 0.030],
+          [0, 0, 0, 0, 1.000]
+        ]
+      },
+      "cost_structure": {
+        "preventive_maintenance": {
+          "state_2": "Rp 5 juta",
+          "state_3": "Rp 15 juta",
+          "state_4": "Rp 40 juta"
+        },
+        "corrective_maintenance": {
+          "state_5": "Rp 150 juta"
+        },
+        "production_loss": {
+          "state_3": "Rp 10 juta/day",
+          "state_4": "Rp 30 juta/day",
+          "state_5": "Rp 100 juta/day"
+        }
+      }
+    },
+    "steady_state_analysis": {
+      "long_run_probabilities": {
+        "state_1": 0.45,
+        "state_2": 0.30,
+        "state_3": 0.15,
+        "state_4": 0.08,
+        "state_5": 0.02
+      },
+      "expected_costs": {
+        "current_policy": "Rp 850 juta/year",
+        "optimal_policy": "Rp 520 juta/year",
+        "savings_potential": "Rp 330 juta/year"
+      }
+    },
+    "optimal_maintenance_policy": {
+      "inspection_interval": {
+        "critical_equipment": "7 days",
+        "standard_equipment": "14 days",
+        "low_priority": "30 days"
+      },
+      "intervention_thresholds": {
+        "preventive_at_state": 3,
+        "immediate_at_state": 4,
+        "condition_monitoring": "Continuous for critical"
+      },
+      "resource_allocation": {
+        "maintenance_crew": "15 technicians",
+        "spare_parts_inventory": "Rp 2 miliar",
+        "predictive_tools": "Rp 800 juta investment"
+      }
+    }
+  },
+  {
+    "id": "system-dynamics-005",
+    "scenario_type": "SUSTAINABILITY_TRANSITION_PATHWAY",
+    "model": "System Dynamics - Carbon Neutral Transformation",
+    "parameters": {
+      "stocks": {
+        "carbon_emissions": {
+          "initial": 15000,
+          "unit": "tCO2e/year"
+        },
+        "renewable_capacity": {
+          "initial": 0.5,
+          "unit": "MW"
+        },
+        "sustainable_practices_adoption": {
+          "initial": 0.25,
+          "unit": "fraction"
+        },
+        "green_investment_fund": {
+          "initial": 5,
+          "unit": "Rp miliar"
+        }
+      },
+      "flows": {
+        "emission_reduction_rate": "f(renewable_capacity, practices)",
+        "investment_rate": "f(carbon_price, regulations)",
+        "adoption_rate": "f(incentives, awareness)",
+        "technology_improvement": "learning_curve(0.85)"
+      },
+      "feedback_loops": {
+        "positive": [
+          "Green premium → Investment → Capacity → Premium",
+          "Adoption → Network effect → More adoption"
+        ],
+        "negative": [
+          "High cost → Resistance → Slow adoption",
+          "Emissions → Regulations → Cost → Reduction"
+        ]
+      }
+    },
+    "simulation_timeline": {
+      "year_1": {
+        "emissions": 14200,
+        "renewable_fraction": 0.15,
+        "investment_needed": "Rp 12 miliar",
+        "adoption_rate": 0.35
+      },
+      "year_3": {
+        "emissions": 10500,
+        "renewable_fraction": 0.45,
+        "investment_cumulative": "Rp 35 miliar",
+        "adoption_rate": 0.65
+      },
+      "year_5": {
+        "emissions": 6000,
+        "renewable_fraction": 0.75,
+        "investment_cumulative": "Rp 60 miliar",
+        "adoption_rate": 0.85
+      },
+      "carbon_neutral_date": {
+        "optimistic": "Year 7",
+        "realistic": "Year 9",
+        "pessimistic": "Year 12"
+      }
+    },
+    "tipping_points": {
+      "critical_mass_adoption": {
+        "threshold": 0.60,
+        "acceleration_factor": 2.5,
+        "timeframe": "Year 2-3"
+      },
+      "regulatory_shift": {
+        "carbon_price_trigger": "$50/tCO2",
+        "probability": 0.70,
+        "impact": "Mandatory compliance"
+      },
+      "technology_breakthrough": {
+        "cost_parity_renewable": "Year 4",
+        "storage_viability": "Year 3",
+        "impact": "Exponential adoption"
+      }
+    }
+  },
+  {
+    "id": "agent-based-006",
+    "scenario_type": "FARMER_ECOSYSTEM_EVOLUTION",
+    "model": "Agent-Based Model - Smallholder Integration",
+    "parameters": {
+      "agent_types": {
+        "progressive_farmers": {
+          "count": 50,
+          "technology_adoption": 0.80,
+          "risk_tolerance": "high",
+          "influence_radius": 5
+        },
+        "traditional_farmers": {
+          "count": 200,
+          "technology_adoption": 0.20,
+          "risk_tolerance": "low",
+          "influence_radius": 2
+        },
+        "young_farmers": {
+          "count": 50,
+          "technology_adoption": 0.90,
+          "risk_tolerance": "medium",
+          "influence_radius": 8
+        }
+      },
+      "interaction_rules": {
+        "knowledge_transfer": "Distance-based probability",
+        "trust_building": "Success demonstration effect",
+        "collective_action": "Threshold model (30%)",
+        "market_access": "Group size advantage"
+      },
+      "environmental_factors": {
+        "price_volatility": "±20% annual",
+        "climate_shocks": "Poisson(λ=0.3)",
+        "government_support": "Cyclic 4-year",
+        "technology_cost": "Declining 10%/year"
+      }
+    },
+    "emergence_patterns": {
+      "cluster_formation": {
+        "timeline": "Month 6-12",
+        "size_distribution": "Power law",
+        "stability": "High after 18 months",
+        "productivity_gain": "35% for clusters"
+      },
+      "innovation_diffusion": {
+        "early_adopters": "15% by month 6",
+        "majority": "50% by month 24",
+        "laggards": "15% never adopt",
+        "s_curve_inflection": "Month 14"
+      },
+      "collective_bargaining": {
+        "emergence": "When cluster >30 farmers",
+        "price_premium": "12-18%",
+        "stability_condition": "Trust index >0.7"
+      }
+    },
+    "intervention_scenarios": {
+      "subsidy_program": {
+        "cost": "Rp 3 miliar/year",
+        "adoption_acceleration": "40%",
+        "roi": "250% social return"
+      },
+      "demonstration_plots": {
+        "investment": "Rp 500 juta",
+        "influence_multiplier": 3.5,
+        "conversion_rate": "25% viewers"
+      },
+      "digital_platform": {
+        "development": "Rp 1 miliar",
+        "network_effects": "Exponential after 100 users",
+        "transaction_value": "Rp 15 miliar/year potential"
+      }
+    }
+  },
+  {
+    "id": "real-options-007",
+    "scenario_type": "TECHNOLOGY_INVESTMENT_FLEXIBILITY",
+    "model": "Real Options Valuation - Sequential Innovation",
+    "parameters": {
+      "investment_stages": {
+        "stage_1_pilot": {
+          "cost": 5,
+          "duration": 1,
+          "success_probability": 0.60
+        },
+        "stage_2_scale": {
+          "cost": 20,
+          "duration": 2,
+          "success_probability": 0.75
+        },
+        "stage_3_commercialize": {
+          "cost": 50,
+          "duration": 2,
+          "success_probability": 0.85
+        }
+      },
+      "uncertainty_parameters": {
+        "market_volatility": 0.35,
+        "technology_volatility": 0.25,
+        "regulatory_volatility": 0.20
+      },
+      "payoff_structure": {
+        "breakthrough_success": {
+          "probability": 0.15,
+          "value": 500,
+          "time_to_payoff": 5
+        },
+        "moderate_success": {
+          "probability": 0.50,
+          "value": 150,
+          "time_to_payoff": 4
+        },
+        "marginal_success": {
+          "probability": 0.25,
+          "value": 80,
+          "time_to_payoff": 3
+        },
+        "failure": {
+          "probability": 0.10,
+          "value": -20,
+          "sunk_cost": "Yes"
+        }
+      }
+    },
+    "option_values": {
+      "american_call_option": {
+        "value": 95.3,
+        "optimal_exercise": "Month 14",
+        "threshold_signal": "Market share >5%"
+      },
+      "compound_option": {
+        "pilot_option_value": 42.7,
+        "scale_option_value": 28.5,
+        "total_project_value": 71.2
+      },
+      "abandonment_option": {
+        "value": 8.5,
+        "trigger": "Market share <2%",
+        "salvage_value": 15
+      },
+      "switching_option": {
+        "value": 12.3,
+        "alternative_use": "Contract manufacturing",
+        "switching_cost": 10
+      }
+    },
+    "decision_tree_outcomes": {
+      "go_path": {
+        "probability": 0.65,
+        "expected_npv": 125.5,
+        "break_even": "Year 3.2"
+      },
+      "wait_path": {
+        "probability": 0.25,
+        "expected_npv": 87.3,
+        "information_value": 15.2
+      },
+      "pivot_path": {
+        "probability": 0.10,
+        "expected_npv": 45.6,
+        "learning_value": "High"
+      }
+    },
+    "strategic_flexibility": {
+      "modular_investment": "Reduce commitment 60%",
+      "partnership_options": "Share risk 50%",
+      "timing_flexibility": "±18 months window",
+      "scale_flexibility": "30% to 150% capacity"
+    }
+  },
+  {
+    "id": "network-effects-008",
+    "scenario_type": "DIGITAL_PLATFORM_GROWTH",
+    "model": "Network Dynamics - Multi-Sided Platform",
+    "parameters": {
+      "user_segments": {
+        "farmers": {
+          "initial": 50,
+          "growth_rate": "exponential",
+          "churn_rate": 0.05,
+          "value_per_user": 100000
+        },
+        "buyers": {
+          "initial": 20,
+          "growth_rate": "linear+network",
+          "churn_rate": 0.10,
+          "value_per_user": 500000
+        },
+        "service_providers": {
+          "initial": 10,
+          "growth_rate": "threshold",
+          "churn_rate": 0.03,
+          "value_per_user": 200000
+        }
+      },
+      "network_effects": {
+        "same_side": {
+          "farmers": 0.3,
+          "buyers": 0.2,
+          "providers": 0.1
+        },
+        "cross_side": {
+          "farmers_buyers": 0.8,
+          "buyers_providers": 0.6,
+          "providers_farmers": 0.5
+        }
+      },
+      "platform_economics": {
+        "take_rate": 0.03,
+        "cac": {
+          "farmers": 50000,
+          "buyers": 200000,
+          "providers": 100000
+        },
+        "retention_cost": 0.2,
+        "platform_overhead": 5000000
+      }
+    },
+    "growth_scenarios": {
+      "organic_growth": {
+        "year_1_users": {
+          "farmers": 250,
+          "buyers": 80,
+          "providers": 35
+        },
+        "year_3_users": {
+          "farmers": 1200,
+          "buyers": 350,
+          "providers": 120
+        },
+        "gmv": {
+          "year_1": 500000000,
+          "year_3": 5000000000
+        },
+        "profitability": "Year 4"
+      },
+      "subsidized_growth": {
+        "investment": 10000000000,
+        "year_1_users": {
+          "farmers": 800,
+          "buyers": 250,
+          "providers": 100
+        },
+        "year_3_users": {
+          "farmers": 5000,
+          "buyers": 1200,
+          "providers": 400
+        },
+        "gmv": {
+          "year_1": 2000000000,
+          "year_3": 25000000000
+        },
+        "profitability": "Year 3"
+      }
+    },
+    "critical_mass_analysis": {
+      "tipping_point": {
+        "farmers": 500,
+        "buyers": 150,
+        "providers": 50
+      },
+      "time_to_critical_mass": {
+        "organic": "18 months",
+        "subsidized": "8 months"
+      },
+      "failure_probability": {
+        "organic": 0.35,
+        "subsidized": 0.15
+      }
+    },
+    "competitive_dynamics": {
+      "winner_take_all_probability": 0.65,
+      "market_share_equilibrium": {
+        "leader": 0.60,
+        "challenger": 0.25,
+        "others": 0.15
+      },
+      "defensive_moat": {
+        "data_advantage": "After 1000 users",
+        "switching_cost": "High after year 2",
+        "brand_loyalty": "Medium"
+      }
+    }
+  },
+  {
+    "id": "climate-risk-009",
+    "scenario_type": "CLIMATE_ADAPTATION_PATHWAYS",
+    "model": "Integrated Assessment Model - Climate Impacts",
+    "parameters": {
+      "climate_scenarios": {
+        "rcp_2.6": {
+          "temperature_increase": 1.5,
+          "rainfall_change": -0.05,
+          "extreme_events": 1.2
+        },
+        "rcp_4.5": {
+          "temperature_increase": 2.5,
+          "rainfall_change": -0.10,
+          "extreme_events": 1.5
+        },
+        "rcp_8.5": {
+          "temperature_increase": 4.0,
+          "rainfall_change": -0.20,
+          "extreme_events": 2.0
+        }
+      },
+      "impact_functions": {
+        "yield_temperature": "quadratic",
+        "yield_rainfall": "threshold",
+        "quality_temperature": "linear_negative",
+        "pest_temperature": "exponential"
+      },
+      "adaptation_options": {
+        "shade_trees": {
+          "cost": 10000000,
+          "effectiveness": 0.30,
+          "implementation_time": 3
+        },
+        "drought_varieties": {
+          "cost": 25000000,
+          "effectiveness": 0.45,
+          "implementation_time": 5
+        },
+        "irrigation_upgrade": {
+          "cost": 40000000,
+          "effectiveness": 0.60,
+          "implementation_time": 2
+        },
+        "elevation_migration": {
+          "cost": 100000000,
+          "effectiveness": 0.80,
+          "implementation_time": 10
+        }
+      }
+    },
+    "impact_projections": {
+      "without_adaptation": {
+        "2030": {
+          "yield_loss": 0.15,
+          "quality_degradation": 0.10,
+          "area_suitable": 0.85,
+          "economic_loss": 25000000000
+        },
+        "2050": {
+          "yield_loss": 0.35,
+          "quality_degradation": 0.25,
+          "area_suitable": 0.60,
+          "economic_loss": 75000000000
+        }
+      },
+      "with_adaptation": {
+        "2030": {
+          "yield_loss": 0.05,
+          "quality_degradation": 0.03,
+          "area_suitable": 0.95,
+          "economic_loss": 8000000000
+        },
+        "2050": {
+          "yield_loss": 0.12,
+          "quality_degradation": 0.08,
+          "area_suitable": 0.80,
+          "economic_loss": 25000000000
+        }
+      }
+    },
+    "robust_decision_making": {
+      "no_regret_actions": [
+        "Water conservation infrastructure",
+        "Crop diversification",
+        "Soil health improvement"
+      ],
+      "adaptive_management": {
+        "monitoring_indicators": [
+          "Temperature trends",
+          "Rainfall patterns",
+          "Pest populations",
+          "Yield trends"
+        ],
+        "decision_triggers": {
+          "temperature_threshold": 1.0,
+          "yield_decline": 0.10,
+          "pest_outbreak": 2
+        }
+      },
+      "portfolio_approach": {
+        "low_risk": 0.40,
+        "medium_risk": 0.40,
+        "transformative": 0.20
+      }
+    }
+  },
+  {
+    "id": "financial-stress-010",
+    "scenario_type": "FINANCIAL_CRISIS_RESILIENCE",
+    "model": "Stress Testing - Multiple Shock Scenarios",
+    "parameters": {
+      "shock_scenarios": {
+        "currency_crisis": {
+          "idr_depreciation": 0.40,
+          "inflation": 0.15,
+          "interest_rate": 0.20,
+          "duration": 18
+        },
+        "commodity_crash": {
+          "tea_price_drop": 0.50,
+          "demand_contraction": 0.30,
+          "duration": 24
+        },
+        "pandemic_2.0": {
+          "lockdown_duration": 6,
+          "demand_shift": -0.40,
+          "supply_disruption": 0.60,
+          "recovery_time": 36
+        },
+        "combined_crisis": {
+          "probability": 0.05,
+          "severity_multiplier": 1.5,
+          "correlation": 0.8
+        }
+      },
+      "financial_buffers": {
+        "cash_reserves": {
+          "current": 5000000000,
+          "minimum_required": 3000000000,
+          "optimal": 8000000000
+        },
+        "credit_facilities": {
+          "committed": 10000000000,
+          "uncommitted": 5000000000,
+          "utilization": 0.30
+        },
+        "hedging_positions": {
+          "currency": 0.60,
+          "commodity": 0.40,
+          "interest_rate": 0.20
+        }
+      }
+    },
+    "stress_test_results": {
+      "base_case": {
+        "debt_service_coverage": 3.5,
+        "current_ratio": 2.1,
+        "quick_ratio": 1.4,
+        "z_score": 2.8
+      },
+      "stressed_scenarios": {
+        "currency_crisis": {
+          "debt_service_coverage": 1.8,
+          "current_ratio": 1.2,
+          "quick_ratio": 0.8,
+          "z_score": 1.5,
+          "survival_probability": 0.85
+        },
+        "commodity_crash": {
+          "debt_service_coverage": 1.2,
+          "current_ratio": 1.0,
+          "quick_ratio": 0.6,
+          "z_score": 1.1,
+          "survival_probability": 0.70
+        },
+        "combined_crisis": {
+          "debt_service_coverage": 0.8,
+          "current_ratio": 0.7,
+          "quick_ratio": 0.4,
+          "z_score": 0.6,
+          "survival_probability": 0.45
+        }
+      }
+    },
+    "mitigation_strategies": {
+      "immediate_actions": {
+        "cost_reduction": {
+          "target": 0.25,
+          "areas": ["Discretionary", "Marketing", "Capex deferral"],
+          "savings": 15000000000
+        },
+        "working_capital": {
+          "inventory_reduction": 0.30,
+          "receivables_acceleration": 15,
+          "payables_extension": 30,
+          "cash_generation": 8000000000
+        }
+      },
+      "structural_changes": {
+        "business_model": {
+          "asset_light": "Increase outsourcing",
+          "revenue_diversification": "Subscription model",
+          "cost_variabilization": 0.60
+        },
+        "financial_restructuring": {
+          "debt_refinancing": "Extend maturity",
+          "equity_injection": 20000000000,
+          "asset_sales": 10000000000
+        }
+      }
+    }
+  },
+  {
+    "id": "game-theory-011",
+    "scenario_type": "COMPETITIVE_MARKET_DYNAMICS",
+    "model": "Game Theory - Multi-Player Competition",
+    "parameters": {
+      "players": {
+        "pagilaran": {
+          "market_share": 0.15,
+          "cost_structure": 100,
+          "brand_strength": 7
+        },
+        "competitor_a": {
+          "market_share": 0.25,
+          "cost_structure": 90,
+          "brand_strength": 8
+        },
+        "competitor_b": {
+          "market_share": 0.20,
+          "cost_structure": 95,
+          "brand_strength": 6
+        },
+        "new_entrant": {
+          "market_share": 0,
+          "cost_structure": 85,
+          "brand_strength": 5
+        }
+      },
+      "strategic_options": {
+        "price_war": {
+          "payoff_matrix": [
+            [50, 30, 20, 10],
+            [30, 40, 25, 15],
+            [20, 25, 45, 20],
+            [10, 15, 20, 35]
+          ]
+        },
+        "innovation_race": {
+          "cost": [20, 25, 22, 30],
+          "success_probability": [0.6, 0.7, 0.5, 0.4],
+          "market_gain": [0.1, 0.12, 0.08, 0.15]
+        },
+        "collaboration": {
+          "coalition_options": ["AB", "AC", "BC", "ABC"],
+          "synergy_value": [15, 10, 12, 25],
+          "regulatory_risk": [0.2, 0.15, 0.18, 0.35]
+        }
+      }
+    },
+    "equilibrium_analysis": {
+      "nash_equilibrium": {
+        "strategy_profile": ["Differentiate", "Premium", "Value", "Niche"],
+        "market_shares": [0.18, 0.23, 0.19, 0.05],
+        "profit_levels": [85, 92, 78, 25]
+      },
+      "dynamic_equilibrium": {
+        "period_1": {
+          "actions": ["Invest", "Wait", "Expand", "Enter"],
+          "outcomes": [0.16, 0.24, 0.21, 0.02]
+        },
+        "period_3": {
+          "actions": ["Premium", "Maintain", "Acquire", "Partner"],
+          "outcomes": [0.20, 0.22, 0.25, 0.08]
+        },
+        "long_run": {
+          "market_structure": "Oligopoly",
+          "hhi_index": 2850,
+          "stability": "Moderate"
+        }
+      }
+    },
+    "strategic_recommendations": {
+      "dominant_strategy": "Innovation + Premium positioning",
+      "defensive_moves": {
+        "loyalty_program": 5000000000,
+        "switching_costs": "Increase 30%",
+        "exclusive_contracts": "Key accounts"
+      },
+      "offensive_moves": {
+        "market_expansion": "Tier 2-3 cities",
+        "product_innovation": "Functional teas",
+        "digital_disruption": "D2C platform"
+      },
+      "contingency_plans": {
+        "price_war_response": "Value bundling",
+        "new_entrant_response": "Acquisition option",
+        "coalition_response": "Counter-alliance"
+      }
+    }
+  },
+  {
+    "id": "portfolio-optimization-012",
+    "scenario_type": "PRODUCT_PORTFOLIO_OPTIMIZATION",
+    "model": "Modern Portfolio Theory - Product Mix",
+    "parameters": {
+      "products": {
+        "black_tea_commodity": {
+          "expected_return": 0.12,
+          "volatility": 0.08,
+          "current_allocation": 0.40
+        },
+        "premium_orthodox": {
+          "expected_return": 0.25,
+          "volatility": 0.15,
+          "current_allocation": 0.20
+        },
+        "green_tea": {
+          "expected_return": 0.18,
+          "volatility": 0.12,
+          "current_allocation": 0.15
+        },
+        "rtd_beverages": {
+          "expected_return": 0.30,
+          "volatility": 0.25,
+          "current_allocation": 0.10
+        },
+        "tea_extracts": {
+          "expected_return": 0.35,
+          "volatility": 0.30,
+          "current_allocation": 0.05
+        },
+        "agrotourism": {
+          "expected_return": 0.20,
+          "volatility": 0.20,
+          "current_allocation": 0.10
+        }
+      },
+      "correlation_matrix": [
+        [1.00, 0.70, 0.60, 0.30, 0.20, 0.10],
+        [0.70, 1.00, 0.50, 0.40, 0.30, 0.15],
+        [0.60, 0.50, 1.00, 0.35, 0.25, 0.12],
+        [0.30, 0.40, 0.35, 1.00, 0.45, 0.20],
+        [0.20, 0.30, 0.25, 0.45, 1.00, 0.18],
+        [0.10, 0.15, 0.12, 0.20, 0.18, 1.00]
+      ],
+      "constraints": {
+        "production_capacity": 1.0,
+        "market_demand": [0.60, 0.30, 0.25, 0.20, 0.15, 0.15],
+        "minimum_allocation": [0.20, 0.10, 0.10, 0.05, 0.02, 0.05],
+        "investment_budget": 50000000000
+      }
+    },
+    "optimization_results": {
+      "efficient_frontier": {
+        "minimum_variance": {
+          "allocation": [0.35, 0.15, 0.20, 0.10, 0.05, 0.15],
+          "expected_return": 0.175,
+          "volatility": 0.095
+        },
+        "maximum_sharpe": {
+          "allocation": [0.25, 0.20, 0.15, 0.15, 0.15, 0.10],
+          "expected_return": 0.225,
+          "volatility": 0.125,
+          "sharpe_ratio": 1.40
+        },
+        "target_return_20": {
+          "allocation": [0.30, 0.18, 0.17, 0.12, 0.10, 0.13],
+          "expected_return": 0.200,
+          "volatility": 0.108
+        }
+      },
+      "scenario_analysis": {
+        "bullish_market": {
+          "optimal_allocation": [0.20, 0.25, 0.15, 0.20, 0.15, 0.05],
+          "expected_return": 0.265,
+          "var_95": -0.08
+        },
+        "bearish_market": {
+          "optimal_allocation": [0.45, 0.15, 0.20, 0.05, 0.05, 0.10],
+          "expected_return": 0.145,
+          "var_95": -0.05
+        },
+        "disruption_scenario": {
+          "optimal_allocation": [0.15, 0.15, 0.20, 0.25, 0.20, 0.05],
+          "expected_return": 0.245,
+          "var_95": -0.12
+        }
+      }
+    },
+    "implementation_roadmap": {
+      "year_1": {
+        "shifts": {
+          "reduce_commodity": -0.10,
+          "increase_rtd": 0.05,
+          "increase_extracts": 0.05
+        },
+        "investment": 15000000000,
+        "expected_impact": 0.05
+      },
+      "year_3": {
+        "target_portfolio": [0.25, 0.20, 0.15, 0.15, 0.15, 0.10],
+        "cumulative_investment": 40000000000,
+        "expected_return_improvement": 0.08
+      },
+      "year_5": {
+        "optimized_portfolio": [0.20, 0.22, 0.13, 0.18, 0.17, 0.10],
+        "total_transformation_cost": 55000000000,
+        "return_on_transformation": 2.80
+      }
+    }
+  },
+  {
+    "id": "queue-theory-013",
+    "scenario_type": "PROCESSING_CAPACITY_OPTIMIZATION",
+    "model": "Queuing Theory - Multi-Stage Production",
+    "parameters": {
+      "arrival_process": {
+        "harvest_rate": {
+          "distribution": "poisson",
+          "lambda": 50,
+          "unit": "tons/day",
+          "seasonality": [1.5, 1.3, 1.0, 0.7]
+        },
+        "quality_distribution": {
+          "premium": 0.30,
+          "standard": 0.50,
+          "low": 0.20
+        }
+      },
+      "service_stations": {
+        "withering": {
+          "servers": 10,
+          "service_rate": 6,
+          "unit": "tons/day/server",
+          "utilization": 0.83
+        },
+        "rolling": {
+          "servers": 5,
+          "service_rate": 12,
+          "unit": "tons/day/server",
+          "utilization": 0.83
+        },
+        "fermentation": {
+          "servers": 8,
+          "service_rate": 7.5,
+          "unit": "tons/day/server",
+          "utilization": 0.83
+        },
+        "drying": {
+          "servers": 4,
+          "service_rate": 15,
+          "unit": "tons/day/server",
+          "utilization": 0.83
+        }
+      },
+      "costs": {
+        "waiting_cost": 100000,
+        "unit": "per_ton_per_hour",
+        "server_cost": {
+          "withering": 5000000,
+          "rolling": 8000000,
+          "fermentation": 6000000,
+          "drying": 10000000
+        },
+        "quality_degradation": {
+          "rate": 0.02,
+          "threshold": 4
+        }
+      }
+    },
+    "performance_metrics": {
+      "current_system": {
+        "average_wait_time": {
+          "withering": 2.5,
+          "rolling": 1.8,
+          "fermentation": 3.2,
+          "drying": 1.5
+        },
+        "queue_length": {
+          "withering": 12.5,
+          "rolling": 9.0,
+          "fermentation": 16.0,
+          "drying": 7.5
+        },
+        "throughput": 48,
+        "quality_loss": 0.08,
+        "total_cost": 850000000
+      },
+      "optimized_system": {
+        "recommended_servers": {
+          "withering": 12,
+          "rolling": 5,
+          "fermentation": 10,
+          "drying": 5
+        },
+        "expected_performance": {
+          "average_wait_time": [1.2, 1.5, 1.8, 1.0],
+          "throughput": 58,
+          "quality_loss": 0.03,
+          "total_cost": 720000000
+        }
+      }
+    },
+    "bottleneck_analysis": {
+      "primary_bottleneck": "Fermentation stage",
+      "secondary_bottleneck": "Withering capacity",
+      "improvement_options": {
+        "parallel_processing": {
+          "investment": 25000000,
+          "capacity_gain": 0.20,
+          "roi": 1.80
+        },
+        "technology_upgrade": {
+          "investment": 40000000,
+          "efficiency_gain": 0.30,
+          "roi": 2.20
+        },
+        "process_reengineering": {
+          "investment": 15000000,
+          "flow_improvement": 0.25,
+          "roi": 3.50
+        }
+      }
+    }
+  },
+  {
+    "id": "reinforcement-learning-014",
+    "scenario_type": "DYNAMIC_PRICING_OPTIMIZATION",
+    "model": "Reinforcement Learning - Multi-Armed Bandit",
+    "parameters": {
+      "state_space": {
+        "inventory_level": ["low", "medium", "high"],
+        "market_demand": ["weak", "normal", "strong"],
+        "competitor_price": ["below", "at", "above"],
+        "season": ["peak", "regular", "off"]
+      },
+      "action_space": {
+        "price_levels": [0.8, 0.9, 1.0, 1.1, 1.2],
+        "promotion": ["none", "light", "heavy"],
+        "channel": ["all", "selective", "exclusive"]
+      },
+      "reward_function": {
+        "revenue_weight": 0.40,
+        "profit_weight": 0.35,
+        "market_share_weight": 0.15,
+        "inventory_cost_weight": -0.10
+      },
+      "learning_parameters": {
+        "exploration_rate": 0.15,
+        "learning_rate": 0.01,
+        "discount_factor": 0.95,
+        "episodes": 10000
+      }
+    },
+    "learned_policy": {
+      "optimal_actions": {
+        "high_demand_low_inventory": {
+          "price": 1.2,
+          "promotion": "none",
+          "expected_reward": 0.92
+        },
+        "normal_demand_medium_inventory": {
+          "price": 1.0,
+          "promotion": "light",
+          "expected_reward": 0.78
+        },
+        "low_demand_high_inventory": {
+          "price": 0.8,
+          "promotion": "heavy",
+          "expected_reward": 0.65
+        }
+      },
+      "performance_improvement": {
+        "baseline_revenue": 100,
+        "rl_optimized_revenue": 118,
+        "profit_improvement": 0.22,
+        "inventory_reduction": 0.30
+      }
+    },
+    "adaptation_scenarios": {
+      "new_competitor_entry": {
+        "detection_time": "3 days",
+        "policy_adjustment": "Automatic",
+        "revenue_protection": 0.85
+      },
+      "demand_shock": {
+        "response_time": "Real-time",
+        "price_flexibility": "±30%",
+        "stability_recovery": "7 days"
+      },
+      "supply_disruption": {
+        "allocation_optimization": "Channel priority",
+        "margin_protection": 0.90,
+        "customer_retention": 0.88
+      }
+    }
+  },
+  {
+    "id": "econometric-forecast-015",
+    "scenario_type": "MACROECONOMIC_IMPACT_ANALYSIS",
+    "model": "Vector Autoregression - Economic Indicators",
+    "parameters": {
+      "endogenous_variables": {
+        "tea_demand": "Domestic consumption",
+        "tea_price": "Wholesale price index",
+        "gdp_growth": "National GDP growth rate",
+        "inflation": "CPI Indonesia",
+        "exchange_rate": "IDR/USD"
+      },
+      "exogenous_variables": {
+        "global_tea_price": "FAO index",
+        "oil_price": "Brent crude",
+        "weather_index": "ENSO indicator",
+        "policy_dummy": "Trade restrictions"
+      },
+      "model_specification": {
+        "lag_order": 4,
+        "cointegration_rank": 2,
+        "error_correction": "VECM"
+      }
+    },
+    "impulse_response_analysis": {
+      "gdp_shock_1_percent": {
+        "tea_demand_response": [0.3, 0.5, 0.7, 0.8, 0.7, 0.6],
+        "tea_price_response": [0.1, 0.2, 0.3, 0.2, 0.1, 0.0],
+        "cumulative_impact": 0.65,
+        "duration": "6 quarters"
+      },
+      "exchange_rate_depreciation_10_percent": {
+        "export_competitiveness": [1.5, 2.2, 2.8, 2.5, 2.0, 1.5],
+        "import_cost_increase": [1.0, 1.3, 1.2, 1.0, 0.8, 0.5],
+        "net_profit_impact": [-0.5, 0.2, 0.8, 1.2, 1.0, 0.8],
+        "break_even_quarter": 2
+      },
+      "inflation_spike_5_percent": {
+        "real_demand_impact": [-0.8, -1.2, -1.0, -0.7, -0.5, -0.3],
+        "pricing_power": [0.6, 0.7, 0.6, 0.5, 0.4, 0.3],
+        "margin_compression": [-0.3, -0.4, -0.3, -0.2, -0.1, 0.0]
+      }
+    },
+    "scenario_forecasts": {
+      "baseline": {
+        "gdp_growth": [5.2, 5.3, 5.4, 5.3],
+        "tea_demand_growth": [3.5, 3.8, 4.0, 3.9],
+        "price_appreciation": [2.0, 2.5, 3.0, 2.8],
+        "probability": 0.60
+      },
+      "recession": {
+        "gdp_growth": [-1.5, 0.5, 2.0, 3.5],
+        "tea_demand_growth": [-5.0, -2.0, 1.0, 2.5],
+        "price_appreciation": [-3.0, -1.0, 1.0, 2.0],
+        "probability": 0.25
+      },
+      "boom": {
+        "gdp_growth": [7.0, 7.5, 7.2, 6.8],
+        "tea_demand_growth": [6.0, 7.0, 6.5, 6.0],
+        "price_appreciation": [4.0, 5.0, 4.5, 4.0],
+        "probability": 0.15
+      }
+    },
+    "policy_recommendations": {
+      "hedging_strategy": {
+        "currency_hedge_ratio": 0.60,
+        "commodity_hedge_ratio": 0.40,
+        "duration": "12-18 months"
+      },
+      "capacity_planning": {
+        "flexible_capacity": "±20%",
+        "inventory_buffer": "3 months",
+        "investment_timing": "Counter-cyclical"
+      },
+      "market_strategy": {
+        "domestic_focus": "Recession scenario",
+        "export_push": "Depreciation scenario",
+        "premium_shift": "Boom scenario"
+      }
+    }
+  },
+  {
+    "id": "behavioral-modeling-016",
+    "scenario_type": "CONSUMER_BEHAVIOR_EVOLUTION",
+    "model": "Agent-Based Behavioral Model - Market Adoption",
+    "parameters": {
+      "consumer_segments": {
+        "health_conscious": {
+          "size": 0.25,
+          "growth_rate": 0.15,
+          "price_sensitivity": 0.3,
+          "quality_preference": 0.9,
+          "social_influence": 0.6
+        },
+        "traditional": {
+          "size": 0.40,
+          "growth_rate": -0.02,
+          "price_sensitivity": 0.8,
+          "quality_preference": 0.5,
+          "social_influence": 0.3
+        },
+        "millennials": {
+          "size": 0.20,
+          "growth_rate": 0.10,
+          "price_sensitivity": 0.5,
+          "quality_preference": 0.7,
+          "social_influence": 0.9
+        },
+        "premium_seekers": {
+          "size": 0.15,
+          "growth_rate": 0.08,
+          "price_sensitivity": 0.2,
+          "quality_preference": 0.95,
+          "social_influence": 0.7
+        }
+      },
+      "influence_network": {
+        "connectivity": "small_world",
+        "average_degree": 12,
+        "clustering_coefficient": 0.4,
+        "influencer_nodes": 0.05
+      },
+      "decision_factors": {
+        "price": 0.30,
+        "quality": 0.25,
+        "brand": 0.20,
+        "convenience": 0.15,
+        "sustainability": 0.10
+      }
+    },
+    "diffusion_dynamics": {
+      "innovation_adoption": {
+        "innovators": {
+          "percentage": 0.025,
+          "time_to_adopt": "0-3 months",
+          "influence_multiplier": 5
+        },
+        "early_adopters": {
+          "percentage": 0.135,
+          "time_to_adopt": "3-12 months",
+          "influence_multiplier": 3
+        },
+        "early_majority": {
+          "percentage": 0.34,
+          "time_to_adopt": "12-24 months",
+          "influence_multiplier": 1.5
+        },
+        "late_majority": {
+          "percentage": 0.34,
+          "time_to_adopt": "24-36 months",
+          "influence_multiplier": 1
+        },
+        "laggards": {
+          "percentage": 0.16,
+          "time_to_adopt": ">36 months",
+          "influence_multiplier": 0.5
+        }
+      },
+      "tipping_points": {
+        "critical_mass": 0.16,
+        "social_proof_threshold": 0.30,
+        "market_maturity": 0.60
+      }
+    },
+    "market_evolution_scenarios": {
+      "organic_growth": {
+        "year_1_penetration": 0.08,
+        "year_3_penetration": 0.22,
+        "year_5_penetration": 0.38,
+        "steady_state": 0.45,
+        "time_to_steady_state": 7
+      },
+      "viral_marketing": {
+        "influencer_investment": 5000000000,
+        "year_1_penetration": 0.18,
+        "year_3_penetration": 0.45,
+        "year_5_penetration": 0.62,
+        "steady_state": 0.68,
+        "roi": 3.2
+      },
+      "disruption_scenario": {
+        "trigger": "Health trend acceleration",
+        "adoption_acceleration": 2.5,
+        "market_restructuring": "Premium shift",
+        "winner_characteristics": "Quality + sustainability"
+      }
+    },
+    "strategic_implications": {
+      "product_development": {
+        "priority_segments": ["health_conscious", "millennials"],
+        "feature_importance": {
+          "functional_benefits": 0.35,
+          "convenience": 0.25,
+          "sustainability": 0.20,
+          "price_value": 0.20
+        }
+      },
+      "marketing_strategy": {
+        "channel_effectiveness": {
+          "social_media": 0.40,
+          "influencer": 0.25,
+          "traditional": 0.20,
+          "experiential": 0.15
+        },
+        "message_testing": {
+          "health_focus": 0.78,
+          "heritage_story": 0.65,
+          "sustainability": 0.72,
+          "lifestyle": 0.81
+        }
+      }
+    }
+  },
+  {
+    "id": "supply-network-017",
+    "scenario_type": "SUPPLY_NETWORK_RESILIENCE",
+    "model": "Complex Network Analysis - Cascading Failures",
+    "parameters": {
+      "network_topology": {
+        "nodes": {
+          "farmers": 300,
+          "collection_points": 15,
+          "processors": 3,
+          "distributors": 20,
+          "retailers": 200
+        },
+        "edges": {
+          "total_connections": 850,
+          "average_degree": 4.2,
+          "clustering": 0.35,
+          "path_length": 3.8
+        },
+        "node_capacity": {
+          "distribution": "log_normal",
+          "mean": 100,
+          "variance": 30
+        }
+      },
+      "failure_propagation": {
+        "initial_failure_probability": 0.05,
+        "cascade_threshold": 0.8,
+        "recovery_rate": 0.1,
+        "correlation_distance": 2
+      },
+      "flow_dynamics": {
+        "normal_utilization": 0.70,
+        "peak_utilization": 0.90,
+        "redistribution_cost": 1.2,
+        "flow_priority": "shortest_path"
+      }
+    },
+    "vulnerability_assessment": {
+      "critical_nodes": {
+        "by_betweenness": ["CP-5", "CP-8", "PROC-1"],
+        "by_degree": ["DIST-3", "DIST-7", "CP-2"],
+        "by_flow": ["PROC-1", "CP-5", "DIST-3"]
+      },
+      "failure_scenarios": {
+        "single_node_failure": {
+          "average_impact": 0.12,
+          "worst_case": 0.35,
+          "recovery_time": 7
+        },
+        "correlated_failures": {
+          "average_impact": 0.38,
+          "worst_case": 0.72,
+          "recovery_time": 21
+        },
+        "targeted_attack": {
+          "top_5_nodes": 0.65,
+          "top_10_nodes": 0.85,
+          "complete_collapse": 15
+        }
+      },
+      "robustness_metrics": {
+        "percolation_threshold": 0.28,
+        "giant_component_size": 0.92,
+        "efficiency": 0.76,
+        "modularity": 0.42
+      }
+    },
+    "resilience_strategies": {
+      "redundancy_addition": {
+        "strategic_links": 25,
+        "cost": 8000000000,
+        "robustness_gain": 0.35,
+        "efficiency_loss": 0.08
+      },
+      "capacity_expansion": {
+        "critical_nodes": 10,
+        "investment": 12000000000,
+        "failure_reduction": 0.45,
+        "throughput_gain": 0.15
+      },
+      "decentralization": {
+        "new_processors": 2,
+        "new_collection_points": 10,
+        "investment": 25000000000,
+        "resilience_improvement": 0.60
+      },
+      "adaptive_routing": {
+        "technology_cost": 3000000000,
+        "response_time": "Real-time",
+        "efficiency_gain": 0.20,
+        "cascade_prevention": 0.70
+      }
+    },
+    "optimization_results": {
+      "pareto_frontier": {
+        "min_cost_solution": {
+          "investment": 15000000000,
+          "resilience": 0.75,
+          "efficiency": 0.82
+        },
+        "balanced_solution": {
+          "investment": 25000000000,
+          "resilience": 0.85,
+          "efficiency": 0.88
+        },
+        "max_resilience_solution": {
+          "investment": 40000000000,
+          "resilience": 0.95,
+          "efficiency": 0.85
+        }
+      },
+      "implementation_priority": [
+        "Adaptive routing system",
+        "Critical node reinforcement",
+        "Strategic redundancy",
+        "Gradual decentralization"
+      ]
+    }
+  },
+  {
+    "id": "weather-derivatives-018",
+    "scenario_type": "WEATHER_RISK_HEDGING",
+    "model": "Weather Derivatives Pricing - Temperature & Rainfall",
+    "parameters": {
+      "weather_variables": {
+        "temperature": {
+          "historical_mean": 22.5,
+          "historical_std": 2.1,
+          "trend": 0.03,
+          "seasonality": "fourier_4"
+        },
+        "rainfall": {
+          "historical_mean": 3200,
+          "historical_std": 450,
+          "trend": -15,
+          "seasonality": "monthly_varying"
+        }
+      },
+      "correlation_matrix": {
+        "temp_rain": -0.35,
+        "temp_yield": -0.60,
+        "rain_yield": 0.75,
+        "temp_quality": -0.45,
+        "rain_quality": 0.30
+      },
+      "derivative_structures": {
+        "temperature_collar": {
+          "floor": 20,
+          "cap": 25,
+          "tick_size": 100000,
+          "max_payout": 50000000
+        },
+        "rainfall_put": {
+          "strike": 2800,
+          "notional": 75000000,
+          "exercise": "european"
+        },
+        "combo_product": {
+          "temp_weight": 0.4,
+          "rain_weight": 0.6,
+          "notional": 100000000,
+          "max_payout": 70000000
+        }
+      }
+    }
+  },
+  [
+  {
+    "id": "weather-derivatives-018",
+    "scenario_type": "WEATHER_RISK_HEDGING",
+    "model": "Weather Derivatives Pricing - Temperature & Rainfall",
+    "parameters": {
+      "weather_variables": {
+        "temperature": {
+          "historical_mean": 22.5,
+          "historical_std": 2.1,
+          "trend": 0.03,
+          "seasonality": "fourier_4"
+        },
+        "rainfall": {
+          "historical_mean": 3200,
+          "historical_std": 450,
+          "trend": -15,
+          "seasonality": "monthly_varying"
+        }
+      },
+      "correlation_matrix": {
+        "temp_rain": -0.35,
+        "temp_yield": -0.60,
+        "rain_yield": 0.75,
+        "temp_quality": -0.45,
+        "rain_quality": 0.30
+      },
+      "derivative_structures": {
+        "temperature_collar": {
+          "floor": 20,
+          "cap": 25,
+          "tick_size": 100000,
+          "max_payout": 50000000
+        },
+        "rainfall_put": {
+          "strike": 2800,
+          "notional": 75000000,
+          "exercise": "european"
+        },
+        "combo_product": {
+          "temp_weight": 0.4,
+          "rain_weight": 0.6,
+          "correlation_adjustment": "copula"
+        }
+      }
+    },
+    "pricing_results": {
+      "black_scholes_adapted": {
+        "temperature_collar_premium": 3500000,
+        "rainfall_put_premium": 5200000,
+        "combo_premium": 7800000,
+        "total_hedge_cost": 16500000
+      },
+      "monte_carlo_pricing": {
+        "simulations": 100000,
+        "temperature_collar": 3650000,
+        "rainfall_put": 5350000,
+        "combo": 8100000,
+        "confidence_interval": [7500000, 8700000]
+      },
+      "historical_simulation": {
+        "backtest_period": 20,
+        "hit_rate": 0.35,
+        "average_payout": 28000000,
+        "max_payout": 75000000,
+        "hedge_effectiveness": 0.78
+      }
+    },
+    "risk_reduction_analysis": {
+      "unhedged_var_95": 125000000,
+      "hedged_var_95": 45000000,
+      "risk_reduction": 0.64,
+      "cost_benefit_ratio": 4.85,
+      "break_even_probability": 0.22
+    },
+    "optimization_strategy": {
+      "dynamic_hedging": {
+        "rebalance_frequency": "monthly",
+        "trigger_levels": {
+          "temperature": 1.5,
+          "rainfall": 300
+        },
+        "expected_cost_saving": 0.20
+      },
+      "portfolio_approach": {
+        "geographic_diversification": 3,
+        "crop_diversification": 2,
+        "natural_hedge": 0.30,
+        "residual_risk_hedge": 0.70
+      }
+    }
+  },
+  {
+    "id": "digital-twin-019",
+    "scenario_type": "FACTORY_DIGITAL_TWIN_OPTIMIZATION",
+    "model": "Digital Twin - Real-time Process Optimization",
+    "parameters": {
+      "physical_assets": {
+        "withering_troughs": {
+          "count": 20,
+          "capacity": 2000,
+          "sensors": ["temperature", "humidity", "airflow", "weight"],
+          "actuators": ["fan_speed", "heater", "damper"]
+        },
+        "rolling_machines": {
+          "count": 8,
+          "capacity": 500,
+          "sensors": ["pressure", "speed", "temperature", "particle_size"],
+          "actuators": ["pressure_control", "speed_control"]
+        },
+        "fermentation_floor": {
+          "area": 1000,
+          "zones": 10,
+          "sensors": ["temperature", "humidity", "co2", "time"],
+          "actuators": ["ventilation", "heating", "humidifier"]
+        },
+        "drying_system": {
+          "count": 6,
+          "capacity": 1000,
+          "sensors": ["inlet_temp", "outlet_temp", "moisture", "flow_rate"],
+          "actuators": ["burner", "fan", "conveyor_speed"]
+        }
+      },
+      "digital_models": {
+        "physics_based": {
+          "heat_transfer": "finite_element",
+          "mass_transfer": "computational_fluid_dynamics",
+          "chemical_kinetics": "reaction_networks"
+        },
+        "data_driven": {
+          "machine_learning": "lstm_networks",
+          "pattern_recognition": "convolutional_nn",
+          "anomaly_detection": "isolation_forest"
+        },
+        "hybrid_models": {
+          "physics_informed_nn": true,
+          "grey_box_modeling": true
+        }
+      },
+      "optimization_objectives": {
+        "quality_maximization": 0.40,
+        "energy_minimization": 0.25,
+        "throughput_maximization": 0.20,
+        "cost_minimization": 0.15
+      }
+    },
+    "real_time_optimization": {
+      "current_state": {
+        "production_rate": 850,
+        "quality_score": 82,
+        "energy_consumption": 120,
+        "unit_cost": 45000
+      },
+      "optimal_setpoints": {
+        "withering": {
+          "temperature": 24.5,
+          "humidity": 65,
+          "duration": 16.5,
+          "airflow": 0.8
+        },
+        "rolling": {
+          "pressure": [120, 100, 80],
+          "duration": [45, 45, 30],
+          "temperature": 28
+        },
+        "fermentation": {
+          "temperature": 26.5,
+          "humidity": 95,
+          "duration": 120,
+          "turning_frequency": 3
+        },
+        "drying": {
+          "inlet_temperature": 110,
+          "outlet_temperature": 55,
+          "feed_rate": 0.7,
+          "final_moisture": 3.2
+        }
+      },
+      "predicted_improvements": {
+        "production_rate": 980,
+        "quality_score": 91,
+        "energy_consumption": 95,
+        "unit_cost": 38000,
+        "roi": "8 months"
+      }
+    },
+    "predictive_maintenance_integration": {
+      "failure_predictions": {
+        "rolling_machine_3": {
+          "probability": 0.78,
+          "time_to_failure": 120,
+          "recommended_action": "bearing_replacement",
+          "cost_avoidance": 15000000
+        },
+        "dryer_2": {
+          "probability": 0.45,
+          "time_to_failure": 450,
+          "recommended_action": "preventive_service",
+          "cost_avoidance": 8000000
+        }
+      },
+      "maintenance_scheduling": {
+        "optimal_window": "2025-08-15 to 2025-08-18",
+        "production_impact": 200,
+        "cost_optimization": 25000000
+      }
+    },
+    "what_if_scenarios": {
+      "demand_surge_30_percent": {
+        "feasibility": "Yes with optimization",
+        "bottlenecks": ["drying_capacity"],
+        "required_changes": {
+          "shift_pattern": "3_shift",
+          "quality_tradeoff": 0.03,
+          "energy_increase": 0.15
+        },
+        "financial_impact": {
+          "revenue_increase": 180000000,
+          "cost_increase": 65000000,
+          "net_benefit": 115000000
+        }
+      },
+      "energy_price_double": {
+        "optimization_response": {
+          "process_adjustments": "Low_temperature_longer_time",
+          "renewable_integration": 0.40,
+          "efficiency_improvements": 0.25
+        },
+        "cost_impact": {
+          "baseline": 45000000,
+          "mitigated": 28000000,
+          "savings": 17000000
+        }
+      },
+      "quality_premium_market": {
+        "process_modifications": {
+          "withering": "Extended_to_20_hours",
+          "fermentation": "Controlled_to_±0.5C",
+          "throughput_reduction": 0.20
+        },
+        "economic_analysis": {
+          "premium_capture": 0.40,
+          "revenue_per_kg": 75000,
+          "margin_improvement": 0.35
+        }
+      }
+    }
+  },
+  {
+    "id": "blockchain-supply-020",
+    "scenario_type": "BLOCKCHAIN_TRACEABILITY_IMPACT",
+    "model": "Distributed Ledger - Supply Chain Transparency",
+    "parameters": {
+      "network_participants": {
+        "farmers": {
+          "count": 300,
+          "digital_literacy": 0.40,
+          "smartphone_penetration": 0.75,
+          "adoption_incentive": 50000
+        },
+        "collection_centers": {
+          "count": 15,
+          "infrastructure_ready": 0.60,
+          "training_need": "moderate"
+        },
+        "processors": {
+          "count": 3,
+          "system_integration": "high",
+          "legacy_systems": "erp_wms"
+        },
+        "distributors": {
+          "count": 50,
+          "readiness": 0.70,
+          "value_perception": "high"
+        },
+        "retailers": {
+          "count": 500,
+          "pos_integration": 0.50,
+          "customer_demand": "increasing"
+        }
+      },
+      "blockchain_architecture": {
+        "consensus_mechanism": "proof_of_authority",
+        "block_time": 5,
+        "transaction_throughput": 1000,
+        "storage_type": "hybrid_ipfs",
+        "smart_contracts": {
+          "quality_certification": true,
+          "payment_automation": true,
+          "carbon_credits": true
+        }
+      },
+      "data_captured": {
+        "farm_level": ["location", "variety", "inputs", "practices", "harvest_date"],
+        "processing": ["batch_id", "process_parameters", "quality_tests", "energy_use"],
+        "logistics": ["temperature", "humidity", "location", "handling"],
+        "retail": ["shelf_life", "customer_feedback", "returns"]
+      }
+    },
+    "implementation_scenarios": {
+      "pilot_phase": {
+        "participants": 50,
+        "duration": 6,
+        "investment": 15000000,
+        "success_metrics": {
+          "data_accuracy": 0.95,
+          "transaction_cost": 500,
+          "user_satisfaction": 0.78
+        }
+      },
+      "scale_up": {
+        "participants": 500,
+        "timeline": 18,
+        "investment": 75000000,
+        "challenges": {
+          "farmer_onboarding": "training_intensive",
+          "data_quality": "validation_needed",
+          "integration": "middleware_required"
+        }
+      },
+      "full_deployment": {
+        "network_size": 1500,
+        "annual_transactions": 2000000,
+        "operational_cost": 50000000,
+        "benefits_realized": {
+          "fraud_reduction": 0.90,
+          "recall_time": 0.10,
+          "premium_capture": 0.25
+        }
+      }
+    },
+    "value_creation_analysis": {
+      "cost_savings": {
+        "fraud_prevention": 150000000,
+        "inventory_optimization": 80000000,
+        "quality_assurance": 60000000,
+        "compliance_automation": 40000000
+      },
+      "revenue_enhancement": {
+        "premium_products": 200000000,
+        "export_facilitation": 150000000,
+        "brand_value": 100000000,
+        "carbon_credits": 50000000
+      },
+      "intangible_benefits": {
+        "consumer_trust": "high",
+        "regulatory_compliance": "automated",
+        "market_access": "expanded",
+        "sustainability_verification": "real_time"
+      }
+    },
+    "risk_scenarios": {
+      "technology_failure": {
+        "probability": 0.05,
+        "impact": 100000000,
+        "mitigation": {
+          "redundancy": "multi_cloud",
+          "backup": "traditional_system",
+          "insurance": 25000000
+        }
+      },
+      "adoption_failure": {
+        "probability": 0.20,
+        "impact": 75000000,
+        "mitigation": {
+          "incentives": "performance_based",
+          "training": "continuous",
+          "support": "24_7_helpdesk"
+        }
+      },
+      "regulatory_change": {
+        "probability": 0.15,
+        "impact": 50000000,
+        "mitigation": {
+          "compliance_buffer": "built_in",
+          "lobbying": "industry_association",
+          "flexibility": "modular_design"
+        }
+      }
+    }
+  },
+  {
+    "id": "genetic-algorithm-021",
+    "scenario_type": "CROP_VARIETY_OPTIMIZATION",
+    "model": "Genetic Algorithm - Multi-Objective Breeding",
+    "parameters": {
+      "objectives": {
+        "yield": {
+          "weight": 0.25,
+          "target": 1500,
+          "unit": "kg_per_ha"
+        },
+        "quality": {
+          "weight": 0.30,
+          "components": ["theaflavin", "thearubigin", "caffeine", "amino_acids"],
+          "target": "premium_grade"
+        },
+        "climate_resilience": {
+          "weight": 0.25,
+          "traits": ["drought_tolerance", "heat_resistance", "pest_resistance"],
+          "threshold": 0.80
+        },
+        "processing_suitability": {
+          "weight": 0.20,
+          "characteristics": ["leaf_size", "plucking_ease", "withering_rate"],
+          "efficiency": 0.90
+        }
+      },
+      "genetic_pool": {
+        "parent_varieties": ["PGL_11", "TRI_2025", "Assam_hybrid", "Kenya_purple"],
+        "population_size": 1000,
+        "generations": 50,
+        "mutation_rate": 0.02,
+        "crossover_rate": 0.80
+      },
+      "selection_pressure": {
+        "method": "tournament",
+        "elite_preservation": 0.10,
+        "diversity_maintenance": "crowding_distance"
+      },
+      "constraints": {
+        "maturation_time": [3, 5],
+        "plant_height": [0.8, 1.5],
+        "plucking_interval": [7, 14],
+        "regulatory_approval": "required"
+      }
+    },
+    "optimization_results": {
+      "pareto_optimal_solutions": [
+        {
+          "variety_id": "PGL_2025_A",
+          "yield": 1450,
+          "quality_score": 92,
+          "resilience_index": 0.85,
+          "processing_efficiency": 0.88,
+          "overall_fitness": 0.91
+        },
+        {
+          "variety_id": "PGL_2025_B",
+          "yield": 1380,
+          "quality_score": 95,
+          "resilience_index": 0.82,
+          "processing_efficiency": 0.92,
+          "overall_fitness": 0.90
+        },
+        {
+          "variety_id": "PGL_2025_C",
+          "yield": 1520,
+          "quality_score": 88,
+          "resilience_index": 0.90,
+          "processing_efficiency": 0.85,
+          "overall_fitness": 0.89
+        }
+      ],
+      "convergence_generation": 35,
+      "diversity_retained": 0.25
+    },
+    "field_trial_simulation": {
+      "locations": ["pagilaran_main", "satellite_1", "satellite_2"],
+      "environmental_conditions": {
+        "scenario_1_normal": {
+          "performance": [0.95, 0.93, 0.97],
+          "stability": "high"
+        },
+        "scenario_2_drought": {
+          "performance": [0.78, 0.75, 0.82],
+          "stability": "moderate"
+        },
+        "scenario_3_pest_pressure": {
+          "performance": [0.85, 0.83, 0.88],
+          "stability": "high"
+        }
+      },
+      "economic_projection": {
+        "development_cost": 150000000,
+        "trial_cost": 50000000,
+        "registration_cost": 25000000,
+        "time_to_market": 5,
+        "expected_adoption": {
+          "year_1": 0.10,
+          "year_3": 0.35,
+          "year_5": 0.60
+        },
+        "roi_projection": {
+          "break_even": "year_4",
+          "10_year_npv": 850000000,
+          "irr": 0.28
+        }
+      }
+    },
+    "risk_assessment": {
+      "technical_risk": {
+        "trait_stability": 0.15,
+        "regulatory_approval": 0.10,
+        "market_acceptance": 0.20
+      },
+      "mitigation_strategies": {
+        "multi_location_trials": 5,
+        "farmer_participation": "early_involvement",
+        "market_testing": "progressive_release",
+        "insurance": "trait_warranty"
+      }
+    }
+  },
+  {
+    "id": "circular-economy-022",
+    "scenario_type": "ZERO_WASTE_CIRCULAR_MODEL",
+    "model": "Material Flow Analysis - Circular Economy",
+    "parameters": {
+      "input_materials": {
+        "fresh_leaves": {
+          "volume": 5000,
+          "unit": "ton_per_year",
+          "composition": {
+            "moisture": 0.78,
+            "solids": 0.22
+          }
+        },
+        "energy": {
+          "electricity": 2000000,
+          "biomass": 500,
+          "solar": 500000,
+          "unit": "kwh_per_year"
+        },
+        "water": {
+          "volume": 50000,
+          "unit": "m3_per_year",
+          "source": ["rainwater", "recycled", "fresh"]
+        },
+        "packaging": {
+          "primary": 100,
+          "secondary": 50,
+          "unit": "ton_per_year"
+        }
+      },
+      "process_outputs": {
+        "primary_products": {
+          "black_tea": 1000,
+          "green_tea": 200,
+          "white_tea": 50,
+          "unit": "ton_per_year"
+        },
+        "byproducts": {
+          "tea_waste": 3500,
+          "tea_dust": 250,
+          "stalks": 150,
+          "unit": "ton_per_year"
+        },
+        "emissions": {
+          "co2": 1500,
+          "methane": 50,
+          "unit": "ton_co2e_per_year"
+        },
+        "wastewater": {
+          "volume": 40000,
+          "bod": 500,
+          "unit": "m3_per_year"
+        }
+      },
+      "circular_interventions": {
+        "waste_to_energy": {
+          "biogas_plant": {
+            "capacity": 500,
+            "input": "tea_waste",
+            "output_energy": 1500000,
+            "output_fertilizer": 200
+          },
+          "biomass_boiler": {
+            "capacity": 1000,
+            "input": "stalks",
+            "output_energy": 800000,
+            "efficiency": 0.85
+          }
+        },
+        "material_recovery": {
+          "composting": {
+            "input": 2000,
+            "output": 800,
+            "quality": "premium_organic"
+          },
+          "tea_extract": {
+            "input": 250,
+            "output": 50,
+            "value_multiplication": 10
+          }
+        },
+        "water_recycling": {
+          "treatment_capacity": 150,
+          "recovery_rate": 0.85,
+          "reuse_applications": ["irrigation", "processing", "cleaning"]
+        }
+      }
+    },
+    "circularity_metrics": {
+      "current_state": {
+        "linear_flow": 0.75,
+        "waste_generation": 0.30,
+        "resource_efficiency": 0.65,
+        "circularity_index": 0.25
+      },
+      "optimized_state": {
+        "linear_flow": 0.20,
+        "waste_generation": 0.05,
+        "resource_efficiency": 0.90,
+        "circularity_index": 0.80
+      },
+      "transition_pathway": {
+        "year_1": {
+          "investments": 50000000,
+          "circularity": 0.40,
+          "cost_savings": 15000000
+        },
+        "year_3": {
+          "investments": 120000000,
+          "circularity": 0.65,
+          "cost_savings": 45000000
+        },
+        "year_5": {
+          "investments": 180000000,
+          "circularity": 0.80,
+          "cost_savings": 85000000,
+          "new_revenue": 60000000
+        }
+      }
+    },
+    "economic_analysis": {
+      "investment_breakdown": {
+        "biogas_plant": 80000000,
+        "water_treatment": 50000000,
+        "extraction_facility": 30000000,
+        "composting_upgrade": 20000000
+      },
+      "revenue_streams": {
+        "energy_savings": 35000000,
+        "fertilizer_sales": 20000000,
+        "extract_sales": 50000000,
+        "carbon_credits": 15000000,
+        "waste_disposal_avoided": 25000000
+      },
+      "payback_analysis": {
+        "simple_payback": 3.2,
+        "discounted_payback": 4.1,
+        "npv_10_years": 420000000,
+        "irr": 0.24
+      }
+    },
+    "environmental_impact": {
+      "ghg_reduction": {
+        "direct": 800,
+        "indirect": 400,
+        "total": 1200,
+        "percentage": 0.80
+      },
+      "water_footprint": {
+        "reduction": 0.70,
+        "absolute_saving": 35000
+      },
+      "landfill_diversion": {
+        "percentage": 0.95,
+        "volume": 3800
+      },
+      "biodiversity_impact": "positive"
+    }
+  },
+  {
+    "id": "quantum-optimization-023",
+    "scenario_type": "QUANTUM_SUPPLY_CHAIN_OPTIMIZATION",
+    "model": "Quantum Annealing - Complex Route Optimization",
+    "parameters": {
+      "problem_size": {
+        "nodes": 500,
+        "edges": 2000,
+        "vehicles": 50,
+        "time_windows": 1000,
+        "constraints": 150
+      },
+      "quantum_formulation": {
+        "qubo_variables": 5000,
+        "coupling_strength": -1.5,
+        "penalty_weight": 100,
+        "chain_strength": 2.0
+      },
+      "classical_benchmark": {
+        "algorithm": "branch_and_bound",
+        "computation_time": 3600,
+        "solution_quality": 0.92,
+        "scalability": "exponential"
+      },
+      "hybrid_approach": {
+        "quantum_percentage": 0.30,
+        "classical_preprocessing": true,
+        "iterative_refinement": true
+      }
+    },
+    "optimization_results": {
+      "quantum_solution": {
+        "computation_time": 120,
+        "solution_quality": 0.97,
+        "energy_landscape": "multiple_minima",
+        "confidence": 0.95
+      },
+      "route_optimization": {
+        "total_distance_reduction": 0.22,
+        "delivery_time_reduction": 0.18,
+        "vehicle_utilization": 0.89,
+        "cost_savings": 85000000
+      },
+      "comparative_advantage": {
+        "speed_up": 30,
+        "quality_improvement": 0.05,
+        "scalability": "polynomial",
+        "real_time_capability": true
+      }
+    },
+    "implementation_scenarios": {
+      "pilot_project": {
+        "scope": "jakarta_distribution",
+        "investment": 25000000,
+        "cloud_access": "quantum_as_service",
+        "results": {
+          "route_efficiency": 0.25,
+          "cost_reduction": 15000000,
+          "customer_satisfaction": 0.92
+        }
+      },
+      "full_deployment": {
+        "coverage": "nationwide",
+        "hybrid_infrastructure": true,
+        "annual_cost": 50000000,
+        "benefits": {
+          "logistics_savings": 150000000,
+          "carbon_reduction": 500,
+          "service_level": 0.98
+        }
+      },
+      "future_potential": {
+        "quantum_advantage_year": 2027,
+        "problem_complexity": "10000_nodes",
+        "strategic_value": "competitive_edge"
+      }
+    }
+  },
+  {
+    "id": "epidemiological-model-024",
+    "scenario_type": "PEST_DISEASE_SPREAD_DYNAMICS",
+    "model": "SEIR-Network Model - Spatial Pest Propagation",
+    "parameters": {
+      "pathogen_characteristics": {
+        "reproduction_rate": 2.5,
+        "incubation_period": 7,
+        "infectious_period": 14,
+        "transmission_mode": ["wind", "vector", "mechanical"]
+      },
+      "spatial_structure": {
+        "field_blocks": 50,
+        "connectivity_matrix": "distance_based",
+        "elevation_gradient": true,
+        "microclimate_variation": true
+      },
+      "host_population": {
+        "total_plants": 2000000,
+        "age_distribution": "mixed",
+        "variety_composition": {
+          "susceptible": 0.60,
+          "resistant": 0.30,
+          "highly_resistant": 0.10
+        }
+      },
+      "environmental_factors": {
+        "temperature_effect": "nonlinear",
+        "humidity_threshold": 0.80,
+        "rainfall_trigger": 50,
+        "wind_dispersal": "gaussian_plume"
+      }
+    },
+    "epidemic_scenarios": {
+      "baseline_outbreak": {
+        "initial_infected": 100,
+        "location": "edge_block",
+        "peak_prevalence": 0.35,
+        "time_to_peak": 45,
+        "economic_impact": 250000000
+      },
+      "worst_case": {
+        "initial_infected": 500,
+        "location": "central_blocks",
+        "peak_prevalence": 0.75,
+        "time_to_peak": 30,
+        "economic_impact": 800000000
+      },
+      "with_intervention": {
+        "detection_time": 7,
+        "control_measures": ["quarantine", "spraying", "pruning"],
+        "peak_prevalence": 0.15,
+        "time_to_peak": 60,
+        "economic_impact": 80000000
+      }
+    },
+    "control_strategies": {
+      "early_warning_system": {
+        "sensor_network": 200,
+        "ml_detection": "image_recognition",
+        "alert_threshold": 0.01,
+        "response_time": 24,
+        "effectiveness": 0.85
+      },
+      "integrated_management": {
+        "biological_control": {
+          "agents": ["predators", "parasitoids", "antagonists"],
+          "establishment_cost": 30000000,
+          "efficacy": 0.60
+        },
+        "chemical_control": {
+          "targeted_spraying": true,
+          "resistance_management": "rotation",
+          "cost": 50000000,
+          "efficacy": 0.80
+        },
+        "cultural_practices": {
+          "resistant_varieties": 0.40,
+          "sanitation": "continuous",
+          "barrier_crops": true,
+          "cost": 20000000
+        }
+      },
+      "optimal_strategy": {
+        "combination": "early_warning_plus_integrated",
+        "total_investment": 120000000,
+        "damage_reduction": 0.90,
+        "benefit_cost_ratio": 6.5
+      }
+    }
+  },
+  {
+    "id": "multi-criteria-025",
+    "scenario_type": "SUSTAINABLE_INTENSIFICATION_PATHWAYS",
+    "model": "Multi-Criteria Decision Analysis - Sustainability Trade-offs",
+    "parameters": {
+      "criteria_hierarchy": {
+        "economic": {
+          "weight": 0.30,
+          "sub_criteria": {
+            "profitability": 0.40,
+            "investment_required": 0.30,
+            "market_access": 0.30
+          }
+        },
+        "environmental": {
+          "weight": 0.35,
+          "sub_criteria": {
+            "carbon_footprint": 0.35,
+            "biodiversity": 0.25,
+            "water_quality": 0.25,
+            "soil_health": 0.15
+          }
+        },
+        "social": {
+          "weight": 0.35,
+          "sub_criteria": {
+            "employment": 0.30,
+            "farmer_welfare": 0.30,
+            "community_development": 0.25,
+            "gender_equity": 0.15
+          }
+        }
+      },
+      "intensification_options": {
+        "precision_agriculture": {
+          "description": "IoT sensors, variable rate application",
+          "investment": 150000000,
+          "yield_increase": 0.25,
+          "input_reduction": 0.30
+        },
+        "agroforestry_integration": {
+          "description": "Shade trees, multi-story cropping",
+          "investment": 80000000,
+          "yield_change": -0.10,
+          "ecosystem_services": 0.40
+        },
+        "organic_transition": {
+          "description": "Certified organic production",
+          "investment": 100000000,
+          "yield_change": -0.20,
+          "price_premium": 0.50
+        },
+        "regenerative_practices": {
+          "description": "Cover crops, minimal tillage, holistic",
+          "investment": 60000000,
+          "yield_change": -0.05,
+          "long_term_productivity": 0.30
+        }
+      }
+    },
+    "evaluation_matrix": {
+      "precision_agriculture": {
+        "economic_score": 0.85,
+        "environmental_score": 0.70,
+        "social_score": 0.60,
+        "weighted_total": 0.71
+      },
+      "agroforestry_integration": {
+        "economic_score": 0.60,
+        "environmental_score": 0.90,
+        "social_score": 0.85,
+        "weighted_total": 0.79
+      },
+      "organic_transition": {
+        "economic_score": 0.70,
+        "environmental_score": 0.85,
+        "social_score": 0.80,
+        "weighted_total": 0.78
+      },
+      "regenerative_practices": {
+        "economic_score": 0.75,
+        "environmental_score": 0.88,
+        "social_score": 0.82,
+        "weighted_total": 0.82
+      }
+    },
+    "sensitivity_analysis": {
+      "weight_variations": {
+        "economic_emphasis": {
+          "weights": [0.50, 0.25, 0.25],
+          "ranking": ["precision", "regenerative", "organic", "agroforestry"]
+        },
+        "environmental_emphasis": {
+          "weights": [0.20, 0.50, 0.30],
+          "ranking": ["agroforestry", "regenerative", "organic", "precision"]
+        },
+        "social_emphasis": {
+          "weights": [0.20, 0.30, 0.50],
+          "ranking": ["agroforestry", "regenerative", "organic", "precision"]
+        }
+      },
+      "robust_choice": "regenerative_practices",
+      "switching_threshold": 0.15
+    },
+    "implementation_recommendation": {
+      "phased_approach": {
+        "phase_1": {
+          "option": "regenerative_practices",
+          "area": 200,
+          "duration": 2,
+          "learning_focus": true
+        },
+        "phase_2": {
+          "option": "precision_agriculture",
+          "area": 300,
+          "duration": 3,
+          "scale_benefits": true
+        },
+        "phase_3": {
+          "option": "agroforestry_integration",
+          "area": 200,
+          "duration": 5,
+          "ecosystem_maturity": true
+        }
+      },
+      "total_transformation": {
+        "timeline": 10,
+        "investment": 290000000,
+        "expected_outcomes": {
+          "productivity": 1.15,
+          "sustainability_index": 0.85,
+          "resilience_score": 0.90
+        }
+      }
+    }
+  },
+  {
+    "id": "lstm-demand-026",
+    "scenario_type": "DEEP_LEARNING_DEMAND_FORECAST",
+    "model": "LSTM Neural Network - Multi-variate Time Series",
+    "parameters": {
+      "input_features": {
+        "historical_sales": {
+          "window": 36,
+          "granularity": "weekly",
+          "products": 15
+        },
+        "price_data": {
+          "own_price": true,
+          "competitor_price": true,
+          "elasticity_embedded": true
+        },
+        "external_factors": {
+          "gdp_growth": true,
+          "consumer_confidence": true,
+          "weather_patterns": true,
+          "social_media_sentiment": true
+        },
+        "calendar_effects": {
+          "holidays": true,
+          "seasons": true,
+          "promotional_calendar": true
+        }
+      },
+      "network_architecture": {
+        "input_layer": 50,
+        "lstm_layers": [
+          {
+            "units": 128,
+            "dropout": 0.2,
+            "recurrent_dropout": 0.2
+          },
+          {
+            "units": 64,
+            "dropout": 0.2,
+            "recurrent_dropout": 0.2
+          }
+        ],
+        "dense_layers": [32, 16],
+        "output_layer": 15,
+        "activation": "relu",
+        "optimizer": "adam"
+      },
+      "training_parameters": {
+        "epochs": 200,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "early_stopping": true,
+        "validation_split": 0.2
+      }
+    },
+    "model_performance": {
+      "training_metrics": {
+        "mse": 0.0045,
+        "mae": 0.052,
+        "mape": 0.068,
+        "r_squared": 0.94
+      },
+      "validation_metrics": {
+        "mse": 0.0062,
+        "mae": 0.061,
+        "mape": 0.079,
+        "r_squared": 0.91
+      },
+      "feature_importance": {
+        "historical_sales": 0.35,
+        "price": 0.20,
+        "seasonality": 0.15,
+        "gdp": 0.10,
+        "weather": 0.08,
+        "sentiment": 0.07,
+        "others": 0.05
+      }
+    },
+    "forecast_results": {
+      "point_forecast": {
+        "week_1": {
+          "total_demand": 25000,
+          "by_product": {
+            "black_tea_premium": 8000,
+            "black_tea_standard": 10000,
+            "green_tea": 4000,
+            "specialty": 3000
+          }
+        },
+        "month_3": {
+          "total_demand": 320000,
+          "growth_rate": 0.12,
+          "confidence": 0.85
+        },
+        "year_1": {
+          "total_demand": 1500000,
+          "growth_rate": 0.15,
+          "confidence": 0.75
+        }
+      },
+      "prediction_intervals": {
+        "week_1": {
+          "lower_95": 23000,
+          "upper_95": 27000
+        },
+        "month_3": {
+          "lower_95": 280000,
+          "upper_95": 360000
+        },
+        "year_1": {
+          "lower_95": 1200000,
+          "upper_95": 1800000
+        }
+      }
+    },
+    "scenario_forecasts": {
+      "economic_downturn": {
+        "demand_impact": -0.25,
+        "recovery_time": 18,
+        "mitigation": "shift_to_value_products"
+      },
+      "health_trend_acceleration": {
+        "demand_impact": 0.40,
+        "sustained_growth": true,
+        "capacity_constraint": "month_8"
+      },
+      "competitor_disruption": {
+        "market_share_gain": 0.15,
+        "duration": 12,
+        "investment_required": 50000000
+      }
+    },
+    "operational_implications": {
+      "production_planning": {
+        "capacity_utilization": 0.82,
+        "shift_patterns": "flexible",
+        "inventory_targets": {
+          "weeks_of_supply": 4,
+          "safety_stock": 0.20
+        }
+      },
+      "procurement_strategy": {
+        "raw_material_forecast": 1800000,
+        "contract_coverage": 0.70,
+        "spot_market": 0.30
+      },
+      "financial_planning": {
+        "revenue_forecast": 120000000000,
+        "working_capital_need": 25000000000,
+        "investment_timing": "q2_capacity_expansion"
+      }
+    }
+  },
+  {
+    "id": "catastrophe-model-027",
+    "scenario_type": "CATASTROPHIC_RISK_ASSESSMENT",
+    "model": "Catastrophe Modeling - Extreme Event Impact",
+    "parameters": {
+      "hazard_catalogue": {
+        "climate_extremes": {
+          "severe_drought": {
+            "return_period": 20,
+            "duration": 6,
+            "intensity": "extreme"
+          },
+          "flooding": {
+            "return_period": 50,
+            "duration": 0.25,
+            "intensity": "severe"
+          },
+          "hailstorm": {
+            "return_period": 10,
+            "duration": 0.01,
+            "intensity": "moderate"
+          }
+        },
+        "biological_hazards": {
+          "pandemic_workforce": {
+            "probability": 0.10,
+            "impact": "severe",
+            "duration": 12
+          },
+          "invasive_species": {
+            "probability": 0.15,
+            "impact": "moderate",
+            "duration": 24
+          }
+        },
+        "market_catastrophes": {
+          "price_collapse": {
+            "probability": 0.20,
+            "magnitude": -0.60,
+            "duration": 18
+          },
+          "trade_war": {
+            "probability": 0.25,
+            "impact": "export_ban",
+            "duration": 24
+          }
+        }
+      },
+      "vulnerability_functions": {
+        "physical_damage": "power_law",
+        "business_interruption": "step_function",
+        "market_share_loss": "exponential_decay",
+        "recovery_curve": "logarithmic"
+      }
+    },
+    "loss_exceedance_curves": {
+      "annual_exceedance_probability": [
+        {
+          "loss": 50000000,
+          "probability": 0.50
+        },
+        {
+          "loss": 150000000,
+          "probability": 0.20
+        },
+        {
+          "loss": 500000000,
+          "probability": 0.05
+        },
+        {
+          "loss": 1000000000,
+          "probability": 0.01
+        },
+        {
+          "loss": 2000000000,
+          "probability": 0.002
+        }
+      ],
+      "average_annual_loss": 125000000,
+      "probable_maximum_loss": 3000000000
+    },
+    "risk_mitigation_portfolio": {
+      "insurance_program": {
+        "property_damage": {
+          "coverage": 1000000000,
+          "deductible": 50000000,
+          "premium": 25000000
+        },
+        "business_interruption": {
+          "coverage": 500000000,
+          "waiting_period": 7,
+          "premium": 15000000
+        },
+        "parametric_weather": {
+          "trigger": "rainfall_below_2000mm",
+          "payout": 200000000,
+          "premium": 8000000
+        }
+      },
+      "physical_mitigation": {
+        "flood_defense": {
+          "investment": 150000000,
+          "protection_level": "1_in_100_year",
+          "benefit": 300000000
+        },
+        "drought_resilience": {
+          "water_storage": 200000000,
+          "irrigation_upgrade": 100000000,
+          "benefit": 500000000
+        }
+      },
+      "financial_hedging": {
+        "catastrophe_bonds": {
+          "issuance": 500000000,
+          "trigger": "multiple_perils",
+          "cost": 0.06
+        },
+        "contingent_credit": {
+          "facility": 300000000,
+          "commitment_fee": 0.005,
+          "drawdown_rate": 0.08
+        }
+      }
+    },
+    "resilience_metrics": {
+      "current_state": {
+        "risk_tolerance": 200000000,
+        "recovery_time": 18,
+        "resilience_score": 0.60
+      },
+      "post_mitigation": {
+        "risk_tolerance": 500000000,
+        "recovery_time": 9,
+        "resilience_score": 0.85
+      },
+      "cost_benefit": {
+        "total_investment": 650000000,
+        "risk_reduction": 400000000,
+        "roi": 0.62,
+        "payback": 4.5
+      }
+    }
+  },
+  {
+    "id": "evolutionary-game-028",
+    "scenario_type": "MARKET_EVOLUTION_DYNAMICS",
+    "model": "Evolutionary Game Theory - Strategy Evolution",
+    "parameters": {
+      "player_strategies": {
+        "premium_focus": {
+          "initial_share": 0.20,
+          "payoff_matrix_row": [3, 1, 2, 4]
+        },
+        "volume_leader": {
+          "initial_share": 0.40,
+          "payoff_matrix_row": [1, 2, 3, 2]
+        },
+        "niche_specialist": {
+          "initial_share": 0.25,
+          "payoff_matrix_row": [2, 3, 4, 1]
+        },
+        "disruptor": {
+          "initial_share": 0.15,
+          "payoff_matrix_row": [4, 2, 1, 3]
+        }
+      },
+      "replicator_dynamics": {
+        "selection_intensity": 0.1,
+        "mutation_rate": 0.02,
+        "time_steps": 100,
+        "population_size": 1000
+      },
+      "environmental_shocks": {
+        "technology_disruption": {
+          "time": 30,
+          "impact": "payoff_shift",
+          "magnitude": 0.3
+        },
+        "regulation_change": {
+          "time": 60,
+          "impact": "strategy_constraint",
+          "affected": ["volume_leader"]
+        }
+      }
+    },
+    "evolution_trajectory": {
+      "equilibrium_states": [
+        {
+          "time": 0,
+          "distribution": [0.20, 0.40, 0.25, 0.15]
+        },
+        {
+          "time": 25,
+          "distribution": [0.28, 0.32, 0.22, 0.18]
+        },
+        {
+          "time": 50,
+          "distribution": [0.35, 0.25, 0.20, 0.20]
+        },
+        {
+          "time": 100,
+          "distribution": [0.42, 0.18, 0.15, 0.25]
+        }
+      ],
+      "stable_equilibrium": {
+        "reached": true,
+        "time": 85,
+        "configuration": [0.40, 0.20, 0.15, 0.25]
+      },
+      "evolutionary_stable_strategy": "premium_focus"
+    },
+    "strategic_insights": {
+      "winning_characteristics": [
+        "Quality differentiation",
+        "Brand strength",
+        "Supply chain efficiency",
+        "Digital capability"
+      ],
+      "losing_characteristics": [
+        "Pure price competition",
+        "Commodity mindset",
+        "Rigid operations",
+        "Traditional channels only"
+      ],
+      "adaptation_requirements": {
+        "from_volume_to_premium": {
+          "investment": 200000000,
+          "timeline": 36,
+          "success_probability": 0.70
+        },
+        "from_niche_to_scale": {
+          "investment": 300000000,
+          "timeline": 48,
+          "success_probability": 0.55
+        }
+      }
+    },
+    "pagilaran_strategy": {
+      "current_position": "volume_leader_transitioning",
+      "target_position": "premium_focus",
+      "migration_path": {
+          "year_1": "Build premium capabilities",
+        "year_2": "Launch premium lines",
+        "year_3": "Scale premium segment",
+        "year_5": "Premium leadership"
+      },
+      "success_factors": {
+        "ugm_heritage": "Unique advantage",
+        "quality_potential": "High",
+        "investment_required": 250000000,
+        "probability_of_success": 0.75
+      }
+    }
+  },
+  {
+    "id": "complex-adaptive-029",
+    "scenario_type": "ECOSYSTEM_EMERGENCE",
+    "model": "Complex Adaptive Systems - Innovation Ecosystem",
+    "parameters": {
+      "agents": {
+        "startups": {
+          "count": 50,
+          "birth_rate": 0.2,
+          "death_rate": 0.3,
+          "innovation_rate": 0.4
+        },
+        "farmers": {
+          "count": 300,
+          "adoption_threshold": 0.3,
+          "network_degree": 5,
+          "trust_decay": 0.1
+        },
+        "investors": {
+          "count": 20,
+          "risk_appetite": "varied",
+          "investment_capacity": 50000000,
+          "exit_horizon": 5
+        },
+        "research_institutions": {
+          "count": 10,
+          "collaboration_propensity": 0.6,
+          "ip_creation_rate": 0.2,
+          "commercialization_rate": 0.1
+        },
+        "corporates": {
+          "count": 5,
+          "acquisition_threshold": 0.7,
+          "partnership_openness": 0.4,
+          "innovation_need": "high"
+        }
+      },
+      "interaction_rules": {
+        "knowledge_spillover": "distance_based",
+        "trust_formation": "repeated_interaction",
+        "resource_flow": "performance_based",
+        "competition": "niche_overlap"
+      },
+      "environmental_conditions": {
+        "government_support": 0.6,
+        "market_dynamism": 0.7,
+        "technology_availability": 0.8,
+        "regulatory_clarity": 0.5
+      }
+    },
+    "emergence_patterns": {
+      "innovation_clusters": {
+        "formation_time": 18,
+        "stable_size": 15,
+        "productivity_multiplier": 2.5,
+        "survival_rate": 0.65
+      },
+      "value_networks": {
+        "density_evolution": [0.1, 0.25, 0.45, 0.60, 0.70],
+        "centrality_concentration": 0.3,
+        "resilience_threshold": 0.4
+      },
+      "scaling_dynamics": {
+        "unicorn_probability": 0.02,
+        "scale_up_rate": 0.15,
+        "international_expansion": 0.05
+      }
+    },
+    "ecosystem_metrics": {
+      "current_state": {
+        "maturity_level": 2,
+        "innovation_output": 25,
+        "investment_flow": 150000000,
+        "success_rate": 0.20
+      },
+      "projected_5_years": {
+        "maturity_level": 4,
+        "innovation_output": 120,
+        "investment_flow": 800000000,
+        "success_rate": 0.35
+      },
+      "tipping_point": {
+        "critical_mass": 100,
+        "time_to_reach": 3,
+        "probability": 0.75
+      }
+    },
+    "strategic_interventions": {
+      "pagilaran_as_anchor": {
+        "role": "Ecosystem orchestrator",
+        "investments": {
+          "innovation_lab": 50000000,
+          "accelerator_program": 30000000,
+          "challenge_prizes": 20000000,
+          "partnership_fund": 100000000
+        },
+        "expected_returns": {
+          "direct_roi": 0.25,
+          "ecosystem_value": 500000000,
+          "innovation_pipeline": 50,
+          "strategic_options": 20
+        }
+      },
+      "policy_recommendations": {
+        "tax_incentives": "R&D credit 200%",
+        "regulatory_sandbox": "Agtech testing",
+        "public_procurement": "Innovation quota 20%",
+        "talent_programs": "1000 agtech specialists"
+      }
+    }
+  },
+  {
+    "id": "scenario-planning-030",
+    "scenario_type": "FUTURE_SCENARIOS_2035",
+    "model": "Morphological Analysis - Alternative Futures",
+    "parameters": {
+      "key_uncertainties": {
+        "technology_adoption": ["slow", "moderate", "exponential"],
+        "climate_impact": ["manageable", "severe", "catastrophic"],
+        "market_structure": ["fragmented", "consolidated", "platform"],
+        "consumer_behavior": ["traditional", "conscious", "radical"],
+        "regulatory_environment": ["liberal", "balanced", "stringent"]
+      },
+      "scenario_dimensions": 5,
+      "consistency_matrix": "expert_validated",
+      "probability_weights": "delphi_method"
+    },
+    "scenarios": {
+      "green_harmony": {
+        "description": "Sustainable tech revolution with climate adaptation",
+        "configuration": ["exponential", "manageable", "platform", "conscious", "balanced"],
+        "probability": 0.25,
+        "implications": {
+          "market_size": 3000000000000,
+          "pagilaran_position": "Innovation leader",
+          "key_capabilities": ["Tech mastery", "Sustainability", "Platform play"],
+          "investment_priority": "Digital ecosystem"
+        }
+      },
+      "survival_mode": {
+        "description": "Climate crisis forcing radical adaptation",
+        "configuration": ["moderate", "catastrophic", "consolidated", "radical", "stringent"],
+        "probability": 0.20,
+        "implications": {
+          "market_size": 1500000000000,
+          "pagilaran_position": "Resilience expert",
+          "key_capabilities": ["Climate tech", "Local focus", "Government ties"],
+          "investment_priority": "Adaptation infrastructure"
+        }
+      },
+      "tradition_revival": {
+        "description": "Back to basics with premium heritage",
+        "configuration": ["slow", "severe", "fragmented", "traditional", "liberal"],
+        "probability": 0.30,
+        "implications": {
+          "market_size": 2000000000000,
+          "pagilaran_position": "Heritage premium",
+          "key_capabilities": ["Quality", "Story", "Relationships"],
+          "investment_priority": "Brand and quality"
+        }
+      },
+      "tech_disruption": {
+        "description": "AI and biotech transform industry",
+        "configuration": ["exponential", "severe", "platform", "radical", "liberal"],
+        "probability": 0.25,
+        "implications": {
+          "market_size": 2500000000000,
+          "pagilaran_position": "Fast follower",
+          "key_capabilities": ["Agility", "Partnerships", "Data"],
+          "investment_priority": "Innovation capacity"
+        }
+      }
+    },
+    "robust_strategies": {
+      "no_regret_actions": [
+        "Digital capability building",
+        "Climate resilience infrastructure",
+        "Innovation ecosystem development",
+        "Brand strengthening"
+      ],
+      "option_creation": [
+        "Modular technology investments",
+        "Flexible supply chains",
+        "Multi-channel distribution",
+        "Talent pipeline development"
+      ],
+      "hedge_bets": [
+        "Geographic diversification",
+        "Product portfolio balance",
+        "Partnership variety",
+        "Financial flexibility"
+      ]
+    },
+    "monitoring_indicators": {
+      "leading_indicators": [
+        "Technology adoption rate in agriculture",
+        "Climate policy stringency index",
+        "Consumer sustainability preference",
+        "Investment in agtech"
+      ],
+      "trigger_points": {
+        "technology_acceleration": "5G rural coverage >50%",
+        "climate_severity": "3 consecutive drought years",
+        "market_consolidation": "Top 5 share >60%",
+        "consumer_shift": "Organic demand >30%"
+      }
+    }
+  },
+  {
+    "id": "reinforcement-pricing-031",
+    "scenario_type": "DYNAMIC_PRICING_AI",
+    "model": "Deep Q-Network - Revenue Optimization",
+    "parameters": {
+      "state_space": {
+        "inventory_levels": 10,
+        "demand_states": 5,
+        "competitor_prices": 5,
+        "time_periods": 52,
+        "total_states": 13000
+      },
+      "action_space": {
+        "price_multipliers": [0.8, 0.9, 1.0, 1.1, 1.2],
+        "promotion_levels": [0, 0.1, 0.2],
+        "total_actions": 15
+      },
+      "reward_function": {
+        "revenue_weight": 0.4,
+        "profit_weight": 0.3,
+        "market_share_weight": 0.2,
+        "inventory_cost_weight": -0.1
+      },
+      "network_architecture": {
+        "input_neurons": 50,
+        "hidden_layers": [256, 128, 64],
+        "output_neurons": 15,
+        "activation": "relu",
+        "optimizer": "adam"
+      }
+    },
+    "training_results": {
+      "episodes": 10000,
+      "final_reward": 0.92,
+      "convergence_episode": 7500,
+      "exploration_decay": "epsilon_greedy",
+      "learning_stability": "high"
+    },
+    "optimal_policies": {
+      "high_demand_low_inventory": {
+        "action": "Price 1.2x, No promotion",
+        "expected_reward": 0.95,
+        "revenue_impact": "+18%"
+      },
+      "low_demand_high_inventory": {
+        "action": "Price 0.8x, 20% promotion",
+        "expected_reward": 0.75,
+        "inventory_turnover": "+40%"
+      },
+      "competitive_threat": {
+        "action": "Price 0.95x, 10% promotion",
+        "expected_reward": 0.82,
+        "market_share_defense": "85% retained"
+      }
+    },
+    "implementation_results": {
+      "pilot_period": 3,
+      "revenue_improvement": 0.15,
+      "profit_improvement": 0.18,
+      "inventory_reduction": 0.25,
+      "customer_satisfaction": 0.88
+    }
+  },
+  {
+    "id": "spatial-optimization-032",
+    "scenario_type": "PLANTATION_LAYOUT_OPTIMIZATION",
+    "model": "Spatial Optimization - Multi-Objective Land Use",
+    "parameters": {
+      "land_parcels": 100,
+      "parcel_size": 7,
+      "total_area": 700,
+      "elevation_range": [800, 1200],
+      "soil_types": 5,
+      "water_sources": 8
+    },
+    "objectives": {
+      "yield_maximization": {
+        "weight": 0.30,
+        "spatial_correlation": 0.7,
+        "elevation_preference": [900, 1100]
+      },
+      "biodiversity_conservation": {
+        "weight": 0.25,
+        "corridor_requirement": true,
+        "minimum_patch_size": 5
+      },
+      "water_protection": {
+        "weight": 0.20,
+        "buffer_zones": 50,
+        "runoff_minimization": true
+      },
+      "operational_efficiency": {
+        "weight": 0.25,
+        "road_access": true,
+        "block_consolidation": true
+      }
+    },
+    "optimization_results": {
+      "land_allocation": {
+        "tea_production": 500,
+        "conservation_areas": 80,
+        "agroforestry": 70,
+        "infrastructure": 30,
+        "water_bodies": 20
+      },
+      "spatial_configuration": {
+        "production_blocks": 25,
+        "average_block_size": 20,
+        "conservation_connectivity": 0.85,
+        "road_efficiency": 0.90
+      },
+      "expected_outcomes": {
+        "yield_increase": 0.12,
+        "biodiversity_index": 0.75,
+        "water_quality": 0.88,
+        "operational_cost_reduction": 0.20
+      }
+    },
+    "implementation_plan": {
+      "phase_1": {
+        "area": 200,
+        "focus": "High-yield zones",
+        "investment": 50000000,
+        "timeline": 2
+      },
+      "phase_2": {
+        "area": 300,
+        "focus": "Conservation integration",
+        "investment": 75000000,
+        "timeline": 3
+      },
+      "phase_3": {
+        "area": 200,
+        "focus": "Complete optimization",
+        "investment": 40000000,
+        "timeline": 2
+      }
+    }
+  },
+  {
+    "id": "supply-synchronization-033",
+    "scenario_type": "SUPPLY_CHAIN_SYNCHRONIZATION",
+    "model": "Multi-Echelon Inventory Optimization",
+    "parameters": {
+      "network_nodes": {
+        "farms": 300,
+        "collection_centers": 15,
+        "processing_plants": 3,
+        "distribution_centers": 8,
+        "customers": 1000
+      },
+      "demand_characteristics": {
+        "mean": 1000,
+        "coefficient_variation": 0.3,
+        "seasonality_factor": 1.5,
+        "correlation_matrix": "spatial"
+      },
+      "lead_times": {
+        "farm_to_collection": 1,
+        "collection_to_plant": 2,
+        "plant_to_dc": 3,
+        "dc_to_customer": 2
+      },
+      "costs": {
+        "holding": 0.20,
+        "shortage": 5.00,
+        "ordering": 1000,
+        "transportation": "distance_based"
+      }
+    },
+    "optimization_results": {
+      "inventory_positioning": {
+        "collection_centers": {
+          "safety_stock": 50,
+          "reorder_point": 150,
+          "order_quantity": 300
+        },
+        "plants": {
+          "safety_stock": 200,
+          "reorder_point": 600,
+          "order_quantity": 1200
+        },
+        "distribution_centers": {
+          "safety_stock": 100,
+          "reorder_point": 300,
+          "order_quantity": 600
+        }
+      },
+      "service_levels": {
+        "farm_fulfillment": 0.98,
+        "plant_availability": 0.99,
+        "customer_service": 0.95
+      },
+      "cost_reduction": {
+        "inventory_holding": -0.30,
+        "shortage_cost": -0.85,
+        "total_cost": -0.25
+      }
+    },
+    "synchronization_benefits": {
+      "bullwhip_reduction": 0.70,
+      "forecast_accuracy": 0.85,
+      "cash_to_cash_cycle": -15,
+      "working_capital": -0.25
+    }
+  },
+  [
+  {
+    "id": "value-chain-integration-034",
+    "scenario_type": "FARM_TO_PREMIUM_VALUE_CREATION",
+    "model": "Integrated Value Chain Optimization - Seedling to Export",
+    "parameters": {
+      "seedling_genetics": {
+        "pgl_series": {
+          "pgl_11": {
+            "productivity": 5800,
+            "catechin_content": 0.18,
+            "disease_resistance": 0.85,
+            "cup_quality_score": 92
+          },
+          "pgl_3": {
+            "productivity": 5200,
+            "catechin_content": 0.15,
+            "disease_resistance": 0.75,
+            "cup_quality_score": 88
+          },
+          "assamica_hybrid": {
+            "productivity": 4800,
+            "catechin_content": 0.20,
+            "disease_resistance": 0.70,
+            "cup_quality_score": 90
+          }
+        },
+        "seedling_ratio": 0.60,
+        "clone_ratio": 0.40,
+        "genetic_diversity_index": 0.75
+      },
+      "cultivation_scenarios": {
+        "organic_transition": {
+          "conversion_period": 36,
+          "yield_reduction_initial": 0.20,
+          "premium_capture": 0.50,
+          "certification_cost": 25000000
+        },
+        "precision_agriculture": {
+          "iot_sensors": 150,
+          "water_saving": 0.18,
+          "fertilizer_optimization": 0.30,
+          "yield_improvement": 0.08
+        },
+        "climate_adaptation": {
+          "shade_trees_integration": 0.15,
+          "drought_resistant_varieties": 0.40,
+          "microclimate_management": true
+        }
+      },
+      "processing_optimization": {
+        "orthodox_vs_ctc": {
+          "orthodox_ratio": 0.70,
+          "ctc_ratio": 0.30,
+          "quality_differential": 0.35,
+          "price_premium": 0.40
+        },
+        "fermentation_control": {
+          "temperature_precision": 0.5,
+          "humidity_control": 0.02,
+          "theaflavin_optimization": 0.25,
+          "thearubigin_balance": 0.30
+        },
+        "grading_accuracy": {
+          "optical_sorting": true,
+          "ai_quality_prediction": 0.92,
+          "contamination_detection": 0.99
+        }
+      }
+    },
+    "simulation_results": {
+      "scenario_1_baseline": {
+        "annual_production": 1200000,
+        "export_grade_percentage": 0.65,
+        "average_price_per_kg": 45000,
+        "total_revenue": 54000000000,
+        "profit_margin": 0.18
+      },
+      "scenario_2_premium_focus": {
+        "production_shift": {
+          "specialty_tea": 0.35,
+          "orthodox_premium": 0.45,
+          "commodity": 0.20
+        },
+        "quality_metrics": {
+          "cup_score_average": 91,
+          "export_grade": 0.85,
+          "rejection_rate": 0.02
+        },
+        "financial_impact": {
+          "revenue_increase": 0.35,
+          "margin_improvement": 0.12,
+          "roi_timeline": 24
+        }
+      },
+      "scenario_3_full_integration": {
+        "vertical_integration": {
+          "farm_productivity": 6200,
+          "processing_efficiency": 0.92,
+          "packaging_innovation": true,
+          "direct_export": 0.80
+        },
+        "value_capture": {
+          "farm_gate": 100,
+          "processed": 250,
+          "branded": 450,
+          "retail": 800
+        },
+        "market_positioning": {
+          "japan_premium": 120000,
+          "europe_organic": 95000,
+          "usa_specialty": 105000,
+          "domestic_premium": 75000
+        }
+      }
+    },
+    "risk_mitigation_strategies": {
+      "weather_hedging": {
+        "insurance_coverage": 0.70,
+        "derivative_instruments": true,
+        "cost": 150000000,
+        "expected_payout": 450000000
+      },
+      "market_diversification": {
+        "geographic_spread": 17,
+        "product_categories": 8,
+        "channel_mix": "balanced",
+        "concentration_risk": 0.15
+      },
+      "quality_assurance": {
+        "haccp_implementation": true,
+        "iso_22000": true,
+        "blockchain_traceability": true,
+        "recall_capability": "2_hours"
+      }
+    },
+    "investment_requirements": {
+      "total_capex": 85000000000,
+      "phased_deployment": {
+        "year_1": 25000000000,
+        "year_2": 35000000000,
+        "year_3": 25000000000
+      },
+      "expected_returns": {
+        "payback_period": 3.5,
+        "irr": 0.28,
+        "npv_10_years": 125000000000
+      }
+    }
+  },
+  {
+    "id": "afdeling-optimization-035",
+    "scenario_type": "MULTI_AFDELING_PRODUCTION_OPTIMIZATION",
+    "model": "Spatial-Temporal Optimization across Afdelings",
+    "parameters": {
+      "afdeling_characteristics": {
+        "pagilaran": {
+          "elevation": [740, 1050],
+          "area_hectares": 280,
+          "soil_ph": 5.2,
+          "rainfall_mm": 3200,
+          "productivity_baseline": 5500
+        },
+        "kayulandak": {
+          "elevation": [900, 1350],
+          "area_hectares": 320,
+          "soil_ph": 5.5,
+          "rainfall_mm": 3500,
+          "productivity_baseline": 5800
+        },
+        "andongsili": {
+          "elevation": [1200, 1600],
+          "area_hectares": 250,
+          "soil_ph": 5.0,
+          "rainfall_mm": 4000,
+          "productivity_baseline": 6000
+        },
+        "samigaluh": {
+          "elevation": [600, 950],
+          "area_hectares": 150,
+          "soil_ph": 5.8,
+          "rainfall_mm": 2800,
+          "productivity_baseline": 4800
+        }
+      },
+      "plucking_optimization": {
+        "gilir_petik_days": {
+          "peak_season": 7,
+          "regular_season": 10,
+          "off_season": 14
+        },
+        "labor_allocation": {
+          "skilled_pluckers": 300,
+          "regular_pluckers": 500,
+          "seasonal_workers": 200
+        },
+        "quality_targets": {
+          "pucuk_peko": 0.70,
+          "pucuk_burung": 0.20,
+          "pucuk_muda": 0.10
+        }
+      }
+    },
+    "optimization_scenarios": {
+      "scenario_1_labor_reallocation": {
+        "strategy": "Dynamic labor movement between afdelings",
+        "implementation": {
+          "morning_shift": "Andongsili priority (cooler)",
+          "afternoon_shift": "Samigaluh focus",
+          "rotation_schedule": "Weekly optimization"
+        },
+        "expected_outcomes": {
+          "productivity_gain": 0.12,
+          "quality_improvement": 0.08,
+          "labor_cost_optimization": 0.15
+        }
+      },
+      "scenario_2_variety_specialization": {
+        "allocation_strategy": {
+          "pagilaran": "PGL-11 focus for export",
+          "kayulandak": "Assamica for CTC",
+          "andongsili": "White tea specialty",
+          "samigaluh": "Green tea production"
+        },
+        "market_alignment": {
+          "japan_demand": "Andongsili white",
+          "russia_preference": "Kayulandak CTC",
+          "europe_organic": "Pagilaran orthodox",
+          "domestic": "Samigaluh green"
+        },
+        "revenue_optimization": {
+          "product_mix_value": 0.35,
+          "market_fit_score": 0.88,
+          "premium_capture": 0.42
+        }
+      },
+      "scenario_3_climate_resilience": {
+        "adaptation_measures": {
+          "andongsili": "Frost protection systems",
+          "samigaluh": "Drought irrigation",
+          "kayulandak": "Erosion control",
+          "pagilaran": "Shade optimization"
+        },
+        "investment_per_afdeling": {
+          "infrastructure": 500000000,
+          "technology": 300000000,
+          "training": 100000000
+        },
+        "resilience_metrics": {
+          "yield_stability": 0.85,
+          "quality_consistency": 0.90,
+          "climate_risk_reduction": 0.60
+        }
+      }
+    },
+    "integrated_supply_chain": {
+      "collection_optimization": {
+        "route_planning": "AI-optimized daily",
+        "quality_preservation": "Cold chain partial",
+        "time_to_factory": "<4 hours",
+        "freshness_retention": 0.95
+      },
+      "processing_allocation": {
+        "pagilaran_factory": "Orthodox premium",
+        "samigaluh_facility": "Green tea line",
+        "mobile_units": "Field processing pilots"
+      },
+      "market_routing": {
+        "export_direct": 0.75,
+        "domestic_premium": 0.15,
+        "agrotourism_retail": 0.10
+      }
+    }
+  },
+  {
+    "id": "agrotourism-ecosystem-036",
+    "scenario_type": "INTEGRATED_AGROTOURISM_REVENUE_MODEL",
+    "model": "Experience Economy Value Creation",
+    "parameters": {
+      "visitor_segments": {
+        "domestic_tourists": {
+          "volume": 45000,
+          "average_spend": 350000,
+          "growth_rate": 0.15,
+          "seasonality": "high"
+        },
+        "international_tourists": {
+          "volume": 3200,
+          "average_spend": 1500000,
+          "growth_rate": 0.25,
+          "seasonality": "moderate"
+        },
+        "educational_groups": {
+          "volume": 8000,
+          "average_spend": 150000,
+          "growth_rate": 0.20,
+          "repeat_rate": 0.40
+        },
+        "corporate_mice": {
+          "volume": 2500,
+          "average_spend": 2500000,
+          "growth_rate": 0.30,
+          "contract_value": "high"
+        }
+      },
+      "experience_products": {
+        "tea_walk_factory": {
+          "capacity": 200,
+          "price": 25000,
+          "satisfaction": 0.88,
+          "tripadvisor_rating": 4.5
+        },
+        "glamping_premium": {
+          "units": 6,
+          "occupancy": 0.70,
+          "adr": 950000,
+          "revpar": 665000
+        },
+        "adventure_activities": {
+          "flying_fox": 35000,
+          "atv_trail": 150000,
+          "paintball": 250000,
+          "utilization": 0.60
+        },
+        "workshop_programs": {
+          "tea_masterclass": 500000,
+          "chocolate_lab": 350000,
+          "barista_training": 750000,
+          "capacity": 30
+        }
+      }
+    },
+    "revenue_optimization_scenarios": {
+      "scenario_1_premium_repositioning": {
+        "strategy": "Luxury eco-resort positioning",
+        "investments": {
+          "infinity_pool": 2000000000,
+          "spa_facility": 1500000000,
+          "fine_dining": 1000000000,
+          "villa_upgrade": 3000000000
+        },
+        "target_market": {
+          "high_net_worth": 0.30,
+          "wellness_tourists": 0.40,
+          "luxury_travelers": 0.30
+        },
+        "projected_impact": {
+          "adr_increase": 0.80,
+          "occupancy": 0.75,
+          "total_revenue": 12000000000,
+          "profit_margin": 0.35
+        }
+      },
+      "scenario_2_mass_market_expansion": {
+        "strategy": "Volume-based family destination",
+        "developments": {
+          "camping_ground": 500000000,
+          "food_court": 750000000,
+          "children_playground": 400000000,
+          "parking_expansion": 300000000
+        },
+        "visitor_projection": {
+          "year_1": 75000,
+          "year_3": 150000,
+          "year_5": 250000
+        },
+        "revenue_model": {
+          "entry_ticket": 30000,
+          "f_and_b_capture": 0.70,
+          "activity_attach": 0.40,
+          "merchandise": 0.25
+        }
+      },
+      "scenario_3_edu_tourism_focus": {
+        "partnerships": {
+          "schools": 500,
+          "universities": 50,
+          "research_institutions": 20,
+          "international_programs": 10
+        },
+        "program_development": {
+          "curriculum_integration": true,
+          "certification_programs": 5,
+          "research_facilities": true,
+          "accommodation_academic": 100
+        },
+        "revenue_streams": {
+          "program_fees": 3000000000,
+          "accommodation": 2000000000,
+          "research_grants": 1000000000,
+          "publication_rights": 500000000
+        }
+      }
+    },
+    "digital_integration": {
+      "virtual_tours": {
+        "vr_experience": 1000000000,
+        "online_booking": "seamless",
+        "digital_marketing": 500000000,
+        "influencer_programs": 300000000
+      },
+      "smart_tourism": {
+        "iot_sensors": "visitor_flow",
+        "mobile_app": "personalized",
+        "ar_experiences": "educational",
+        "data_analytics": "real_time"
+      }
+    },
+    "sustainability_certification": {
+      "green_globe": "In progress",
+      "travelife": "Gold status",
+      "carbon_neutral": "2027 target",
+      "community_benefit": "30% local employment"
+    }
+  },
+  {
+    "id": "export-market-dynamics-037",
+    "scenario_type": "GLOBAL_MARKET_PENETRATION_STRATEGY",
+    "model": "Multi-Country Portfolio Optimization",
+    "parameters": {
+      "current_markets": {
+        "japan": {
+          "market_share": 0.02,
+          "growth_potential": 0.15,
+          "price_premium": 0.60,
+          "quality_requirement": "ultra_high"
+        },
+        "russia": {
+          "market_share": 0.03,
+          "growth_potential": 0.10,
+          "price_sensitivity": "high",
+          "volume_focus": true
+        },
+        "usa": {
+          "market_share": 0.01,
+          "growth_potential": 0.25,
+          "specialty_demand": "high",
+          "organic_premium": 0.40
+        },
+        "europe": {
+          "market_share": 0.015,
+          "growth_potential": 0.20,
+          "sustainability_requirement": "mandatory",
+          "certification_needs": ["organic", "fairtrade", "rainforest"]
+        }
+      },
+      "market_entry_costs": {
+        "regulatory_compliance": {
+          "japan": 50000000,
+          "usa": 75000000,
+          "europe": 100000000,
+          "middle_east": 40000000
+        },
+        "marketing_investment": {
+          "brand_building": 200000000,
+          "trade_shows": 150000000,
+          "digital_marketing": 100000000,
+          "distributor_support": 250000000
+        }
+      }
+    },
+    "market_penetration_scenarios": {
+      "scenario_1_japan_premium": {
+        "strategy": "Ultra-premium single origin",
+        "product_development": {
+          "sencha_style": true,
+          "matcha_grade": true,
+          "packaging": "minimalist_luxury",
+          "storytelling": "heritage_craft"
+        },
+        "distribution": {
+          "specialty_stores": 0.60,
+          "high_end_hotels": 0.25,
+          "online_direct": 0.15
+        },
+        "financial_projection": {
+          "investment": 500000000,
+          "revenue_year_3": 2500000000,
+          "margin": 0.45,
+          "market_share_target": 0.05
+        }
+      },
+      "scenario_2_europe_sustainable": {
+        "compliance_strategy": {
+          "eu_deforestation_free": "Full compliance 2025",
+          "carbon_footprint": "Reduction 50%",
+          "packaging": "100% recyclable",
+          "supply_chain": "Blockchain verified"
+        },
+        "product_portfolio": {
+          "organic_certified": 0.60,
+          "fairtrade": 0.30,
+          "regenerative": 0.10
+        },
+        "market_approach": {
+          "germany_focus": 0.35,
+          "uk_premium": 0.25,
+          "france_specialty": 0.20,
+          "nordics_sustainable": 0.20
+        }
+      },
+      "scenario_3_usa_dtc": {
+        "digital_first_strategy": {
+          "amazon_fba": true,
+          "subscription_model": true,
+          "influencer_marketing": true,
+          "content_marketing": "education_focus"
+        },
+        "product_innovation": {
+          "ready_to_drink": 0.30,
+          "functional_blends": 0.40,
+          "premium_loose": 0.30
+        },
+        "growth_projection": {
+          "year_1": 500000000,
+          "year_3": 2000000000,
+          "year_5": 5000000000,
+          "cac_to_ltv": 0.25
+        }
+      }
+    },
+    "risk_hedging": {
+      "currency_exposure": {
+        "natural_hedge": 0.40,
+        "forward_contracts": 0.40,
+        "options": 0.20
+      },
+      "political_risk": {
+        "insurance": 250000000,
+        "diversification": "essential",
+        "local_partnerships": "strategic"
+      },
+      "quality_consistency": {
+        "redundant_supply": 0.20,
+        "quality_buffer": 0.10,
+        "certification_maintenance": "continuous"
+      }
+    }
+  },
+  {
+    "id": "digital-transformation-038",
+    "scenario_type": "INDUSTRY_4.0_IMPLEMENTATION",
+    "model": "Smart Factory & Precision Agriculture Integration",
+    "parameters": {
+      "current_digitalization": {
+        "maturity_level": 2.3,
+        "iot_coverage": 0.15,
+        "data_integration": 0.25,
+        "automation_level": 0.20
+      },
+      "transformation_roadmap": {
+        "phase_1_foundation": {
+          "duration_months": 12,
+          "investment": 3000000000,
+          "focus": ["erp_implementation", "basic_iot", "data_lake"]
+        },
+        "phase_2_integration": {
+          "duration_months": 18,
+          "investment": 5000000000,
+          "focus": ["ai_analytics", "predictive_maintenance", "supply_chain_visibility"]
+        },
+        "phase_3_optimization": {
+          "duration_months": 12,
+          "investment": 4000000000,
+          "focus": ["digital_twin", "autonomous_systems", "blockchain"]
+        }
+      },
+      "technology_stack": {
+        "field_technologies": {
+          "drone_monitoring": 15,
+          "soil_sensors": 150,
+          "weather_stations": 20,
+          "satellite_imagery": "subscription"
+        },
+        "factory_technologies": {
+          "scada_system": true,
+          "mes_integration": true,
+          "quality_vision": 8,
+          "robotic_sorting": 2
+        },
+        "analytics_platform": {
+          "edge_computing": 10,
+          "cloud_infrastructure": "hybrid",
+          "ml_models": 25,
+          "dashboards": "real_time"
+        }
+      }
+    },
+    "transformation_scenarios": {
+      "scenario_1_incremental": {
+        "approach": "Step-by-step modernization",
+        "timeline": 60,
+        "investment": 8000000000,
+        "risk": "low",
+        "expected_benefits": {
+          "efficiency_gain": 0.25,
+          "quality_improvement": 0.15,
+          "cost_reduction": 0.20,
+          "roi_months": 48
+        }
+      },
+      "scenario_2_leapfrog": {
+        "approach": "Quantum leap to Industry 4.0",
+        "timeline": 36,
+        "investment": 15000000000,
+        "risk": "high",
+        "expected_benefits": {
+          "efficiency_gain": 0.45,
+          "quality_improvement": 0.30,
+          "cost_reduction": 0.35,
+          "roi_months": 36
+        }
+      },
+      "scenario_3_partnership": {
+        "approach": "Strategic tech partnerships",
+        "partners": ["Microsoft", "Local startups", "UGM"],
+        "investment": 6000000000,
+        "revenue_share_model": true,
+        "expected_benefits": {
+          "efficiency_gain": 0.35,
+          "innovation_speed": "2x",
+          "risk_sharing": 0.50,
+          "capability_building": "accelerated"
+        }
+      }
+    },
+    "impact_projections": {
+      "operational_metrics": {
+        "oee_improvement": [0.65, 0.85],
+        "yield_increase": 0.15,
+        "waste_reduction": 0.40,
+        "energy_efficiency": 0.25
+      },
+      "financial_metrics": {
+        "revenue_uplift": 0.20,
+        "margin_expansion": 0.08,
+        "working_capital": -0.25,
+        "asset_utilization": 0.30
+      },
+      "organizational_impact": {
+        "job_transformation": 0.40,
+        "new_skills_required": 250,
+        "productivity_per_employee": 0.35,
+        "innovation_index": 0.60
+      }
+    }
+  },
+  {
+    "id": "climate-resilience-039",
+    "scenario_type": "CLIMATE_CHANGE_ADAPTATION_PATHWAYS",
+    "model": "Multi-Hazard Risk Assessment & Adaptation",
+    "parameters": {
+      "climate_projections": {
+        "temperature_increase": {
+          "2030": 1.2,
+          "2040": 2.0,
+          "2050": 2.8
+        },
+        "rainfall_variability": {
+          "drought_frequency": 0.30,
+          "extreme_rainfall": 0.25,
+          "seasonal_shift": "significant"
+        },
+        "pest_disease_pressure": {
+          "blister_blight": 0.40,
+          "new_pests": 0.20,
+          "vector_expansion": 0.35
+        }
+      },
+      "vulnerability_assessment": {
+        "elevation_zones": {
+          "low_600_900": "high_risk",
+          "medium_900_1200": "moderate_risk",
+          "high_1200_1600": "low_risk"
+        },
+        "variety_susceptibility": {
+          "pgl_11": 0.30,
+          "assamica": 0.45,
+          "sinensis": 0.50
+        },
+        "infrastructure_exposure": {
+          "processing_facilities": 0.20,
+          "roads": 0.35,
+          "water_systems": 0.40
+        }
+      }
+    },
+    "adaptation_scenarios": {
+      "scenario_1_incremental": {
+        "measures": {
+          "shade_trees": 0.20,
+          "mulching": "extensive",
+          "water_harvesting": 15,
+          "variety_adjustment": 0.15
+        },
+        "investment": 5000000000,
+        "effectiveness": 0.60,
+        "implementation": "immediate"
+      },
+      "scenario_2_transformative": {
+        "measures": {
+          "elevation_migration": 200,
+          "variety_replacement": 0.50,
+          "protected_cultivation": 0.10,
+          "processing_relocation": 2
+        },
+        "investment": 20000000000,
+        "effectiveness": 0.85,
+        "timeline": "10_years"
+      },
+      "scenario_3_diversification": {
+        "strategies": {
+          "crop_diversification": ["coffee", "spices", "herbs"],
+          "agroforestry": 0.30,
+          "ecosystem_services": true,
+          "carbon_farming": 500
+        },
+        "revenue_model": {
+          "tea": 0.60,
+          "other_crops": 0.20,
+          "carbon_credits": 0.10,
+          "ecosystem_payments": 0.10
+        }
+      }
+    },
+    "financial_implications": {
+      "without_adaptation": {
+        "yield_loss": 0.35,
+        "quality_degradation": 0.25,
+        "revenue_impact": -8000000000,
+        "stranded_assets": 5000000000
+      },
+      "with_adaptation": {
+        "yield_maintenance": 0.90,
+        "quality_premium": 0.15,
+        "new_revenue_streams": 3000000000,
+        "resilience_value": "high"
+      },
+      "insurance_strategy": {
+        "parametric_weather": 500000000,
+        "yield_insurance": 300000000,
+        "business_interruption": 400000000,
+        "premium_cost": 80000000
+      }
+    }
+  },
+  {
+    "id": "workforce-transformation-040",
+    "scenario_type": "HUMAN_CAPITAL_EVOLUTION",
+    "model": "Skills Transformation & Demographic Transition",
+    "parameters": {
+      "current_workforce": {
+        "total_employees": 1100,
+        "age_distribution": {
+          "under_30": 0.15,
+          "30_45": 0.35,
+          "45_60": 0.40,
+          "over_60": 0.10
+        },
+        "skill_levels": {
+          "unskilled": 0.60,
+          "semi_skilled": 0.25,
+          "skilled": 0.10,
+          "professional": 0.05
+        },
+        "gender_ratio": {
+          "female": 0.70,
+          "male": 0.30
+        }
+      },
+      "future_requirements": {
+        "technology_skills": {
+          "data_analytics": 50,
+          "iot_operation": 100,
+          "quality_control": 75,
+          "digital_marketing": 25
+        },
+        "leadership_pipeline": {
+          "succession_planning": 15,
+          "high_potential": 30,
+          "cross_functional": 20
+        }
+      }
+    },
+    "transformation_scenarios": {
+      "scenario_1_reskilling": {
+        "training_programs": {
+          "digital_literacy": 800,
+          "technical_skills": 300,
+          "leadership": 50,
+          "innovation": 100
+        },
+        "investment": 2000000000,
+        "timeline_months": 36,
+        "success_rate": 0.75,
+        "productivity_impact": 0.30
+      },
+      "scenario_2_automation": {
+        "job_displacement": 300,
+        "new_roles_created": 150,
+        "redeployment": 200,
+        "early_retirement": 100,
+        "investment": 5000000000,
+        "social_cost": 1000000000
+      },
+      "scenario_3_hybrid": {
+        "human_machine_collaboration": {
+          "augmented_workers": 500,
+          "automation_assistants": 200,
+          "quality_inspectors": 100,
+          "data_analysts": 50
+        },
+        "workforce_composition": {
+          "permanent": 0.60,
+          "contract": 0.25,
+          "seasonal": 0.15
+        },
+        "capability_building": {
+          "ugm_partnership": "continuous",
+          "vocational_training": "structured",
+          "mentorship": "1_to_1",
+          "innovation_time": 0.20
+        }
+      }
+    },
+    "social_impact": {
+      "community_effects": {
+        "local_employment": 3000,
+        "indirect_jobs": 5000,
+        "youth_retention": 0.40,
+        "women_empowerment": "high"
+      },
+      "education_initiatives": {
+        "scholarship_program": 100,
+        "internships": 300,
+        "research_positions": 20,
+        "skill_certification": 500
+      },
+      "welfare_programs": {
+        "healthcare_coverage": "comprehensive",
+        "housing_support": 200,
+        "childcare_facilities": 3,
+        "retirement_planning": "structured"
+      }
+    }
+  },
+  {
+    "id": "circular-bioeconomy-041",
+    "scenario_type": "ZERO_WASTE_BIOREFINERY_MODEL",
+    "model": "Integrated Bioeconomy Value Creation",
+    "parameters": {
+      "waste_streams": {
+        "tea_prunings": {
+          "volume": 3500,
+          "current_use": "mulch",
+          "potential_products": ["biochar", "essential_oils", "animal_feed"]
+        },
+        "processing_waste": {
+          "volume": 250,
+          "current_use": "disposal",
+          "potential_products": ["biogas", "compost", "biochemicals"]
+        },
+        "cocoa_husks": {
+          "volume": 150,
+          "current_use": "limited",
+          "potential_products": ["bioplastic", "activated_carbon", "pectin"]
+        }
+      },
+      "biorefinery_configuration": {
+        "primary_products": {
+          "biogas": {
+            "capacity": 1200,
+            "energy_output": 2500000,
+            "investment": 3000000000
+          },
+          "biochar": {
+            "capacity": 500,
+            "carbon_sequestration": 1000,
+            "market_price": 2000000
+          },
+          "bio_chemicals": {
+            "catechins_extraction": 50,
+            "theophylline": 10,
+            "market_value": 500000000
+          }
+        }
+      }
+    },
+    "value_creation_scenarios": {
+      "scenario_1_energy_focus": {
+        "biogas_expansion": {
+          "capacity": 2000,
+          "grid_connection": true,
+          "carbon_credits": 15000000,
+          "energy_independence": 0.80
+        },
+        "investment": 5000000000,
+        "payback": 4.5,
+        "environmental_benefit": "8000 tCO2e reduction"
+      },
+      "scenario_2_biochemical": {
+        "extraction_facility": {
+          "technology": "supercritical_co2",
+          "products": ["antioxidants", "flavoring", "cosmetics"],
+          "capacity": 100,
+          "purity": 0.95
+        },
+        "market_potential": {
+          "pharma": 300000000,
+          "cosmetics": 200000000,
+          "food": 150000000
+        },
+        "partnership": "Required with pharma company"
+      },
+      "scenario_3_integrated": {
+        "cascading_use": {
+          "level_1": "Extract high value compounds",
+          "level_2": "Fermentation for chemicals",
+          "level_3": "Biogas production",
+          "level_4": "Soil amendment"
+        },
+        "revenue_streams": {
+          "biochemicals": 400000000,
+          "energy": 200000000,
+          "carbon_credits": 100000000,
+          "fertilizer": 50000000
+        },
+        "sustainability_metrics": {
+          "waste_diversion": 0.98,
+          "carbon_negative": true,
+          "water_recovery": 0.85,
+          "circular_index": 0.92
+        }
+      }
+    }
+  },
+  {
+    "id": "supply-network-resilience-042",
+    "scenario_type": "ADAPTIVE_SUPPLY_NETWORK",
+    "model": "Dynamic Network Reconfiguration",
+    "parameters": {
+      "network_topology": {
+        "suppliers": {
+          "farmers": 300,
+          "input_suppliers": 50,
+          "service_providers": 30
+        },
+        "intermediaries": {
+          "collection_centers": 15,
+          "cooperatives": 8,
+          "traders": 20
+        },
+        "customers": {
+          "b2b": 150,
+          "b2c": 10000,
+          "export": 50
+        }
+      },
+      "disruption_scenarios": {
+        "pandemic_lockdown": {
+          "probability": 0.10,
+          "impact": "severe",
+          "duration": 90,
+          "recovery": 180
+        },
+        "climate_extreme": {
+          "probability": 0.25,
+          "impact": "moderate",
+          "duration": 30,
+          "recovery": 60
+        },
+        "market_shock": {
+          "probability": 0.20,
+          "impact": "high",
+          "duration": 180,
+          "recovery": 360
+        }
+      }
+    },
+    "resilience_strategies": {
+      "redundancy_building": {
+        "supplier_diversification": {
+          "primary": 0.60,
+          "secondary": 0.30,
+          "emergency": 0.10
+        },
+        "inventory_buffering": {
+          "raw_materials": 45,
+          "finished_goods": 30,
+          "critical_spares": 90
+        },
+        "capacity_flexibility": {
+          "surge_capability": 0.30,
+          "production_switching": 0.25,
+          "outsourcing_ready": 0.15
+        }
+      },
+      "digital_visibility": {
+        "control_tower": {
+          "real_time_tracking": true,
+          "predictive_analytics": true,
+          "automated_alerts": true,
+          "decision_support": "ai_powered"
+        },
+        "blockchain_integration": {
+          "traceability": "end_to_end",
+          "smart_contracts": 100,
+          "payment_automation": true,
+          "dispute_resolution": "automated"
+        }
+      },
+      "adaptive_response": {
+        "scenario_planning": {
+          "models_maintained": 10,
+          "update_frequency": "weekly",
+          "drill_exercises": "quarterly"
+        },
+        "rapid_reconfiguration": {
+          "switching_time": 48,
+          "alternative_routes": 5,
+          "backup_facilities": 3
+        }
+      }
+    },
+    "performance_under_stress": {
+      "baseline_performance": {
+        "service_level": 0.95,
+        "cost_efficiency": 0.85,
+        "quality_consistency": 0.92
+      },
+      "stressed_performance": {
+        "single_disruption": {
+          "service_level": 0.85,
+          "recovery_time": 14,
+          "cost_increase": 0.15
+        },
+        "multiple_disruptions": {
+          "service_level": 0.70,
+          "recovery_time": 30,
+          "cost_increase": 0.35
+        }
+      },
+      "investment_return": {
+        "resilience_investment": 8000000000,
+        "avoided_losses": 15000000000,
+        "competitive_advantage": "significant",
+        "roi": 2.5
+      }
+    }
+  },
+  {
+    "id": "innovation-ecosystem-043",
+    "scenario_type": "OPEN_INNOVATION_PLATFORM",
+    "model": "Collaborative Innovation Network",
+    "parameters": {
+      "ecosystem_actors": {
+        "ugm_research": {
+          "faculty": 50,
+          "students": 500,
+          "projects": 30,
+          "budget": 5000000000
+        },
+        "startups": {
+          "agtech": 15,
+          "biotech": 8,
+          "digital": 12,
+          "funding": 10000000000
+        },
+        "industry_partners": {
+          "local": 20,
+          "national": 10,
+          "international": 5
+        },
+        "government": {
+          "programs": 8,
+          "grants": 3000000000,
+          "regulatory_sandbox": true
+        }
+      },
+      "innovation_focus_areas": {
+        "variety_development": {
+          "crispr_projects": 3,
+          "traditional_breeding": 5,
+          "marker_assisted": 4
+        },
+        "processing_innovation": {
+          "fermentation_tech": 2,
+          "extraction_methods": 3,
+          "quality_sensors": 5
+        },
+        "digital_solutions": {
+          "precision_ag": 4,
+          "supply_chain": 3,
+          "customer_engagement": 2
+        },
+        "sustainability": {
+          "carbon_negative": 2,
+          "water_management": 3,
+          "biodiversity": 2
+        }
+      }
+    },
+    "innovation_scenarios": {
+      "scenario_1_incremental": {
+        "approach": "Internal R&D focus",
+        "investment": 2000000000,
+        "timeline": 60,
+        "expected_innovations": 10,
+        "success_rate": 0.60,
+        "value_creation": 5000000000
+      },
+      "scenario_2_open_innovation": {
+        "approach": "Ecosystem orchestration",
+        "investment": 5000000000,
+        "timeline": 36,
+        "expected_innovations": 25,
+        "success_rate": 0.40,
+        "value_creation": 15000000000
+      },
+      "scenario_3_venture_building": {
+        "approach": "Startup incubation",
+        "investment": 8000000000,
+        "portfolio": 20,
+        "unicorn_probability": 0.05,
+        "exit_value": 50000000000
+      }
+    },
+    "value_capture_mechanisms": {
+      "ip_strategy": {
+        "patents_filed": 15,
+        "trade_secrets": 20,
+        "licensing_revenue": 500000000,
+        "joint_ip": "shared_revenue"
+      },
+      "commercialization": {
+        "spin_offs": 3,
+        "technology_transfer": 8,
+        "consulting_services": 1000000000,
+        "equity_stakes": 5
+      },
+      "ecosystem_benefits": {
+        "knowledge_spillovers": "high",
+        "talent_attraction": "enhanced",
+        "brand_value": "innovation_leader",
+        "network_effects": "exponential"
+      }
+    }
+  },
+  {
+    "id": "financial-engineering-044",
+    "scenario_type": "CAPITAL_STRUCTURE_OPTIMIZATION",
+    "model": "Multi-Objective Financial Optimization",
+    "parameters": {
+      "current_financials": {
+        "revenue": 60000000000,
+        "ebitda": 12000000000,
+        "debt": 15000000000,
+        "equity": 45000000000,
+        "wacc": 0.12
+      },
+      "growth_scenarios": {
+        "organic": {
+          "capex_required": 10000000000,
+          "revenue_growth": 0.08,
+          "margin_improvement": 0.02
+        },
+        "acquisition": {
+          "target_value": 20000000000,
+          "synergies": 0.25,
+          "integration_cost": 2000000000
+        },
+        "transformation": {
+          "digital_investment": 12000000000,
+          "efficiency_gain": 0.30,
+          "new_revenue": 0.20
+        }
+      },
+      "financing_options": {
+        "debt_financing": {
+          "bank_loan": 0.08,
+          "green_bonds": 0.06,
+          "capacity": 20000000000
+        },
+        "equity_financing": {
+          "strategic_investor": 0.25,
+          "ipo": 0.30,
+          "valuation_multiple": 12
+        },
+        "alternative_financing": {
+          "revenue_sharing": 0.15,
+          "asset_backed": 0.07,
+          "crowdfunding": 0.10
+        }
+      }
+    },
+    "optimization_scenarios": {
+      "scenario_1_conservative": {
+        "debt_equity_target": 0.3,
+        "financing_mix": {
+          "retained_earnings": 0.50,
+          "bank_debt": 0.30,
+          "green_bonds": 0.20
+        },
+        "financial_metrics": {
+          "roe": 0.15,
+          "interest_coverage": 8,
+          "credit_rating": "A",
+          "cost_of_capital": 0.10
+        }
+      },
+      "scenario_2_aggressive": {
+        "debt_equity_target": 0.8,
+        "financing_mix": {
+          "leveraged_loan": 0.60,
+          "mezzanine": 0.20,
+          "equity": 0.20
+        },
+        "financial_metrics": {
+          "roe": 0.25,
+          "interest_coverage": 3,
+          "credit_rating": "BB+",
+          "cost_of_capital": 0.14
+        }
+      },
+      "scenario_3_balanced": {
+        "debt_equity_target": 0.5,
+        "financing_mix": {
+          "green_bonds": 0.40,
+          "strategic_equity": 0.30,
+          "retained_earnings": 0.30
+        },
+        "financial_metrics": {
+          "roe": 0.18,
+          "interest_coverage": 5,
+          "credit_rating": "BBB+",
+          "cost_of_capital": 0.11
+        }
+      }
+    },
+    "value_creation_analysis": {
+      "enterprise_value": {
+        "current": 72000000000,
+        "scenario_1": 95000000000,
+        "scenario_2": 110000000000,
+        "scenario_3": 105000000000
+      },
+      "shareholder_returns": {
+        "dividend_policy": "Progressive",
+        "buyback_program": 5000000000,
+        "total_return": 0.22
+      },
+      "risk_metrics": {
+        "var_95": 8000000000,
+        "stress_test_pass": true,
+        "liquidity_ratio": 2.1
+      }
+    }
+  },
+  {
+    "id": "regenerative-agriculture-045",
+    "scenario_type": "REGENERATIVE_FARMING_TRANSITION",
+    "model": "Soil-Carbon-Biodiversity Optimization",
+    "parameters": {
+      "baseline_conditions": {
+        "soil_organic_carbon": 2.1,
+        "biodiversity_index": 0.45,
+        "water_retention": 0.60,
+        "chemical_inputs": 250
+      },
+      "regenerative_practices": {
+        "cover_cropping": {
+          "area_percentage": 0.40,
+          "species_mix": 5,
+          "carbon_sequestration": 2.5,
+          "cost": 500000
+        },
+        "agroforestry": {
+          "shade_trees": 100,
+          "nitrogen_fixers": 50,
+          "fruit_trees": 30,
+          "carbon_stock": 150
+        },
+        "composting": {
+          "tea_waste_recycled": 0.95,
+          "biochar_application": 10,
+          "microbial_inoculants": true
+        },
+        "water_management": {
+          "contour_planting": true,
+          "mulching": 0.80,
+          "rainwater_harvesting": 15
+        }
+      }
+    },
+    "transition_scenarios": {
+      "scenario_1_gradual": {
+        "timeline": 10,
+        "area_conversion": {
+          "year_1": 0.10,
+          "year_5": 0.50,
+          "year_10": 1.00
+        },
+        "investment": 10000000000,
+        "certification": "Regenerative Organic",
+        "yield_impact": {
+          "year_1_3": -0.15,
+          "year_4_6": 0,
+          "year_7_10": 0.20
+        }
+      },
+      "scenario_2_rapid": {
+        "timeline": 5,
+        "area_conversion": {
+          "year_1": 0.30,
+          "year_3": 0.70,
+          "year_5": 1.00
+        },
+        "investment": 20000000000,
+        "support_needed": "Technical assistance intensive",
+        "market_premium": 0.40
+      },
+      "scenario_3_selective": {
+        "high_value_blocks": 0.50,
+        "demonstration_farms": 0.20,
+        "conventional_retention": 0.30,
+        "investment": 8000000000,
+        "risk_mitigation": "Balanced approach"
+      }
+    },
+    "ecosystem_services_valuation": {
+      "carbon_sequestration": {
+        "annual_rate": 5000,
+        "carbon_price": 50000,
+        "revenue": 250000000
+      },
+      "water_services": {
+        "infiltration_increase": 0.40,
+        "runoff_reduction": 0.60,
+        "value": 150000000
+      },
+      "biodiversity": {
+        "species_increase": 0.80,
+        "pollinator_services": 100000000,
+        "pest_control": 80000000
+      },
+      "soil_health": {
+        "organic_matter": 0.50,
+        "fertility_improvement": 0.35,
+        "input_reduction": 200000000
+      }
+    },
+    "market_positioning": {
+      "certification_pathway": {
+        "regenerative_organic": "Year 3",
+        "carbon_neutral": "Year 5",
+        "biodiversity_positive": "Year 7"
+      },
+      "premium_markets": {
+        "europe_conscious": 0.50,
+        "usa_millennial": 0.30,
+        "japan_premium": 0.20
+      },
+      "brand_storytelling": {
+        "farmer_stories": "Authentic",
+        "impact_metrics": "Transparent",
+        "consumer_engagement": "Direct"
+      }
+    }
   }
-]]]]]]]]
+]]]]]]]]]]]
